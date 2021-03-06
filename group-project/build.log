@@ -1,7 +1,7 @@
 Messages from application of /home/eli/.local/lib/python3.9/site-packages/pretext/static/xsl/pretext-html.xsl:
-PTX:BUG:   an element ("example") does not know its level
-             located within: "getting-started" (xml:id), "Getting Started" (title)
-PTX:BUG:   an element ("example") does not know its level
-             located within: "getting-started" (xml:id), "Getting Started" (title)
-PTX:BUG:   an element ("example") does not know its level
-             located within: "getting-started" (xml:id), "Getting Started" (title)
+PTX:BUG:   an element ("exercise") does not know its level
+             located within: "check-math-notation" (xml:id), "Math Notation" (title)
+PTX:BUG:   an element ("exercise") does not know its level
+             located within: "check-math-notation" (xml:id), "Math Notation" (title)
+PTX:BUG:   an element ("exercise") does not know its level
+             located within: "check-math-notation" (xml:id), "Math Notation" (title)
