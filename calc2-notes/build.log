@@ -1,0 +1,10 @@
+Messages from application of /home/eli/.local/lib/python3.9/site-packages/pretext/static/xsl/pretext-html.xsl:
+MBX:DEPRECATE: (2019-02-06) the "circumflex" element is no longer necessary, simply replace with a bare "^" character (7 times)
+             located within: "f(x)=2^x" (title)
+             located within: "f(x)=2^x" (title)
+             located within: "f(x)=2^x" (title)
+             located within: "f(x)=2^x" (title)
+             located within: "f(x)=2^x" (title)
+             located within: "f(x)=2^x" (title)
+             located within: "f(x)=2^x" (title)
+--------------

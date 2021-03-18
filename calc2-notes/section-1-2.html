@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-03-15T21:26:02-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Volumes by Slicing</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\(\newcommand{\foo}{bar}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="calc-2-notes.html"><span class="title">Calculus 2 Notes</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-1-1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-1.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="arc-length-and-surface-area.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-1-1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-1.html" title="Up">Up</a><a class="next-button button toolbar-item" href="arc-length-and-surface-area.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link">
+<a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">-- Applications of Definite Integrals</span></a><ul>
+<li><a href="section-1-1.html" data-scroll="section-1-1">Area Between Two Curves</a></li>
+<li><a href="section-1-2.html" data-scroll="section-1-2" class="active">Volumes by Slicing</a></li>
+<li><a href="arc-length-and-surface-area.html" data-scroll="arc-length-and-surface-area">Arc Length and Surface Area</a></li>
+<li><a href="sec-work.html" data-scroll="sec-work">Work</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">-- Exponential, Logarithmic and Inverse Trigonometric Functions</span></a><ul>
+<li><a href="sec-exponential-and-logrithmic-functions.html" data-scroll="sec-exponential-and-logrithmic-functions">Exponential and Logrithmic Functions</a></li>
+<li><a href="sec-derivatives-and-integrals-of-logs.html" data-scroll="sec-derivatives-and-integrals-of-logs">Derivatives and Integrals involving Log Functions</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section-1-2"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.2</span> <span class="title">Volumes by Slicing</span>
+</h2>
+<section class="introduction" id="introduction-1"><p id="p-4"><figure class="figure figure-like" id="figure-2"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/example_2.png" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.1<span class="period">.</span></span><span class="space"> </span></figcaption></figure> How can we find the volume when the above region is revolved around the x-axis?</p></section><section class="subsection" id="disk-method"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.2.1</span> <span class="title">Volumes of Solids of Revolution -- Disk Method</span>
+</h3>
+<p id="p-5">If we cut the previous graph up into small, evenly spaced verticle strips, and rotate them around the x-axis, we would get a series of disks. The equation for the volume of a disk is \(V_{disk}=\pi r^2 h\text{.}\) We can apply this to our graph by using the following:</p>
+<ul class="disc">
+<li id="li-1"><p id="p-6">\(r=f(x_k^*)\)  where \(f(x_k^*)\) is the height of each individual "strip"</p></li>
+<li id="li-2"><p id="p-7">\(h=\Delta x\) where \(\Delta x \) is the width of each individual "strip"</p></li>
+<li id="li-3"><p id="p-8">This gives us the equation: \(V_{n,disk}=\pi(f(x_k^*))^2 \Delta x\)</p></li>
+</ul>
+<p id="p-9">So how do we find the <em class="emphasis">total</em> volume of all disks?</p>
+<div class="displaymath">
+\begin{align*}
+V_{total}\amp=V_{1,disk}+V_{2,disk}+...+V_{n,disk}\\
+\amp = \pi(f(x_1^*))^2 \Delta x +\pi(f(x_2^*))^2 \Delta x +...+\pi(f(x_n^*))^2 \Delta x  \\
+\amp=\displaystyle\sum_{k=1}^{n} \pi(f(x_k^*))^2 \Delta x
+\end{align*}
+</div>
+<p id="p-10">To find the exact volume of a solid of revolution, we must take the limit of the above equation, turning this into a definite integral.</p>
+<div class="displaymath">
+\begin{align*}
+V \amp = \displaystyle\lim\limits_{n\to\infty} \displaystyle\sum_{k=1}^{n} \pi(f(x_k^*))^2 \Delta x\\
+\amp = \int_a^b \pi (f(x))^2dx
+\end{align*}
+</div>
+<article class="example example-like" id="example-2"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-2"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Volume Using Disk Method.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-2"><article class="example example-like"><p id="p-11">Let's find the volume of the function \(y=\sqrt{x}\) from 1 to 9 revolved about the x-axis:</p>
+<div class="displaymath">
+\begin{align*}
+V\amp=\int_a^b\pi(f(x))^2dx\\
+\amp=\int_1^9\pi(\sqrt{x})^2dx\\
+\amp=\pi\int_1^9xdx\\
+\amp=\pi\left[\dfrac{x^2}{2}\right]_1^9\\
+\amp=\pi\left(\dfrac{(9)^2}{2}-\dfrac{(1)^2}{2}\right)\\
+\amp=\pi\left(\dfrac{80}{2}\right)\\
+\amp=40\pi
+\end{align*}
+</div></article></div></section><section class="subsection" id="washer-method"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.2.2</span> <span class="title">Volumes of Solids of Revolution -- Washer Method</span>
+</h3>
+<p id="p-12"><figure class="figure figure-like" id="figure-3"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/example_3.png" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.3<span class="period">.</span></span><span class="space"> </span></figcaption></figure> How do we find the volume of the solid of revolution in this case?</p>
+<p id="p-13">Similarly to the disk method, we need to cut up the functions into even subintervals. In this case though, when we revolve these subintervals around the x-axis, we end up with a washer instead of a disk.</p>
+<p id="p-14">What is the volume of the washer? We can think of it as the volume of a larger disk minus the volume of a smaller disk.</p>
+<ul class="disc">
+<li id="li-4"><p id="p-15">\(r_1\) = radius of big disk</p></li>
+<li id="li-5"><p id="p-16">\(r_2\) = radius of small disk</p></li>
+<li id="li-6"><p id="p-17">\(\displaystyle V_{washer} = \pi r_1^2 h - \pi r_2^2 h \)</p></li>
+<li id="li-7"><p id="p-18">\(\displaystyle V_{washer} = \pi \left( r_1^2 - r_2^2 \right) h \)</p></li>
+</ul>
+<p data-braille="continuation">Now, we need to convert the variables to our equation to find the total volume:</p>
+<ul class="disc">
+<li id="li-8"><p id="p-19">\(\displaystyle r_1 = f(x_k^*)\)</p></li>
+<li id="li-9"><p id="p-20">\(\displaystyle r_2 = g(x_k^*)\)</p></li>
+<li id="li-10"><p id="p-21">\(\displaystyle h=\Delta x\)</p></li>
+</ul>
+<p data-braille="continuation">So, \(V_n = \pi \left( (f(x))^2 -(g(x))^2 \right) \Delta x\)</p>
+<p id="p-22">Finally, the exact volume:</p>
+<div class="displaymath">
+\begin{equation*}
+V = \int_a^b \pi \left( (f(x))^2 - (g(x))^2 \right) dx
+\end{equation*}
+</div>
+<article class="example example-like" id="example-3"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-3"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Volume Using Washer Method.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-3"><article class="example example-like"><p id="p-23">Let's set up the integral to find the volume of the image above revolved around the x-axis. The area is bound above by \(f(x)=sin(x)+3\text{,}\) below by \(g(x)=cos(x)+2\text{,}\) to the left by \(x = 1\text{,}\) and the right by \(x = 4\text{.}\)</p>
+<div class="displaymath">
+\begin{align*}
+V \amp = \int_a^b \pi \left( (f(x))^2 - (g(x))^2 \right) dx\\
+\amp = \int_1^4 \pi \left( (sin(x)+3)^2 - (cos(x)+2)^2 \right) dx\\
+\amp = \int_1^4 \pi \left( (sin^2(x)+6sin(x) + 9) - (cos^2(x)+4cos(x)+4) \right) dx\\
+\amp = \int_1^4 \pi \left(sin^2(x)+6sin(x) + 9 - cos^2(x)-4cos(x)-4 \right) dx\\
+\amp = \pi \int_1^4 sin^2(x)+6sin(x) - cos^2(x)-4cos(x)+5 dx
+\end{align*}
+</div></article></div></section><section class="subsection" id="shell-method"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.2.3</span> <span class="title">Volumes of Solids of Revolution -- Shell Method</span>
+</h3>
+<p id="p-24"><figure class="figure figure-like" id="figure-4"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/example_4.jpg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.5<span class="period">.</span></span><span class="space"> </span></figcaption></figure> What if we wanted to revolve a function around the y-axis? We can approach this in a similar manner as the previous two methods. Again, we will split the function into equally sized subintervals along the x-axis. If we revolve one of these subintervals around the y-axis, we get a cylindrical shell.</p>
+<p id="p-25">If we "peel" open this shell, we roughly get a box shaped like a stick of gum. We can find the volume of the box by using the equation: \(V_{shell} \approx V_{box} = l \cdot w \cdot h\text{.}\) Now we need to changes this equations into terms of the fucntion:</p>
+<ul class="disc">
+<li id="li-11"><p id="p-26">\(w = \Delta x\) (the thickness of the shell)</p></li>
+<li id="li-12"><p id="p-27">\(l = 2 \pi r = 2 \pi x\) (r is equal to x -- this becomes the radius)</p></li>
+<li id="li-13"><p id="p-28">\(h = f(x)-g(x) \) (the distance between the two function)</p></li>
+</ul>
+<p data-braille="continuation">So, \(V_{shell} \approx 2 \pi x \left(f(x) - g(x)\right)\Delta x \)</p>
+<p id="p-29">Now the only thing left to do is to plug this into a definite integral:</p>
+<div class="displaymath">
+\begin{equation*}
+V = \int_a^b 2\pi x \left(f(x) - g(x)\right) dx
+\end{equation*}
+</div>
+<article class="example example-like" id="example-4"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-4"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Volume Using Shell Method.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-4"><article class="example example-like"><p id="p-30">Let's set up the integral to find the volume of the image above revolved around the y-axis. The area is bound above by \(f(x)=x^2\text{,}\) on the left by \(x=0\text{,}\) and on the right by \(x=2\text{.}\)</p>
+<div class="displaymath">
+\begin{align*}
+V \amp = \int_a^b 2\pi x \left(f(x) - g(x)\right) dx\\
+\amp = \int_0^2 2\pi x \left(x^2\right) dx\\
+\amp = 2\pi \int_0^2  x^3 dx \\
+\amp = 2 \pi \left[ \dfrac{x^4}{4}\right]_0^2\\
+\amp = 2 \pi \left( \dfrac{(2)^4}{4}- \dfrac{(0)^4}{4}\right)\\
+\amp = 2 \pi \left( \dfrac{16}{4} \right)\\
+\amp = 8 \pi
+\end{align*}
+</div></article></div></section><section class="conclusion" id="conclusion-1"></section></section></div></main>
+</div>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-03-15T21:26:02-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Exponential and Logrithmic Functions</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\(\newcommand{\foo}{bar}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="calc-2-notes.html"><span class="title">Calculus 2 Notes</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chapter-2.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-2.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-derivatives-and-integrals-of-logs.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chapter-2.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-2.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-derivatives-and-integrals-of-logs.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link">
+<a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">-- Applications of Definite Integrals</span></a><ul>
+<li><a href="section-1-1.html" data-scroll="section-1-1">Area Between Two Curves</a></li>
+<li><a href="section-1-2.html" data-scroll="section-1-2">Volumes by Slicing</a></li>
+<li><a href="arc-length-and-surface-area.html" data-scroll="arc-length-and-surface-area">Arc Length and Surface Area</a></li>
+<li><a href="sec-work.html" data-scroll="sec-work">Work</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">-- Exponential, Logarithmic and Inverse Trigonometric Functions</span></a><ul>
+<li><a href="sec-exponential-and-logrithmic-functions.html" data-scroll="sec-exponential-and-logrithmic-functions" class="active">Exponential and Logrithmic Functions</a></li>
+<li><a href="sec-derivatives-and-integrals-of-logs.html" data-scroll="sec-derivatives-and-integrals-of-logs">Derivatives and Integrals involving Log Functions</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-exponential-and-logrithmic-functions"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.1</span> <span class="title">Exponential and Logrithmic Functions</span>
+</h2>
+<section class="introduction" id="introduction-4"></section><section class="subsection" id="sub-exponential-functions"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.1.1</span> <span class="title">Exponential Functions</span>
+</h3>
+<article class="note remark-like" id="note-rules-for-exponents"><h6 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">The nine fules for exponents:.</span>
+</h6>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;">
+<div class="sbspanel" style="width:37.5%;justify-content:center;"><ul id="p-54" class="disc">
+<li id="li-18"><p id="p-55">\(\displaystyle a^m \cdot a^n = a^{m+n}\)</p></li>
+<li id="li-19"><p id="p-56">\(\displaystyle \left(a^m\right)^n = a^{m \cdot n}\)</p></li>
+<li id="li-20"><p id="p-57">\(\displaystyle \dfrac{a^m}{a^n} = a^{m-n} \)</p></li>
+<li id="li-21"><p id="p-58">\(\displaystyle a^0 = 1\)</p></li>
+<li id="li-22"><p id="p-59">\(\displaystyle a^{-1} = \dfrac{1}{a^n} \)</p></li>
+</ul></div>
+<div class="sbspanel" style="width:37.5%;justify-content:center;"><ul id="p-60" class="disc">
+<li id="li-23"><p id="p-61">\(\displaystyle (a\cdot b)^n = a^n \cdot b^n \)</p></li>
+<li id="li-24"><p id="p-62">\(\displaystyle \left(\dfrac{a}{b}\right)^n = \dfrac{a^n}{b^n}\)</p></li>
+<li id="li-25"><p id="p-63">\(\displaystyle a^{\frac{1}{n}} = \sqrt{a} \)</p></li>
+<li id="li-26"><p id="p-64">\(\displaystyle a^{\frac{m}{n}} = \left(\sqrt[n]{a}\right)^m \text{or } \sqrt[n]{(a)^m} \)</p></li>
+</ul></div>
+</div></div></article><article class="definition definition-like" id="def-exponential-function"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">Exponential Function.</span>
+</h6>
+<p id="p-65">A function that can be written in the form \(f(x)=b^x\) where \(b &gt; 0 \) and \(b \ne 1\) is called an exponential function.</p>
+<p id="p-66"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><p id="p-67"><figure class="table table-like" id="table-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.3<span class="period">.</span></span><span class="space"> </span>\(f(x)=2^x\)</figcaption><table>
+<tr>
+<td class="l m b2 r2 l0 t2 lines">x</td>
+<td class="l m b2 r2 l0 t2 lines">f(x)</td>
+<td class="l m b2 r2 l0 t2 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="l m b2 r2 l0 t0 lines">-3</td>
+<td class="l m b2 r2 l0 t0 lines">\(\frac{1}{8}\)</td>
+<td class="l m b2 r2 l0 t0 lines" data-braille="last-cell">\(2^{-3}=\frac{1}{8}\)</td>
+</tr>
+<tr>
+<td class="l m b2 r2 l0 t0 lines">-2</td>
+<td class="l m b2 r2 l0 t0 lines">\(\frac{1}{4}\)</td>
+<td class="l m b2 r2 l0 t0 lines" data-braille="last-cell">\(2^{-2}=\frac{1}{4}\)</td>
+</tr>
+<tr>
+<td class="l m b2 r2 l0 t0 lines">-1</td>
+<td class="l m b2 r2 l0 t0 lines">\(\frac{1}{2}\)</td>
+<td class="l m b2 r2 l0 t0 lines" data-braille="last-cell">\(2^{-1}=\frac{1}{2}\)</td>
+</tr>
+<tr>
+<td class="l m b2 r2 l0 t0 lines">0</td>
+<td class="l m b2 r2 l0 t0 lines">1</td>
+<td class="l m b2 r2 l0 t0 lines" data-braille="last-cell">\(2^0 = 1\)</td>
+</tr>
+<tr>
+<td class="l m b2 r2 l0 t0 lines">1</td>
+<td class="l m b2 r2 l0 t0 lines">2</td>
+<td class="l m b2 r2 l0 t0 lines" data-braille="last-cell">\(2^1=2\)</td>
+</tr>
+<tr>
+<td class="l m b2 r2 l0 t0 lines">2</td>
+<td class="l m b2 r2 l0 t0 lines">4</td>
+<td class="l m b2 r2 l0 t0 lines" data-braille="last-cell">\(2^2=4\)</td>
+</tr>
+<tr>
+<td class="l m b2 r2 l0 t0 lines">3</td>
+<td class="l m b2 r2 l0 t0 lines">8</td>
+<td class="l m b2 r2 l0 t0 lines" data-braille="last-cell">\(2^3=8\)</td>
+</tr>
+</table></figure></p></div>
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><p id="p-68"><figure class="figure figure-like" id="figure-9"><img src="images/example_7.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.1.4<span class="period">.</span></span><span class="space"> </span></figcaption></figure></p></div>
+</div></div></p></article><p id="p-69"><article class="definition definition-like" id="def-e"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.5</span><span class="period">.</span><span class="space"> </span><span class="title">Euler's Number.</span>
+</h6>
+<div class="displaymath" id="p-70">
+\begin{equation*}
+e = \displaystyle \lim\limits_{n \to \pm \infty}\left(1+\frac{1}{n}\right)^n \approx 2.71828
+\end{equation*}
+</div>
+<p data-braille="continuation">If you graph \(f(x)=\left(1+\frac{1}{x}\right)^x\text{,}\) you get a horizontal asymptote at \(y=e\text{.}\) If you graph \(y=e^x\) the slope of the tangent line at any point is equal to the height of the fundtion, therefore the derivative with respect to x of \(e^x\) is \(e^x\text{.}\)</p></article></p></section><section class="subsection" id="sub-logrithms"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.1.2</span> <span class="title">Logrithms</span>
+</h3>
+<p id="p-71"><article class="note remark-like" id="note-properties-of-algorithms"><h6 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">2.1.6</span><span class="period">.</span><span class="space"> </span><span class="title">The Five Properties of Algorithms.</span>
+</h6>
+<ul class="disc">
+<li id="li-27"><p id="p-72">\(\displaystyle log_a(a^m)= m \)</p></li>
+<li id="li-28"><p id="p-73">\(\displaystyle a^{log_a m} = m \)</p></li>
+<li id="li-29"><p id="p-74">\(\displaystyle log_a (m \cdot n) = log_a m + log_a n \)</p></li>
+<li id="li-30"><p id="p-75">\(\displaystyle log_a\left(\dfrac{m}{n}\right) = log_a m - log_a n \)</p></li>
+<li id="li-31"><p id="p-76">\(\displaystyle log_a (m ^ r) = r \cdot log_a m \)</p></li>
+</ul></article></p>
+<article class="definition definition-like" id="def-logrithms"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.7</span><span class="period">.</span><span class="space"> </span><span class="title">Logrithm.</span>
+</h6>
+<p id="p-77">If \(a &gt; 0\) and \(a \neq 1\text{,}\) and if \(c &gt; 0\text{,}\) then \(log_a c = b\) means \(a^b = c\text{.}\)</p>
+<p id="p-78"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><p id="p-79"><figure class="table table-like" id="table-3"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.8<span class="period">.</span></span><span class="space"> </span>\(f(x)=log_2 x\)</figcaption><table>
+<tr>
+<td class="l m b2 r2 l0 t2 lines">x</td>
+<td class="l m b2 r2 l0 t2 lines">f(x)</td>
+<td class="l m b2 r2 l0 t2 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="l m b2 r2 l0 t0 lines">\(\frac{1}{8}\)</td>
+<td class="l m b2 r2 l0 t0 lines">-3</td>
+<td class="l m b2 r2 l0 t0 lines" data-braille="last-cell">\(log_2 \frac{1}{8} = -3\)</td>
+</tr>
+<tr>
+<td class="l m b2 r2 l0 t0 lines">\(\frac{1}{4}\)</td>
+<td class="l m b2 r2 l0 t0 lines">-2</td>
+<td class="l m b2 r2 l0 t0 lines" data-braille="last-cell">\(log_2 \frac{1}{4} = -2\)</td>
+</tr>
+<tr>
+<td class="l m b2 r2 l0 t0 lines">\(\frac{1}{2}\)</td>
+<td class="l m b2 r2 l0 t0 lines">-1</td>
+<td class="l m b2 r2 l0 t0 lines" data-braille="last-cell">\(log_2 \frac{1}{2} = -1\)</td>
+</tr>
+<tr>
+<td class="l m b2 r2 l0 t0 lines">1</td>
+<td class="l m b2 r2 l0 t0 lines">0</td>
+<td class="l m b2 r2 l0 t0 lines" data-braille="last-cell">\(log_2 1 = 0\)</td>
+</tr>
+<tr>
+<td class="l m b2 r2 l0 t0 lines">2</td>
+<td class="l m b2 r2 l0 t0 lines">1</td>
+<td class="l m b2 r2 l0 t0 lines" data-braille="last-cell">\(log_2 2 = 1\)</td>
+</tr>
+<tr>
+<td class="l m b2 r2 l0 t0 lines">4</td>
+<td class="l m b2 r2 l0 t0 lines">2</td>
+<td class="l m b2 r2 l0 t0 lines" data-braille="last-cell">\(log_2 4 = 2\)</td>
+</tr>
+<tr>
+<td class="l m b2 r2 l0 t0 lines">8</td>
+<td class="l m b2 r2 l0 t0 lines">3</td>
+<td class="l m b2 r2 l0 t0 lines" data-braille="last-cell">\(log_a 8 = 2\)</td>
+</tr>
+</table></figure></p></div>
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><p id="p-80"><figure class="figure figure-like" id="figure-10"><img src="images/example_8.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.1.9<span class="period">.</span></span><span class="space"> </span></figcaption></figure></p></div>
+</div></div></p></article><article class="note remark-like" id="note-addition-notation"><h6 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">2.1.10</span><span class="period">.</span><span class="space"> </span><span class="title">Additional Notation.</span>
+</h6>
+<ul class="disc">
+<li id="li-32"><p id="p-81">\(ln \rightarrow log_e \)  "natural log"</p></li>
+<li id="li-33"><p id="p-82">\(log \rightarrow log_{10} \)  "common log"</p></li>
+</ul></article><article class="definition definition-like" id="def-change-of-base"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.11</span><span class="period">.</span><span class="space"> </span><span class="title">Change of Base Formula.</span>
+</h6>
+<p id="p-83">For any bases <em class="emphasis">a</em> and <em class="emphasis">b</em> (positive and \(\neq 1\)) and number <em class="emphasis">M</em>:</p>
+<div class="displaymath">
+\begin{equation*}
+log_b M = \dfrac{log_a M}{log_a b}
+\end{equation*}
+</div></article></section><section class="conclusion" id="conclusion-3"></section></section></div></main>
+</div>
+</body>
+</html>
