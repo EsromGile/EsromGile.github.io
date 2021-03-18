@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-03-17T19:21:13-05:00       *-->
+<!--*       on 2021-03-17T19:56:37-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,12 +15,25 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>For any bases <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">a</em> and <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">b</em> (positive and \(\neq 1\)) and number <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">M</em>:</p>
+<p>If \(f(x) = \ln(x)\text{,}\) then what is \(f'(x)\text{.}\)</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-log_b M = \dfrac{log_a M}{log_a b}
-\end{equation*}
+\begin{align*}
+f'(x) \amp = \lim\limits_{h\to 0} \dfrac{f(x+h) - f(x)}{h} \\
+\amp = \lim\limits_{h\to 0} \dfrac{\ln(x+h) - \ln(x)}{h} \\
+\amp = \lim\limits_{h\to 0} \dfrac{\ln(\dfrac{x+h}{x})}{h} \\
+\amp = \lim\limits_{h\to 0} \dfrac{\ln(\dfrac{x}{x}+\frac{h}{x})}{h} \\
+\amp = \lim\limits_{h\to 0} \dfrac{\ln\left(1+\dfrac{h}{x}\right)}{h} \\
+\amp = \lim\limits_{h\to 0} \dfrac{1}{h} \ln\left(1 + \dfrac{h}{x}\right) \\
+\amp = \lim\limits_{v\to 0} \dfrac{1}{vx} \ln(1+v) \\
+\amp = \lim\limits_{v\to 0} \dfrac{1}{v} \cdot \dfrac{1}{x} \ln(1+v) \\
+\amp = \dfrac{1}{x} \lim\limits_{v\to 0} \dfrac{1}{v} \ln(1+v) \\
+\amp = \dfrac{1}{x} \lim\limits_{v\to 0} \ln\left((1+v)^{\dfrac{1}{v}}\right)\\
+\amp = \dfrac{1}{x} \ln\left(\lim\limits_{v\to 0} (1+v)^{\dfrac{1}{v}}\right) \\
+\amp = \dfrac{1}{x} \ln(e) \\
+\amp = \dfrac{1}{x} (1) \\
+f'(x)\amp = \dfrac{1}{x} 
+\end{align*}
 </div>
-<span class="incontext"><a href="sec-exponential-and-logrithmic-functions.html#p-84">in-context</a></span>
+<span class="incontext"><a href="sec-derivatives-and-integrals-of-logs.html#p-84">in-context</a></span>
 </body>
 </html>
