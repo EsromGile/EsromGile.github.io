@@ -1,10 +1,35 @@
 Messages from application of /home/eli/.local/lib/python3.9/site-packages/pretext/static/xsl/pretext-html.xsl:
-MBX:DEPRECATE: (2019-02-06) the "circumflex" element is no longer necessary, simply replace with a bare "^" character (7 times)
-             located within: "f(x)=2^x" (title)
-             located within: "f(x)=2^x" (title)
-             located within: "f(x)=2^x" (title)
-             located within: "f(x)=2^x" (title)
-             located within: "f(x)=2^x" (title)
-             located within: "f(x)=2^x" (title)
-             located within: "f(x)=2^x" (title)
---------------
+PTX:BUG:   an element ("p") does not know its level
+             located within: "sec-inverse-functions" (xml:id), "Inverse Functions" (title)
+PTX:BUG:   an element ("p") does not know its level
+             located within: "sec-inverse-functions" (xml:id), "Inverse Functions" (title)
+PTX:BUG:   an element ("p") does not know its level
+             located within: "sec-inverse-functions" (xml:id), "Inverse Functions" (title)
+PTX:BUG:   an element ("p") does not know its level
+             located within: "sec-inverse-functions" (xml:id), "Inverse Functions" (title)
+PTX:BUG:   an element ("p") does not know its level
+             located within: "sec-inverse-functions" (xml:id), "Inverse Functions" (title)
+PTX:BUG:   an element ("p") does not know its level
+             located within: "sec-inverse-functions" (xml:id), "Inverse Functions" (title)
+PTX:BUG:   an element ("p") does not know its level
+             located within: "sec-inverse-functions" (xml:id), "Inverse Functions" (title)
+PTX:BUG:   an element ("p") does not know its level
+             located within: "sec-inverse-functions" (xml:id), "Inverse Functions" (title)
+PTX:BUG:   an element ("p") does not know its level
+             located within: "sec-inverse-functions" (xml:id), "Inverse Functions" (title)
+PTX:BUG:   an element ("p") does not know its level
+             located within: "sec-inverse-functions" (xml:id), "Inverse Functions" (title)
+PTX:BUG:   an element ("p") does not know its level
+             located within: "sec-inverse-functions" (xml:id), "Inverse Functions" (title)
+PTX:BUG:   an element ("p") does not know its level
+             located within: "sec-inverse-functions" (xml:id), "Inverse Functions" (title)
+PTX:BUG:   an element ("p") does not know its level
+             located within: "sec-inverse-functions" (xml:id), "Inverse Functions" (title)
+PTX:BUG:   an element ("p") does not know its level
+             located within: "sec-inverse-functions" (xml:id), "Inverse Functions" (title)
+PTX:BUG:   an element ("p") does not know its level
+             located within: "sec-inverse-functions" (xml:id), "Inverse Functions" (title)
+PTX:BUG:   an element ("p") does not know its level
+             located within: "sec-inverse-functions" (xml:id), "Inverse Functions" (title)
+PTX:BUG:   an element ("p") does not know its level
+             located within: "sec-inverse-functions" (xml:id), "Inverse Functions" (title)
