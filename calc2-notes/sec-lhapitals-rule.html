@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-03-30T20:00:33-05:00       *-->
+<!--*       on 2021-03-31T18:52:05-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -70,10 +70,10 @@ MathJax.Hub.Config({
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-inverse-functions.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap-exponential-log-inverse-trig-functions.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-inverse-functions.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap-exponential-log-inverse-trig-functions.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="-sec-inverse-trig-functions.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-inverse-functions.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap-exponential-log-inverse-trig-functions.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-inverse-functions.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap-exponential-log-inverse-trig-functions.html" title="Up">Up</a><a class="next-button button toolbar-item" href="-sec-inverse-trig-functions.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -92,6 +92,7 @@ MathJax.Hub.Config({
 <li><a href="sec-derivatives-and-integrals-of-logs.html" data-scroll="sec-derivatives-and-integrals-of-logs">Derivatives and Integrals Involving Log Functions</a></li>
 <li><a href="sec-inverse-functions.html" data-scroll="sec-inverse-functions">Inverse Functions</a></li>
 <li><a href="sec-lhapitals-rule.html" data-scroll="sec-lhapitals-rule" class="active">L'Hopital's Rule</a></li>
+<li><a href="-sec-inverse-trig-functions.html" data-scroll="-sec-inverse-trig-functions">Inverse Trig Functions (*)</a></li>
 </ul>
 </li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
@@ -159,11 +160,48 @@ MathJax.Hub.Config({
 <li id="li-52"><p id="p-133">\(\displaystyle 0 \cdot \infty \)</p></li>
 <li id="li-53"><p id="p-134">\(\displaystyle \infty - \infty \)</p></li>
 </ul></div>
-</div></div></article><p id="p-135">We can directly apply L'Hoptial's rule on the first column of inderminate forms, but we have to modify the functions that are in the form of the other two columns before we can apply the rule.</p></section><section class="subsection" id="sub-column-2-indeterminate-forms"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">2.4.1</span> <span class="title">Column Two Indeterminate Forms(*)</span>
-</h3></section><section class="subsection" id="sub-column-3-indeterminate-forms"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">2.4.2</span> <span class="title">Columns Three Indeterminate Forms(*)</span>
-</h3></section><section class="conclusion" id="conclusion-6"></section></section></div></main>
+</div></div></article><p id="p-135">We can directly apply L'Hoptial's rule on the first column of indeterminate forms, but we have to modify the functions that are in the form of the other two columns before we can apply the rule.</p></section><section class="subsection" id="sub-column-2-indeterminate-forms"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.4.1</span> <span class="title">Column Two Indeterminate Forms</span>
+</h3>
+<p id="p-136">To find the limit of the second column of indeterminate forms, we take advantage of logrithms to bring down the exponent.</p>
+<p id="p-137">If \(L = \displaystyle\lim_{x \to 0} \left( 1 + \sin(x) \right) ^{\frac{1}{x}}\text{,}\) then:</p>
+<div class="displaymath">
+\begin{align*}
+\ln(L) \amp = \ln \left( \displaystyle\lim_{x \to 0} \left(1 + \sin(x) \right)^{\frac{1}{x}} \right) \\
+\amp = \displaystyle\lim_{x \to 0} \ln \left( 1 + \sin(x) \right) ^{\frac{1}{x}} \\
+\amp = \displaystyle\lim_{x \to 0} \dfrac{1}{x} \cdot \ln(1 + \sin(x))  \\
+\amp = \displaystyle\lim_{x \to 0} \dfrac{\ln(1 + \sin(x))}{x} \\
+\amp = \displaystyle\lim_{x \to 0} \dfrac{\dfrac{1}{1+\sin(x)} \cdot \cos(x)}{1} \text{  * apply L'Hopital's rule} \\
+\amp = \dfrac{\dfrac{1}{1+0} \cdot 1}{1}\\
+\text{So, } \ln(L) \amp = 1\\
+L \amp = e
+\end{align*}
+</div></section><section class="subsection" id="sub-column-3-indeterminate-forms"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.4.2</span> <span class="title">Columns Three Indeterminate Forms</span>
+</h3>
+<p id="p-138">To find the limit of the indeterminate form \(\infty - \infty\text{,}\) we have to find a common denominator and combine the two terms.</p>
+<div class="displaymath">
+\begin{align*}
+y \amp = \displaystyle \lim_{x \to 0^+} \left( \dfrac{1}{\sin(x)} - \dfrac{1}{x} \right) \\
+\amp = \displaystyle \lim_{x \to 0^+} \left( \dfrac{x}{x \cdot \sin(x)} - \dfrac{\sin(x)}{x \cdot \sin(x)} \right) \\
+\amp = \displaystyle \lim_{x \to 0^+} \left( \dfrac{x - \sin(x)}{x \cdot \sin(x)} \right) \\
+\amp = \displaystyle \lim_{x \to 0^+} \left( \dfrac{1 - \cos(x)}{x \cdot \cos(x) + \sin(x) \cdot 1} \right) \text{  *apply L'Hopital's rule} \\
+\amp = \displaystyle \lim_{x \to 0^+} \left( \dfrac{\sin(x)}{x \cdot -\sin(x) + \cos(x) \cdot 1 + \sin(x)} \right) \text{  *apply L'Hopital's rule again} \\
+\amp = \dfrac{0}{2} \\
+\amp = 0 
+\end{align*}
+</div>
+<p id="p-139">To find the limit of the indeterminate for \(0 \cdot \infty\text{,}\) we need to divide one term by the inverse of the other.</p>
+<div class="displaymath">
+\begin{align*}
+y \amp = \displaystyle \lim_{x \to 0^+} x^3 \cdot \ln(x) \\
+\amp = \displaystyle \lim_{x \to 0^+} \dfrac{\ln(x)}{x^{-3}}\\
+\amp = \displaystyle \lim_{x \to 0^+} \dfrac{\dfrac{1}{x}}{-3x^{-4}} \text{  *apply L'Hoptital's rule}\\
+\amp = \displaystyle \lim_{x \to 0^+} \dfrac{1}{x} \cdot \dfrac{x^4}{-3}\\
+\amp = \displaystyle \lim_{x \to 0^+} \dfrac{x^3}{-3}\\
+\amp = 0 
+\end{align*}
+</div></section><section class="conclusion" id="conclusion-6"></section></section></div></main>
 </div>
 </body>
 </html>
