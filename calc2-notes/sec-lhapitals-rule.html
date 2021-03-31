@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-03-30T15:45:39-05:00       *-->
+<!--*       on 2021-03-30T20:00:33-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -11,7 +11,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>L'Hopital's Rule(*)</title>
+<title>L'Hopital's Rule</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type="text/x-mathjax-config">
@@ -91,14 +91,79 @@ MathJax.Hub.Config({
 <li><a href="sec-exponential-and-logrithmic-functions.html" data-scroll="sec-exponential-and-logrithmic-functions">Exponential and Logrithmic Functions</a></li>
 <li><a href="sec-derivatives-and-integrals-of-logs.html" data-scroll="sec-derivatives-and-integrals-of-logs">Derivatives and Integrals Involving Log Functions</a></li>
 <li><a href="sec-inverse-functions.html" data-scroll="sec-inverse-functions">Inverse Functions</a></li>
-<li><a href="sec-lhapitals-rule.html" data-scroll="sec-lhapitals-rule" class="active">L'Hopital's Rule(*)</a></li>
+<li><a href="sec-lhapitals-rule.html" data-scroll="sec-lhapitals-rule" class="active">L'Hopital's Rule</a></li>
 </ul>
 </li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-lhapitals-rule"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">2.4</span> <span class="title">L'Hopital's Rule(*)</span>
-</h2></section></div></main>
+<span class="type">Section</span> <span class="codenumber">2.4</span> <span class="title">L'Hopital's Rule</span>
+</h2>
+<section class="introduction" id="introduction-7"><article class="remark remark-like" id="remark-2"><h6 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.4.1</span><span class="period">.</span>
+</h6>
+<p id="p-116"><em class="emphasis">Recall:</em></p>
+<div class="displaymath">
+\begin{equation*}
+\displaystyle\lim_{x \to 3}\dfrac{x^2+x-12}{x^2+4x-21} = \dfrac{0}{0}
+\end{equation*}
+</div>
+<p data-braille="continuation">This is known as indeterminate form, and we have to evaluate it a little differently (*this method was used in calculus I). <div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;">
+<div class="sbspanel" style="width:37.5%;justify-content:center;"><div class="displaymath" id="p-117">
+\begin{align*}
+\displaystyle\lim_{x \to 3}\dfrac{x^2+x-12}{x^2+4x-21} \amp = \displaystyle\lim_{x \to 3}\dfrac{(x-3)(x+4)}{(x-3)(x+7)} \\
+\amp = \displaystyle\lim_{x \to 3}\dfrac{x+4}{x+7}\\
+\amp =\dfrac{3+4}{3+7}\\
+\amp = \dfrac{7}{10}
+\end{align*}
+</div></div>
+<div class="sbspanel" style="width:37.5%;justify-content:center;"><div class="displaymath" id="p-118">
+\begin{equation*}
+\begin{cases}
+\text{}\\
+\text{We have to factor out and remove the zero at 3. }\\
+\displaystyle\lim_{x \to 3}\dfrac{x^2+x-12}{x^2+4x-21}\text{is the same as } \displaystyle\lim_{x \to 3}\dfrac{x+4}{x+7} \text{except}\\
+\text{there is a hole at 3 on } \displaystyle\lim_{x \to 3}\dfrac{x^2+x-12}{x^2+4x-21} \text{at y = 0.7.}
+\end{cases}
+\end{equation*}
+</div></div>
+</div></div></p></article><p id="p-119">We can bypass this by using L'Hoptials rule: <article class="definition definition-like" id="def-lhopitals-rule"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">L'Hopital's Rule.</span>
+</h6>
+<p id="p-120">Given that the functions <em class="emphasis">f</em> and <em class="emphasis">g</em> are differentiable functions on an open interval containg \(x = a\text{,}\) except possible at \(x = a\text{,}\) and that \(\displaystyle\lim_{x \to a}f(x) = 0\) and \(\displaystyle\lim_{x \to a}g(x) = 0\text{.}\)</p>
+<p id="p-121">If \(\displaystyle\lim_{x \to a}\dfrac{f(x)}{g(x)}\) exists, or if this limit is \(+\infty\mbox{ or }-\infty\text{,}\) then \(\displaystyle\lim_{x \to a}\dfrac{f(x)}{g(x)} = \displaystyle\lim_{x \to a}\dfrac{f'(x)}{g'(x)}\text{.}\)</p>
+<p id="p-122">Moreover, this statement is also true in the case of limits as \(x \to a^- \mbox{ , } x \to a^+ \mbox{ , } x \to -\infty \text{ , or } x \to +\infty\text{.}\)</p></article> <article class="example example-like" id="example-11"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-11"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.3</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-11"><article class="example example-like"><p id="p-123">Find \(\displaystyle\lim_{x \to 7} \dfrac{ln(2x-13)}{3x-21}\text{.}\)</p>
+<p id="p-124"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-4" id="solution-4"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-4"><div class="solution solution-like"><div class="displaymath">
+\begin{align*}
+\displaystyle\lim_{x \to 7} \dfrac{ln(2x-13)}{3x-21} \amp = \displaystyle\lim_{x \to 7} \dfrac{\dfrac{1}{2x-13} \cdot 2}{3} \\
+\amp = \dfrac{\dfrac{1}{1} \cdot 2}{3} \\
+\amp = \dfrac{2}{3} 
+\end{align*}
+</div></div></div></p></article></div></p>
+<article class="note remark-like" id="note-indeterminate-forms"><h6 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">2.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">List of Indeterminate Forms.</span>
+</h6>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:center;"><ul id="p-125" class="disc">
+<li id="li-47"><p id="p-126">\(\displaystyle \frac{0}{0} \)</p></li>
+<li id="li-48"><p id="p-127">\(\displaystyle \frac{\infty}{\infty} \)</p></li>
+</ul></div>
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:center;"><ul id="p-128" class="disc">
+<li id="li-49"><p id="p-129">\(\displaystyle 0^0 \)</p></li>
+<li id="li-50"><p id="p-130">\(\displaystyle 1^{\infty} \)</p></li>
+<li id="li-51"><p id="p-131">\(\displaystyle \infty^0 \)</p></li>
+</ul></div>
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:center;"><ul id="p-132" class="disc">
+<li id="li-52"><p id="p-133">\(\displaystyle 0 \cdot \infty \)</p></li>
+<li id="li-53"><p id="p-134">\(\displaystyle \infty - \infty \)</p></li>
+</ul></div>
+</div></div></article><p id="p-135">We can directly apply L'Hoptial's rule on the first column of inderminate forms, but we have to modify the functions that are in the form of the other two columns before we can apply the rule.</p></section><section class="subsection" id="sub-column-2-indeterminate-forms"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.4.1</span> <span class="title">Column Two Indeterminate Forms(*)</span>
+</h3></section><section class="subsection" id="sub-column-3-indeterminate-forms"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.4.2</span> <span class="title">Columns Three Indeterminate Forms(*)</span>
+</h3></section><section class="conclusion" id="conclusion-6"></section></section></div></main>
 </div>
 </body>
 </html>
