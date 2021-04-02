@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-03-31T18:52:05-05:00       *-->
+<!--*       on 2021-04-02T16:16:46-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -81,8 +81,8 @@ MathJax.Hub.Config({
 <li class="link">
 <a href="chap-applications-of-definite-integrals.html" data-scroll="chap-applications-of-definite-integrals"><span class="codenumber">1</span> <span class="title">-- Applications of Definite Integrals</span></a><ul>
 <li><a href="sec-area-between-curves.html" data-scroll="sec-area-between-curves">Area Between Two Curves</a></li>
-<li><a href="section-1-2.html" data-scroll="section-1-2">Volumes by Slicing</a></li>
-<li><a href="arc-length-and-surface-area.html" data-scroll="arc-length-and-surface-area">Arc Length and Surface Area</a></li>
+<li><a href="sec-volumes-by-slicing.html" data-scroll="sec-volumes-by-slicing">Volumes by Slicing</a></li>
+<li><a href="sec-arc-length-and-surface-area.html" data-scroll="sec-arc-length-and-surface-area">Arc Length and Surface Area</a></li>
 <li><a href="sec-work.html" data-scroll="sec-work">Work</a></li>
 </ul>
 </li>
@@ -92,7 +92,7 @@ MathJax.Hub.Config({
 <li><a href="sec-derivatives-and-integrals-of-logs.html" data-scroll="sec-derivatives-and-integrals-of-logs">Derivatives and Integrals Involving Log Functions</a></li>
 <li><a href="sec-inverse-functions.html" data-scroll="sec-inverse-functions" class="active">Inverse Functions</a></li>
 <li><a href="sec-lhapitals-rule.html" data-scroll="sec-lhapitals-rule">L'Hopital's Rule</a></li>
-<li><a href="-sec-inverse-trig-functions.html" data-scroll="-sec-inverse-trig-functions">Inverse Trig Functions (*)</a></li>
+<li><a href="-sec-inverse-trig-functions.html" data-scroll="-sec-inverse-trig-functions">Inverse Trig Functions</a></li>
 </ul>
 </li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
@@ -108,9 +108,9 @@ MathJax.Hub.Config({
 <li id="li-37"><p id="p-93">\(\displaystyle f(g(x)) = x \)</p></li>
 <li id="li-38"><p id="p-94">\(\displaystyle g(f(x)) = x \)</p></li>
 </ul>
-<p data-braille="continuation">for all \(x\text{;}\) if \(g\) is the inverse of \(f\text{,}\) we often write \(f^{-1}\) instead of \(g\text{.}\)</p></article><article class="example example-like" id="example-9"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-9"><h6 class="heading">
+<p data-braille="continuation">for all \(x\text{;}\) if \(g\) is the inverse of \(f\text{,}\) we often write \(f^{-1}\) instead of \(g\text{.}\)</p></article><article class="example example-like" id="ex-inverse-functions"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-ex-inverse-functions"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.2</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-9"><article class="example example-like"><p id="p-95">How can we show that \(f(x)=x^3+7\) and \(g(x)=\sqrt[3]{x-7}\) are inverses?</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex-inverse-functions"><article class="example example-like"><p id="p-95">How can we show that \(f(x)=x^3+7\) and \(g(x)=\sqrt[3]{x-7}\) are inverses?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-3" id="solution-3"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-3"><div class="solution solution-like">
 <div class="displaymath">
 \begin{align*}
@@ -141,9 +141,9 @@ g(f(x)) \amp = g(x^3+7)\\
 <li id="li-41"><p id="p-101">solve for \(y\)</p></li>
 <li id="li-42"><p id="p-102">replace \(y\) with \(f^{-1}(x)\)</p></li>
 </ol>
-<p data-braille="continuation"><article class="example example-like" id="example-10"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-10"><h6 class="heading">
+<p data-braille="continuation"><article class="example example-like" id="ex-formula-inverse-function"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-ex-formula-inverse-function"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.4</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-10"><article class="example example-like"><p id="p-103">Function: \(f(x) = 2x^3 + 5\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex-formula-inverse-function"><article class="example example-like"><p id="p-103">Function: \(f(x) = 2x^3 + 5\)</p>
 <ol class="decimal">
 <li id="li-43"><p id="p-104">\(\displaystyle y = 2x^3 + 5\)</p></li>
 <li id="li-44"><p id="p-105">\(\displaystyle x = 2y^3 + 5\)</p></li>

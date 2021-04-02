@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-04-02T16:16:46-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Arc Length and Surface Area</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\(\newcommand{\foo}{bar}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="calc-2-notes.html"><span class="title">Calculus 2 Notes</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-volumes-by-slicing.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap-applications-of-definite-integrals.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-work.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-volumes-by-slicing.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap-applications-of-definite-integrals.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-work.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link">
+<a href="chap-applications-of-definite-integrals.html" data-scroll="chap-applications-of-definite-integrals"><span class="codenumber">1</span> <span class="title">-- Applications of Definite Integrals</span></a><ul>
+<li><a href="sec-area-between-curves.html" data-scroll="sec-area-between-curves">Area Between Two Curves</a></li>
+<li><a href="sec-volumes-by-slicing.html" data-scroll="sec-volumes-by-slicing">Volumes by Slicing</a></li>
+<li><a href="sec-arc-length-and-surface-area.html" data-scroll="sec-arc-length-and-surface-area" class="active">Arc Length and Surface Area</a></li>
+<li><a href="sec-work.html" data-scroll="sec-work">Work</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap-exponential-log-inverse-trig-functions.html" data-scroll="chap-exponential-log-inverse-trig-functions"><span class="codenumber">2</span> <span class="title">-- Exponential, Logarithmic and Inverse Trigonometric Functions</span></a><ul>
+<li><a href="sec-exponential-and-logrithmic-functions.html" data-scroll="sec-exponential-and-logrithmic-functions">Exponential and Logrithmic Functions</a></li>
+<li><a href="sec-derivatives-and-integrals-of-logs.html" data-scroll="sec-derivatives-and-integrals-of-logs">Derivatives and Integrals Involving Log Functions</a></li>
+<li><a href="sec-inverse-functions.html" data-scroll="sec-inverse-functions">Inverse Functions</a></li>
+<li><a href="sec-lhapitals-rule.html" data-scroll="sec-lhapitals-rule">L'Hopital's Rule</a></li>
+<li><a href="-sec-inverse-trig-functions.html" data-scroll="-sec-inverse-trig-functions">Inverse Trig Functions</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-arc-length-and-surface-area"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.3</span> <span class="title">Arc Length and Surface Area</span>
+</h2>
+<section class="introduction" id="introduction-2"><p id="p-31">In this section we cover how to find and use arc length and surface area of a function when revolved around an axis.</p></section><section class="subsection" id="sub-arc-length"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.3.1</span> <span class="title">Arc Length</span>
+</h3>
+<p id="p-32"><figure class="figure figure-like" id="fig-arc-length"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/example_5.png" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.3.1<span class="period">.</span></span><span class="space"> </span></figcaption></figure> How do we find the length of the above curve from \(x=1\text{,}\) to \(x=3\text{?}\)</p>
+<p id="p-33">Similarly to previous section, we need to divide the function into subintervals along the x-axis. If we place dots at the subinterval points and connect the dots, we can get an approximation of the length of the function.</p>
+<p id="p-34">To do this accurately we use the mean value theorum or MVT to find the mean slope between two points using the formula \(slope = \dfrac{f(b)-f(a)}{b-a}\text{.}\) <article class="definition definition-like" id="def-mvt"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">MVT.</span>
+</h6>
+<figure class="figure figure-like" id="fig-mvt"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/definition_1.png" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.3.3<span class="period">.</span></span><span class="space"> </span></figcaption></figure> Essentially, MVT says that there is at least one tangent line that has the slope of the trinagle's hypotenus where \(f'(c)=\dfrac{f(b)-f(a)}{b-a}\text{.}\) <article class="note remark-like" id="note-mvt"><h6 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">1.3.4</span><span class="period">.</span>
+</h6>In order to use MVT or find the arc length of a function, the function must be differentiable between the points [a,b] where</article></article> Apply MVT to each subinterval to get the "c" in the above function.</p>
+<p id="p-35">By using the pythagorean theorum, we can find that \(c=\sqrt{1 + f'(x_k^*)^2} \Delta x\text{.}\) <article class="remark remark-like" id="rem-pythagorean-theorum"><h6 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.3.5</span><span class="period">.</span>
+</h6>
+<div class="displaymath">
+\begin{align*}
+c^2 \amp = (\Delta x)^2 + (f'(x_k^*)\Delta x)^2\\
+c \amp = \sqrt{ \Delta x^2 + (f'(x_k^*)\Delta x)^2}\\
+\amp = \sqrt{(\Delta x)^2 (1 + (f'(x_k^*))^2}\\
+\amp = \sqrt{\Delta x^2} \sqrt{1 + (f'(x_k^*)^2}\\
+\amp = \Delta x \sqrt{1 + (f'(x_k^*)^2}\\
+\amp = \sqrt{1 + (f'(x_k^*)^2} \Delta x
+\end{align*}
+</div>
+<figure class="figure figure-like" id="fig-pythagorean-theorum"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/definition_2.png" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.3.6<span class="period">.</span></span><span class="space"> </span></figcaption></figure></article></p>
+<p id="p-36">To find the total length we need to sum up all of the subintervals:</p>
+<div class="displaymath">
+\begin{equation*}
+L_n = \displaystyle\sum_{k=1}^{n} \sqrt{1 + f'(x_k^*)^2} \Delta x
+\end{equation*}
+</div>
+<p id="p-37">And to find the <em class="emphasis">exact</em> length, we must take the limit to inifinity:</p>
+<div class="displaymath">
+\begin{equation*}
+L = \displaystyle\lim\limits_{n\to\infty} \displaystyle\sum_{k=1}^{n} \sqrt{1 + f'(x_k^*)^2} \Delta x
+\end{equation*}
+</div>
+<p id="p-38">Finally, applying the definition of a definite integral we get:</p>
+<div class="displaymath">
+\begin{equation*}
+L = \int_a^b\sqrt{1 + f'(x)^2}dx
+\end{equation*}
+</div>
+<article class="example example-like" id="ex-arc-length"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-ex-arc-length"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.3.7</span><span class="period">.</span><span class="space"> </span><span class="title">Arc Length.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex-arc-length"><article class="example example-like"> Using the figure at the top of the page, let's set up the definite integral:<div class="displaymath">
+\begin{gather*}
+L = \int_a^b\sqrt{1 + f'(x)^2}dx\\
+L = \int_1^3\sqrt{1 + (cos(x))^2}dx\\
+L = \int_1^3\sqrt{1 + cos^2(x)}dx
+\end{gather*}
+</div></article></div></section><section class="subsection" id="sub-surface-area"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.3.2</span> <span class="title">Area of a Surface of Revolution</span>
+</h3>
+<figure class="figure figure-like" id="fig-area-suface-of-revolution"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/example_6.png" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.3.8<span class="period">.</span></span><span class="space"> </span></figcaption></figure><p id="p-39">Building on the previous equation, how can we find the surface area of a function that has been revolved around an axis?</p>
+<p id="p-40">Like the previous section, we need to divide the function into equal subsections along the x-axis. If we rotate these subintervals around the x-axis, we get very thin "rubber bands".If we were to "cut open" the rubber band, we would get a rectangle.</p>
+<p id="p-41">We know that the area of a rectangle is \(SA = l \cdot w\text{.}\) In order to apply this, we need to change this equation into variables of out function.</p>
+<ul class="disc">
+<li id="li-14"><p id="p-42">\(l = \sqrt{1 + (f'(x_k^*))^2} \Delta x\) : the lendth is equal to the arc length of the subinterval</p></li>
+<li id="li-15"><p id="p-43">\(w = 2 \pi r = 2 \pi (f(x_k^*))\) : the width would be equal to the curcumference of the "rubber band"</p></li>
+</ul>
+<p data-braille="continuation">When we plug those in we get \(SA_{band} = 2 \pi (f(x_k^*)) \cdot \sqrt{1 + (f'(x_k^*))^2} \Delta x \text{.}\)</p>
+<p id="p-44">If we sum up all of the subsection, we get the total estimated surface area of the function when revolved around the x-axis, and if we take the limit of the sumation to infinity and apply the definition of the definite integral we get:</p>
+<div class="displaymath">
+\begin{equation*}
+SA = \int_a^b = 2 \pi f(x) \cdot \sqrt{1 + (f'(x))^2} dx
+\end{equation*}
+</div>
+<article class="example example-like" id="fig-area-surface-of-revolution"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-fig-area-surface-of-revolution"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.3.9</span><span class="period">.</span><span class="space"> </span><span class="title">Area of A Surface of Revolution.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-fig-area-surface-of-revolution"><article class="example example-like"> Let's find the surface area of the graph above, \(f(x)=x^3\text{,}\) from [1,3] revolved around the x-axis.<div class="displaymath">
+\begin{align*}
+SA \amp = \int_a^b 2 \pi f(x) \cdot \sqrt{1 + (f'(x))^2} dx \\
+\amp = 2 \pi \int_1^3 x^3 \cdot \sqrt{1 + (3x^2)^2} dx \\
+\amp = 2 \pi \int_1^3 x^3 \cdot \sqrt{1 + 9x^4} dx \\
+\amp = 2 \pi \int_1^3 \dfrac{1}{36} \cdot 36x^3 \cdot \sqrt{1 + 9x^4} dx \\
+\amp = \dfrac{2}{36} \pi \int_1^3 36x^3 \cdot \sqrt{1 + 9x^4} dx \\
+\amp = \dfrac{\pi}{18} \int_10^730 \sqrt{u} du \\
+\amp = \dfrac{\pi}{18} \left[ \dfrac{2}{3} u^{\frac{3}{2}} \right]_10^730 \\
+\amp = \dfrac{\pi}{18} \cdot \dfrac{2}{3} \left( 730^{\frac{3}{2}} - 10^{\frac{3}{2}} \right) \\
+\amp = \dfrac{\pi}{27} \left( 730\sqrt{730} - 10\sqrt{10} \right) \\
+\amp = \dfrac{\pi}{27} \left( 730\sqrt{730} - 10\sqrt{10} \right) \\
+SA \amp = \dfrac{730\sqrt{730}\pi}{27} - \dfrac{10\sqrt{10}\pi}{27} \approx 2291.3 
+\end{align*}
+</div>
+<article class="note remark-like" id="note-area-of-revolution-u-sub"><h6 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">1.3.10</span><span class="period">.</span>
+</h6>
+<div class="displaymath">
+\begin{equation*}
+\begin{cases} u = 1 + 9x^4 \\ du = 36x^3dx \end{cases}
+\end{equation*}
+</div>
+<div class="displaymath">
+\begin{equation*}
+\begin{cases} 1 + 9(1)^4 = 10 \\ 1 + 9(1)^4 = 730  \end{cases}
+\end{equation*}
+</div></article></article></div></section></section></div></main>
+</div>
+</body>
+</html>
