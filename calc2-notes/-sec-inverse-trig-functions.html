@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-04-02T16:16:46-05:00       *-->
+<!--*       on 2021-04-03T16:38:00-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -70,10 +70,10 @@ MathJax.Hub.Config({
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-lhapitals-rule.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap-exponential-log-inverse-trig-functions.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-lhapitals-rule.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap-exponential-log-inverse-trig-functions.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-hyperbolic-trig-functions.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-lhapitals-rule.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap-exponential-log-inverse-trig-functions.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-lhapitals-rule.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap-exponential-log-inverse-trig-functions.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-hyperbolic-trig-functions.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -93,6 +93,7 @@ MathJax.Hub.Config({
 <li><a href="sec-inverse-functions.html" data-scroll="sec-inverse-functions">Inverse Functions</a></li>
 <li><a href="sec-lhapitals-rule.html" data-scroll="sec-lhapitals-rule">L'Hopital's Rule</a></li>
 <li><a href="-sec-inverse-trig-functions.html" data-scroll="-sec-inverse-trig-functions" class="active">Inverse Trig Functions</a></li>
+<li><a href="sec-hyperbolic-trig-functions.html" data-scroll="sec-hyperbolic-trig-functions">Hyperbolic Trig Functions(*)</a></li>
 </ul>
 </li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
@@ -113,10 +114,48 @@ MathJax.Hub.Config({
 <div class="sbspanel" style="width:34.2857142857143%;justify-content:center;"><figure class="figure figure-like" id="fig-tan"><img src="images/tan.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.5<span class="period">.</span></span><span class="space"> </span>tan(x)</figcaption></figure></div>
 <div class="sbspanel" style="width:51.4285714285714%;justify-content:center;"><figure class="figure figure-like" id="fig-arctan"><img src="images/arctan.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.6<span class="period">.</span></span><span class="space"> </span>arctan(x)</figcaption></figure></div>
 </div></div></p></section><section class="subsection" id="sub-triangle-method"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">2.5.1</span> <span class="title">Triangle Method(*)</span>
-</h3></section><section class="subsection" id="sub-derivates-integrals-inverse-trig-functions"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">2.5.2</span> <span class="title">Derivatives and Integrals(*)</span>
-</h3></section><section class="conclusion" id="conclusion-7"></section></section></div></main>
+<span class="type">Subsection</span> <span class="codenumber">2.5.1</span> <span class="title">Triangle Method</span>
+</h3>
+<p id="p-144">What is \(\sin(\tan^{-1}(x))\text{?}\)</p>
+<p id="p-145">Recall that tangent is opposite of adjacent, so we can represent this as \(\dfrac{x}{1}\text{,}\) plug it in, and then solve for the hypotenuse. This leaves us with the image below. <figure class="figure figure-like" id="fig-triangle-method"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/triangle-method-example.png" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.7<span class="period">.</span></span><span class="space"> </span></figcaption></figure> Now, let's take the sine of this function. That would be opposite over hypotenuse or \(\dfrac{x}{\sqrt{(1+x^2)}}\text{.}\) That is our final answer.</p>
+<p id="p-146"></p></section><section class="subsection" id="sub-derivates-inverse-trig-functions"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.5.2</span> <span class="title">Derivatives</span>
+</h3>
+<p id="p-147">How would we find the derivative of \(y = \sin^{-1}(x)\text{?}\) <article class="note remark-like" id="note-derivative-of-inverse-trig-functions"><h6 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">2.5.8</span><span class="period">.</span>
+</h6>
+<p id="p-148">If \(y = \sin^{-1}(x)\text{,}\) then \(\sin(y) = \sin(\sin^{-1}(x))\) and \(\sin(y) = x\text{.}\)</p></article></p>
+<div class="displaymath">
+\begin{equation*}
+\sin(y) = x
+\end{equation*}
+</div>
+<p data-braille="continuation">Now, take the derivative of both sides with respect to x. <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:30%;justify-content:center;"><div class="displaymath" id="p-149">
+\begin{align*}
+\cos(y) \cdot \dfrac{dy}{dx} \amp = 1 \\
+\dfrac{dy}{dx} \amp = \dfrac{1}{\cos(y)} \\
+\amp = \dfrac{1}{\cos(\sin^{-1}(x))} \\
+\amp = \dfrac{1}{\sqrt{1-x^2}}
+\end{align*}
+</div></div>
+<div class="sbspanel" style="width:70%;justify-content:center;"><p id="p-150"><figure class="figure figure-like" id="figure-18"><img src="images/inverse-sin-example.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.9<span class="period">.</span></span><span class="space"> </span></figcaption></figure></p></div>
+</div></div></p>
+<p id="p-151">If we repeat this process for the other trig functions we get the following list:</p>
+<ul class="disc">
+<li id="li-54"><p id="p-152">\(\displaystyle \dfrac{dy}{dx}(\sin^{-1}(x) = \dfrac{1}{\sqrt{1-x^2}} \)</p></li>
+<li id="li-55"><p id="p-153">\(\displaystyle \dfrac{dy}{dx}(\cos^{-1}(x) = - \dfrac{1}{\sqrt{1-x^2}} \)</p></li>
+<li id="li-56"><p id="p-154">\(\displaystyle \dfrac{dy}{dx}(\tan^{-1}(x) = \dfrac{1}{1+x^2} \)</p></li>
+</ul></section><section class="subsection" id="sub-inverse-trig-function-integrals"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.5.3</span> <span class="title">Integrals</span>
+</h3>
+<p id="p-155">Idefinite intregrals are just the opposite of derivatives, so we can simply reverse the opperations and add <em class="emphasis">c</em>.</p>
+<ul class="disc">
+<li id="li-57"><p id="p-156">\(\displaystyle \int \dfrac{1}{\sqrt{1-x^2}} dx = \sin^{-1}(x) + c \)</p></li>
+<li id="li-58"><p id="p-157">\(\displaystyle - \int \dfrac{1}{\sqrt{1-x^2}} dx = \cos^{-1}(x) + c \)</p></li>
+<li id="li-59"><p id="p-158">\(\displaystyle \int \dfrac{1}{1+x^2} dx = \tan^{-1}(x) + c \)</p></li>
+</ul></section><section class="conclusion" id="conclusion-7"></section></section></div></main>
 </div>
 </body>
 </html>
