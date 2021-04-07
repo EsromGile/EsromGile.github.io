@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-04-05T17:46:18-05:00       *-->
+<!--*       on 2021-04-07T17:20:25-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -97,7 +97,7 @@ MathJax.Hub.Config({
 </ul>
 </li>
 <li class="link">
-<a href="chap-principles-of-integral-evaluation.html" data-scroll="chap-principles-of-integral-evaluation"><span class="codenumber">3</span> <span class="title">-- Principles of Integral Evaluation</span></a><ul><li><a href="sec-integration-by-parts.html" data-scroll="sec-integration-by-parts">Integration by Parts (*)</a></li></ul>
+<a href="chap-principles-of-integral-evaluation.html" data-scroll="chap-principles-of-integral-evaluation"><span class="codenumber">3</span> <span class="title">-- Principles of Integral Evaluation</span></a><ul><li><a href="sec-integration-by-parts.html" data-scroll="sec-integration-by-parts">Integration by Parts</a></li></ul>
 </li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
@@ -132,9 +132,7 @@ g(f(x)) \amp = g(x^3+7)\\
 \end{align*}
 </div>
 </div></div></article></div>
-<p id="p-96">Inverses are reflections of each other over the line \(y = x\text{.}\) Also, not every function has an inverse. A function has an inverse if, and only if, it is a one-to-one funcion. <article class="definition definition-like" id="def-one-to-one-function"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">One-to-One Function.</span>
-</h6>
+<p id="p-96">Inverses are reflections of each other over the line \(y = x\text{.}\) Also, not every function has an inverse. A function has an inverse if, and only if, it is a one-to-one funcion. <article class="assemblage assemblage-like" id="as-one-to-one-function"><h6 class="heading"><span class="title">One-to-One Function.</span></h6>
 <p id="p-97">One-to-one meas that for every one input, the function only returns one output (or passes both the horizontal and vertical line tests).</p></article></p></section><section class="subsection" id="sub-formula-for-inverse-functions"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.3.1</span> <span class="title">Obtaining Formulas for Inverse Functions</span>
 </h3>
@@ -146,7 +144,7 @@ g(f(x)) \amp = g(x^3+7)\\
 <li id="li-42"><p id="p-102">replace \(y\) with \(f^{-1}(x)\)</p></li>
 </ol>
 <p data-braille="continuation"><article class="example example-like" id="ex-formula-inverse-function"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-ex-formula-inverse-function"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.4</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.3</span><span class="period">.</span>
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex-formula-inverse-function"><article class="example example-like"><p id="p-103">Function: \(f(x) = 2x^3 + 5\)</p>
 <ol class="decimal">
 <li id="li-43"><p id="p-104">\(\displaystyle y = 2x^3 + 5\)</p></li>
@@ -157,7 +155,7 @@ g(f(x)) \amp = g(x^3+7)\\
 <span class="type">Subsection</span> <span class="codenumber">2.3.2</span> <span class="title">Derivatives of Inverse Functions</span>
 </h3>
 <p id="p-111"><article class="definition definition-like" id="def-formula-for-derivative-of-inverse"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.3.5</span><span class="period">.</span><span class="space"> </span><span class="title">Formula for Derivative of an Inverse Function.</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.3.4</span><span class="period">.</span><span class="space"> </span><span class="title">Formula for Derivative of an Inverse Function.</span>
 </h6>
 <div class="displaymath">
 \begin{equation*}
@@ -168,39 +166,41 @@ g(f(x)) \amp = g(x^3+7)\\
 <span class="type">Worksheet</span> <span class="codenumber">2.3.2.1</span> <span class="title">Example Problem</span>
 </h4>
 <p id="p-112">Let \(f(x) = x^3 + x + 2\text{,}\) find \((f^{-1})'(4)\text{.}\)</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel" style="width:50%;justify-content:flex-start;">
-<p id="p-113">Old Way:</p>
-<div class="displaymath">
+<p id="p-113"><figure class="table table-like" id="tab-inverse-example-problem"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.3.5<span class="period">.</span></span><span class="space"> </span>Inverse Function Example</figcaption><table>
+<tr>
+<td class="l m b2 r2 l0 t0 lines">Old Way</td>
+<td class="l m b2 r0 l0 t0 lines" data-braille="last-cell">New Way</td>
+</tr>
+<tr>
+<td class="l m b0 r2 l0 t0 lines"><div class="displaymath">
 \begin{align*}
 y \amp = x^3 + x + 2\\
 x \amp = y^3 + y + 2\\
 x - 2 \amp = y^3 + y\\
 y^3 + y \amp = 2 - x
 \end{align*}
-</div>
-<p data-braille="continuation">We're stuck!</p>
-</div>
-<div class="sbspanel" style="width:50%;justify-content:flex-start;">
-<p id="p-114">New Way: <p id="p-115">Hint: \(f(1) = 4\text{,}\) so \(f^{-1}(4) = 1\)</p></p>
-<div class="displaymath">
+</div></td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell"><div class="displaymath">
 \begin{align*}
 f(x) \amp = x^3 + x + 2\\
 f'(x) \amp = 3x^2 + 1\\
 f'(1) \amp = 3(1)^2 + 1\\
 \amp = 4
 \end{align*}
-</div>
-<div class="displaymath">
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r2 l0 t0 lines">We're stuck!</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell"><div class="displaymath">
 \begin{align*}
 (f^{-1})'(x) \amp = \dfrac{1}{f'(f^{-1}(x))} \\
 (f^{-1})'(4) \amp = \dfrac{1}{f'(f^{-1}(4))} \\
 \amp = \dfrac{1}{f'(1)} \\
-\amp = \frac{1}{4}
+\amp = {\frac{1}{4}}
 \end{align*}
-</div>
-</div>
-</div></div></section></section><section class="conclusion" id="conclusion-5"></section></section></div></main>
+</div></td>
+</tr>
+</table></figure></p></section></section><section class="conclusion" id="conclusion-5"></section></section></div></main>
 </div>
 </body>
 </html>

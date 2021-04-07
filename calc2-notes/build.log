@@ -1,3 +1,4 @@
 Messages from application of /home/eli/.local/lib/python3.9/site-packages/pretext/static/xsl/pretext-html.xsl:
-MBX:WARNING: A section containing subsections needs to have other content inside an <introduction> and/or  <conclusion>.
-             located within: "sec-lhapitals-rule" (xml:id), "L'Hopital's Rule" (title)
+MBX:DEPRECATE: (2017-11-09) an "assemblage" should not contain any items with a "caption".  You can instead place the content in a bare "sidebyside" (1 time)
+             located within: "fig-mvt" (xml:id)
+--------------

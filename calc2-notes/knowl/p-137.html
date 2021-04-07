@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-04-05T17:46:18-05:00       *-->
+<!--*       on 2021-04-07T17:20:25-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,17 +15,15 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>If \(L = \displaystyle\lim_{x \to 0} \left( 1 + \sin(x) \right) ^{\frac{1}{x}}\text{,}\) then:</p>
+<p>To find the limit of the indeterminate for \(0 \cdot \infty\text{,}\) we need to divide one term by the inverse of the other.</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{align*}
-\ln(L) \amp = \ln \left( \displaystyle\lim_{x \to 0} \left(1 + \sin(x) \right)^{\frac{1}{x}} \right) \\
-\amp = \displaystyle\lim_{x \to 0} \ln \left( 1 + \sin(x) \right) ^{\frac{1}{x}} \\
-\amp = \displaystyle\lim_{x \to 0} \dfrac{1}{x} \cdot \ln(1 + \sin(x))  \\
-\amp = \displaystyle\lim_{x \to 0} \dfrac{\ln(1 + \sin(x))}{x} \\
-\amp = \displaystyle\lim_{x \to 0} \dfrac{\dfrac{1}{1+\sin(x)} \cdot \cos(x)}{1} \text{  * apply L'Hopital's rule} \\
-\amp = \dfrac{\dfrac{1}{1+0} \cdot 1}{1}\\
-\text{So, } \ln(L) \amp = 1\\
-L \amp = e
+y \amp = \displaystyle \lim_{x \to 0^+} x^3 \cdot \ln(x) \\
+\amp = \displaystyle \lim_{x \to 0^+} \dfrac{\ln(x)}{x^{-3}}\\
+\amp = \displaystyle \lim_{x \to 0^+} \dfrac{\dfrac{1}{x}}{-3x^{-4}} \text{  *apply L'Hoptital's rule}\\
+\amp = \displaystyle \lim_{x \to 0^+} \dfrac{1}{x} \cdot \dfrac{x^4}{-3}\\
+\amp = \displaystyle \lim_{x \to 0^+} \dfrac{x^3}{-3}\\
+\amp = 0 
 \end{align*}
 </div>
 <span class="incontext"><a href="sec-lhapitals-rule.html#p-137">in-context</a></span>

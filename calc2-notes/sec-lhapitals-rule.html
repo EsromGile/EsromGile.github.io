@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-04-05T17:46:18-05:00       *-->
+<!--*       on 2021-04-07T17:20:25-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -97,7 +97,7 @@ MathJax.Hub.Config({
 </ul>
 </li>
 <li class="link">
-<a href="chap-principles-of-integral-evaluation.html" data-scroll="chap-principles-of-integral-evaluation"><span class="codenumber">3</span> <span class="title">-- Principles of Integral Evaluation</span></a><ul><li><a href="sec-integration-by-parts.html" data-scroll="sec-integration-by-parts">Integration by Parts (*)</a></li></ul>
+<a href="chap-principles-of-integral-evaluation.html" data-scroll="chap-principles-of-integral-evaluation"><span class="codenumber">3</span> <span class="title">-- Principles of Integral Evaluation</span></a><ul><li><a href="sec-integration-by-parts.html" data-scroll="sec-integration-by-parts">Integration by Parts</a></li></ul>
 </li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
@@ -107,14 +107,14 @@ MathJax.Hub.Config({
 <section class="introduction" id="introduction-7"><article class="remark remark-like" id="rem-indeterminate-forms"><h6 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.4.1</span><span class="period">.</span>
 </h6>
-<p id="p-116"><em class="emphasis">Recall:</em></p>
+<p id="p-114"><em class="emphasis">Recall:</em></p>
 <div class="displaymath">
 \begin{equation*}
 \displaystyle\lim_{x \to 3}\dfrac{x^2+x-12}{x^2+4x-21} = \dfrac{0}{0}
 \end{equation*}
 </div>
 <p data-braille="continuation">This is known as indeterminate form, and we have to evaluate it a little differently (*this method was used in calculus I). <div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;">
-<div class="sbspanel" style="width:37.5%;justify-content:center;"><div class="displaymath" id="p-117">
+<div class="sbspanel" style="width:37.5%;justify-content:center;"><div class="displaymath" id="p-115">
 \begin{align*}
 \displaystyle\lim_{x \to 3}\dfrac{x^2+x-12}{x^2+4x-21} \amp = \displaystyle\lim_{x \to 3}\dfrac{(x-3)(x+4)}{(x-3)(x+7)} \\
 \amp = \displaystyle\lim_{x \to 3}\dfrac{x+4}{x+7}\\
@@ -122,7 +122,7 @@ MathJax.Hub.Config({
 \amp = \dfrac{7}{10}
 \end{align*}
 </div></div>
-<div class="sbspanel" style="width:37.5%;justify-content:center;"><div class="displaymath" id="p-118">
+<div class="sbspanel" style="width:37.5%;justify-content:center;"><div class="displaymath" id="p-116">
 \begin{equation*}
 \begin{cases}
 \text{}\\
@@ -132,15 +132,15 @@ MathJax.Hub.Config({
 \end{cases}
 \end{equation*}
 </div></div>
-</div></div></p></article><p id="p-119">We can bypass this by using L'Hoptials rule: <article class="definition definition-like" id="def-lhopitals-rule"><h6 class="heading">
+</div></div></p></article><p id="p-117">We can bypass this by using L'Hoptials rule: <article class="definition definition-like" id="def-lhopitals-rule"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">L'Hopital's Rule.</span>
 </h6>
-<p id="p-120">Given that the functions <em class="emphasis">f</em> and <em class="emphasis">g</em> are differentiable functions on an open interval containg \(x = a\text{,}\) except possible at \(x = a\text{,}\) and that \(\displaystyle\lim_{x \to a}f(x) = 0\) and \(\displaystyle\lim_{x \to a}g(x) = 0\text{.}\)</p>
-<p id="p-121">If \(\displaystyle\lim_{x \to a}\dfrac{f(x)}{g(x)}\) exists, or if this limit is \(+\infty\mbox{ or }-\infty\text{,}\) then \(\displaystyle\lim_{x \to a}\dfrac{f(x)}{g(x)} = \displaystyle\lim_{x \to a}\dfrac{f'(x)}{g'(x)}\text{.}\)</p>
-<p id="p-122">Moreover, this statement is also true in the case of limits as \(x \to a^- \mbox{ , } x \to a^+ \mbox{ , } x \to -\infty \text{ , or } x \to +\infty\text{.}\)</p></article> <article class="example example-like" id="example-11"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-11"><h6 class="heading">
+<p id="p-118">Given that the functions <em class="emphasis">f</em> and <em class="emphasis">g</em> are differentiable functions on an open interval containg \(x = a\text{,}\) except possible at \(x = a\text{,}\) and that \(\displaystyle\lim_{x \to a}f(x) = 0\) and \(\displaystyle\lim_{x \to a}g(x) = 0\text{.}\)</p>
+<p id="p-119">If \(\displaystyle\lim_{x \to a}\dfrac{f(x)}{g(x)}\) exists, or if this limit is \(+\infty\mbox{ or }-\infty\text{,}\) then \(\displaystyle\lim_{x \to a}\dfrac{f(x)}{g(x)} = \displaystyle\lim_{x \to a}\dfrac{f'(x)}{g'(x)}\text{.}\)</p>
+<p id="p-120">Moreover, this statement is also true in the case of limits as \(x \to a^- \mbox{ , } x \to a^+ \mbox{ , } x \to -\infty \text{ , or } x \to +\infty\text{.}\)</p></article> <article class="example example-like" id="example-11"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-11"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.3</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-11"><article class="example example-like"><p id="p-123">Find \(\displaystyle\lim_{x \to 7} \dfrac{ln(2x-13)}{3x-21}\text{.}\)</p>
-<p id="p-124"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-4" id="solution-4"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-4"><div class="solution solution-like"><div class="displaymath">
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-11"><article class="example example-like"><p id="p-121">Find \(\displaystyle\lim_{x \to 7} \dfrac{ln(2x-13)}{3x-21}\text{.}\)</p>
+<p id="p-122"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-4" id="solution-4"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-4"><div class="solution solution-like"><div class="displaymath">
 \begin{align*}
 \displaystyle\lim_{x \to 7} \dfrac{ln(2x-13)}{3x-21} \amp = \displaystyle\lim_{x \to 7} \dfrac{\dfrac{1}{2x-13} \cdot 2}{3} \\
 \amp = \dfrac{\dfrac{1}{1} \cdot 2}{3} \\
@@ -151,24 +151,24 @@ MathJax.Hub.Config({
 <span class="type">Note</span><span class="space"> </span><span class="codenumber">2.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">List of Indeterminate Forms.</span>
 </h6>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
-<div class="sbspanel" style="width:31.0344827586207%;justify-content:center;"><ul id="p-125" class="disc">
-<li id="li-47"><p id="p-126">\(\displaystyle \frac{0}{0} \)</p></li>
-<li id="li-48"><p id="p-127">\(\displaystyle \frac{\infty}{\infty} \)</p></li>
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:center;"><ul id="p-123" class="disc">
+<li id="li-47"><p id="p-124">\(\displaystyle \frac{0}{0} \)</p></li>
+<li id="li-48"><p id="p-125">\(\displaystyle \frac{\infty}{\infty} \)</p></li>
 </ul></div>
-<div class="sbspanel" style="width:31.0344827586207%;justify-content:center;"><ul id="p-128" class="disc">
-<li id="li-49"><p id="p-129">\(\displaystyle 0^0 \)</p></li>
-<li id="li-50"><p id="p-130">\(\displaystyle 1^{\infty} \)</p></li>
-<li id="li-51"><p id="p-131">\(\displaystyle \infty^0 \)</p></li>
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:center;"><ul id="p-126" class="disc">
+<li id="li-49"><p id="p-127">\(\displaystyle 0^0 \)</p></li>
+<li id="li-50"><p id="p-128">\(\displaystyle 1^{\infty} \)</p></li>
+<li id="li-51"><p id="p-129">\(\displaystyle \infty^0 \)</p></li>
 </ul></div>
-<div class="sbspanel" style="width:31.0344827586207%;justify-content:center;"><ul id="p-132" class="disc">
-<li id="li-52"><p id="p-133">\(\displaystyle 0 \cdot \infty \)</p></li>
-<li id="li-53"><p id="p-134">\(\displaystyle \infty - \infty \)</p></li>
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:center;"><ul id="p-130" class="disc">
+<li id="li-52"><p id="p-131">\(\displaystyle 0 \cdot \infty \)</p></li>
+<li id="li-53"><p id="p-132">\(\displaystyle \infty - \infty \)</p></li>
 </ul></div>
-</div></div></article><p id="p-135">We can directly apply L'Hoptial's rule on the first column of indeterminate forms, but we have to modify the functions that are in the form of the other two columns before we can apply the rule.</p></section><section class="subsection" id="sub-column-2-indeterminate-forms"><h3 class="heading hide-type">
+</div></div></article><p id="p-133">We can directly apply L'Hoptial's rule on the first column of indeterminate forms, but we have to modify the functions that are in the form of the other two columns before we can apply the rule.</p></section><section class="subsection" id="sub-column-2-indeterminate-forms"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.4.1</span> <span class="title">Column Two Indeterminate Forms</span>
 </h3>
-<p id="p-136">To find the limit of the second column of indeterminate forms, we take advantage of logrithms to bring down the exponent.</p>
-<p id="p-137">If \(L = \displaystyle\lim_{x \to 0} \left( 1 + \sin(x) \right) ^{\frac{1}{x}}\text{,}\) then:</p>
+<p id="p-134">To find the limit of the second column of indeterminate forms, we take advantage of logrithms to bring down the exponent.</p>
+<p id="p-135">If \(L = \displaystyle\lim_{x \to 0} \left( 1 + \sin(x) \right) ^{\frac{1}{x}}\text{,}\) then:</p>
 <div class="displaymath">
 \begin{align*}
 \ln(L) \amp = \ln \left( \displaystyle\lim_{x \to 0} \left(1 + \sin(x) \right)^{\frac{1}{x}} \right) \\
@@ -183,7 +183,7 @@ L \amp = e
 </div></section><section class="subsection" id="sub-column-3-indeterminate-forms"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.4.2</span> <span class="title">Columns Three Indeterminate Forms</span>
 </h3>
-<p id="p-138">To find the limit of the indeterminate form \(\infty - \infty\text{,}\) we have to find a common denominator and combine the two terms.</p>
+<p id="p-136">To find the limit of the indeterminate form \(\infty - \infty\text{,}\) we have to find a common denominator and combine the two terms.</p>
 <div class="displaymath">
 \begin{align*}
 y \amp = \displaystyle \lim_{x \to 0^+} \left( \dfrac{1}{\sin(x)} - \dfrac{1}{x} \right) \\
@@ -195,7 +195,7 @@ y \amp = \displaystyle \lim_{x \to 0^+} \left( \dfrac{1}{\sin(x)} - \dfrac{1}{x}
 \amp = 0 
 \end{align*}
 </div>
-<p id="p-139">To find the limit of the indeterminate for \(0 \cdot \infty\text{,}\) we need to divide one term by the inverse of the other.</p>
+<p id="p-137">To find the limit of the indeterminate for \(0 \cdot \infty\text{,}\) we need to divide one term by the inverse of the other.</p>
 <div class="displaymath">
 \begin{align*}
 y \amp = \displaystyle \lim_{x \to 0^+} x^3 \cdot \ln(x) \\
