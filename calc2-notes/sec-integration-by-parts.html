@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-04-07T17:20:25-05:00       *-->
+<!--*       on 2021-04-08T17:26:57-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -148,13 +148,85 @@ dv = \cos(x) dx
 \end{cases}
 \end{equation*}
 </div></div>
-</div></div></div></div></p></article></div></section><section class="subsection" id="sub-rules-of-thumb"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.1.1</span> <span class="title">Rules of Thumb(*)</span>
-</h3></section><section class="subsection" id="sub-tabular-integration"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.1.2</span> <span class="title">Tabular Integration(*)</span>
-</h3></section><section class="subsection" id="sub-spectial-technique"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.1.3</span> <span class="title">Spectial Integration Technique(*)</span>
-</h3></section><section class="conclusion" id="conclusion-8"></section></section></div></main>
+</div></div></div></div></p></article></div>
+<article class="assemblage assemblage-like" id="as-rule-of-thumb"><h6 class="heading"><span class="title">Rule of Thumb.</span></h6>
+<p id="p-180">From left to right:</p>
+<p id="p-181">logrithmic, inverse trig, algebraic, trig, exponential</p>
+<p id="p-182">Where,</p>
+<ul class="disc">
+<li id="li-67"><p id="p-183"><em class="emphasis">u</em> is the earliest in the list</p></li>
+<li id="li-68"><p id="p-184"><em class="emphasis">dv</em> is the latest in the list</p></li>
+</ul>
+<p data-braille="continuation">This doesn't awlays work, but works enough to be helpful.</p></article></section><section class="subsection" id="sub-tabular-integration"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.1.1</span> <span class="title">Tabular Integration</span>
+</h3>
+<p id="p-185">A quick way to integrate where you would otherwise have to integrate by parts multiple times. You do this by differenciating the <em class="emphasis">u</em> until it reaches zero and then taking the integral of the <em class="emphasis">dv</em> the same number of times. <figure class="table table-like" id="tab-tabular-integration-example-1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.1.3<span class="period">.</span></span><span class="space"> </span>Tabular Integration</figcaption><table>
+<tr>
+<td class="l m b2 r0 l0 t0 lines"></td>
+<td class="l m b2 r0 l0 t0 lines">derivative</td>
+<td class="l m b2 r0 l0 t0 lines" data-braille="last-cell">integral</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">+</td>
+<td class="l m b0 r0 l0 t0 lines">\(x^3 + 5x^2 + 7x + 4\)</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(e^{2x}\)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">-</td>
+<td class="l m b0 r0 l0 t0 lines">\(3x^2 + 10x + 7\)</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{1}{2} e^{2x}\)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">+</td>
+<td class="l m b0 r0 l0 t0 lines">\(6x + 10\)</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{1}{4} e^{2x}\)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">-</td>
+<td class="l m b0 r0 l0 t0 lines">\(6 \)</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{1}{8}e^{2x}\)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">\(0 \)</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{1}{16}e^{2x}\)</td>
+</tr>
+</table></figure> The sign in front of each line denotes weather it is positive or negative. We multiply the polynomial on the derivative column by the integral on the next row. You do this until you reach the zero. After that just add a "\(+ c\)" to the end.</p>
+<div class="displaymath">
+\begin{equation*}
+\int (x^3 + 5x^2 + 7x + 4) \cdot 3^{2x} dx = (x^3 + 5x^2 + 7x + 4) \cdot \dfrac{1}{2} e^{2x} - (3x^2 + 10x + 7) \cdot \dfrac{1}{4} e^{2x} + (6x+10) \cdot \dfrac{1}{8} e^{2x} - \dfrac{6}{16}e^{2x} + c
+\end{equation*}
+</div>
+<p id="p-186">What would we do if <em class="emphasis">u</em> is not a polynomial or if repeated differentiation of <em class="emphasis">u</em> doesn't eventually give 0? For example \(\int \ln(x)dx\text{:}\) <figure class="table table-like" id="tab-tabular-integration-example-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.1.4<span class="period">.</span></span><span class="space"> </span>Tabular Integration (Repeating)</figcaption><table>
+<tr>
+<td class="l m b2 r0 l0 t0 lines"></td>
+<td class="l m b2 r0 l0 t0 lines">derivative</td>
+<td class="l m b2 r0 l0 t0 lines" data-braille="last-cell">integral</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">+</td>
+<td class="l m b0 r0 l0 t0 lines">\(\ln(x)\)</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(1\)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">-</td>
+<td class="l m b0 r0 l0 t0 lines">\(\dfrac{1}{x}\)</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(x\)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">\(\vdots\)</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\vdots\)</td>
+</tr>
+</table></figure> When we have this type of integral, we can stop when we know how to integrate one element in the row by the other element. In this case, the second row is \(\dfrac{1}{x}\) time \(x\text{,}\) which is just 1.</p>
+<div class="displaymath">
+\begin{align*}
+\int \ln(x) dx \amp = \ln(x) \cdot x - \int \dfrac{1}{x} x dx \\
+\amp = x \ln(x) - x + c
+\end{align*}
+</div></section><section class="subsection" id="sub-spectial-technique"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.1.2</span> <span class="title">A Special Integration Technique</span>
+</h3> There is a spectial integration technique</section><section class="conclusion" id="conclusion-8"></section></section></div></main>
 </div>
 </body>
 </html>
