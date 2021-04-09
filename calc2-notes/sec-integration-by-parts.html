@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-04-08T17:26:57-05:00       *-->
+<!--*       on 2021-04-09T14:19:12-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -70,10 +70,10 @@ MathJax.Hub.Config({
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chap-principles-of-integral-evaluation.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap-principles-of-integral-evaluation.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chap-principles-of-integral-evaluation.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap-principles-of-integral-evaluation.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-integrating-trig-functions.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chap-principles-of-integral-evaluation.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap-principles-of-integral-evaluation.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chap-principles-of-integral-evaluation.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap-principles-of-integral-evaluation.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-integrating-trig-functions.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -97,7 +97,10 @@ MathJax.Hub.Config({
 </ul>
 </li>
 <li class="link">
-<a href="chap-principles-of-integral-evaluation.html" data-scroll="chap-principles-of-integral-evaluation"><span class="codenumber">3</span> <span class="title">-- Principles of Integral Evaluation</span></a><ul><li><a href="sec-integration-by-parts.html" data-scroll="sec-integration-by-parts" class="active">Integration by Parts</a></li></ul>
+<a href="chap-principles-of-integral-evaluation.html" data-scroll="chap-principles-of-integral-evaluation"><span class="codenumber">3</span> <span class="title">-- Principles of Integral Evaluation</span></a><ul>
+<li><a href="sec-integration-by-parts.html" data-scroll="sec-integration-by-parts" class="active">Integration by Parts</a></li>
+<li><a href="sec-integrating-trig-functions.html" data-scroll="sec-integrating-trig-functions">Integrating Trig Functions</a></li>
+</ul>
 </li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
@@ -226,7 +229,42 @@ dv = \cos(x) dx
 \end{align*}
 </div></section><section class="subsection" id="sub-spectial-technique"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.1.2</span> <span class="title">A Special Integration Technique</span>
-</h3> There is a spectial integration technique</section><section class="conclusion" id="conclusion-8"></section></section></div></main>
+</h3>
+<p id="p-187">There is a special integration technique used where the original integral appears in the answer when integrating by parts. <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:73.6842105263158%;justify-content:flex-start;"><div class="displaymath" id="p-188">
+\begin{align*}
+\int \sin (x) \cdot e^x dx \amp = \sin(x) \cdot e^x - \int \cos (x) \cdot e^x dx \\
+\amp = \sin(x) \cdot e^x - ( \cos(x) \cdot e^x - \int e^x ( - \sin(x) )dx)\\
+\amp = \sin(x) \cdot e^x - \cos(x) \cdot e^x - \int \sin(x) \cdot e^x dx
+\end{align*}
+</div></div>
+<div class="sbspanel" style="width:21.0526315789474%;justify-content:flex-start;"><p id="p-189"><figure class="table table-like" id="tab-special-integral-technique-1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.1.5<span class="period">.</span></span><span class="space"> </span></figcaption><table>
+<tr>
+<td class="l m b0 r0 l2 t0 lines">\(u = \sin(x)\)</td>
+<td class="l m b0 r2 l0 t0 lines" data-braille="last-cell">\(v = e^x\)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l2 t0 lines">\(du = \cos(x)dx\)</td>
+<td class="l m b0 r2 l0 t0 lines" data-braille="last-cell">\(dv = e^xdx\)</td>
+</tr>
+</table></figure> <figure class="table table-like" id="tab-special-integral-technique-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.1.6<span class="period">.</span></span><span class="space"> </span></figcaption><table>
+<tr>
+<td class="l m b0 r0 l2 t0 lines">\(u = \cos(x)\)</td>
+<td class="l m b0 r2 l0 t0 lines" data-braille="last-cell">\(v = e^x\)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l2 t0 lines">\(du = - \sin(x)dx\)</td>
+<td class="l m b0 r2 l0 t0 lines" data-braille="last-cell">\(dv = e^xdx\)</td>
+</tr>
+</table></figure></p></div>
+</div></div> But, if we add \(\int \sin(x) \cdot e^x dx\) to both sides, we can get a reasonable answer:</p>
+<div class="displaymath">
+\begin{align*}
+\int \sin (x) \cdot e^x dx \amp = \sin(x) \cdot e^x - \cos(x) \cdot e^x - \int \sin(x) \cdot e^x dx \\
+2 \int \sin (x) \cdot e^x dx \amp = \sin(x) \cdot e^x - \cos(x) \cdot e^x \\
+\int \sin (x) \cdot e^x dx \amp = \dfrac{1}{2} ( \sin(x) \cdot e^x - \cos(x) \cdot e^x) + c 
+\end{align*}
+</div></section><section class="conclusion" id="conclusion-8"></section></section></div></main>
 </div>
 </body>
 </html>
