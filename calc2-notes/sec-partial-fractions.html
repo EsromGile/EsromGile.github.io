@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-04-16T17:07:55-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Partial Fractions</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\(\newcommand{\foo}{bar}
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\sech}{sech}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="calc-2-notes.html"><span class="title">Calculus 2 Notes</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-trig-substitution.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap-principles-of-integral-evaluation.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-trig-substitution.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap-principles-of-integral-evaluation.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link">
+<a href="chap-applications-of-definite-integrals.html" data-scroll="chap-applications-of-definite-integrals"><span class="codenumber">1</span> <span class="title">-- Applications of Definite Integrals</span></a><ul>
+<li><a href="sec-area-between-curves.html" data-scroll="sec-area-between-curves">Area Between Two Curves</a></li>
+<li><a href="sec-volumes-by-slicing.html" data-scroll="sec-volumes-by-slicing">Volumes by Slicing</a></li>
+<li><a href="sec-arc-length-and-surface-area.html" data-scroll="sec-arc-length-and-surface-area">Arc Length and Surface Area</a></li>
+<li><a href="sec-work.html" data-scroll="sec-work">Work</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap-exponential-log-inverse-trig-functions.html" data-scroll="chap-exponential-log-inverse-trig-functions"><span class="codenumber">2</span> <span class="title">-- Exponential, Logarithmic and Inverse Trigonometric Functions</span></a><ul>
+<li><a href="sec-exponential-and-logrithmic-functions.html" data-scroll="sec-exponential-and-logrithmic-functions">Exponential and Logrithmic Functions</a></li>
+<li><a href="sec-derivatives-and-integrals-of-logs.html" data-scroll="sec-derivatives-and-integrals-of-logs">Derivatives and Integrals Involving Log Functions</a></li>
+<li><a href="sec-inverse-functions.html" data-scroll="sec-inverse-functions">Inverse Functions</a></li>
+<li><a href="sec-lhapitals-rule.html" data-scroll="sec-lhapitals-rule">L'Hopital's Rule</a></li>
+<li><a href="-sec-inverse-trig-functions.html" data-scroll="-sec-inverse-trig-functions">Inverse Trig Functions</a></li>
+<li><a href="sec-hyperbolic-trig-functions.html" data-scroll="sec-hyperbolic-trig-functions">Hyperbolic Trig Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap-principles-of-integral-evaluation.html" data-scroll="chap-principles-of-integral-evaluation"><span class="codenumber">3</span> <span class="title">-- Principles of Integral Evaluation</span></a><ul>
+<li><a href="sec-integration-by-parts.html" data-scroll="sec-integration-by-parts">Integration by Parts</a></li>
+<li><a href="sec-integrating-trig-functions.html" data-scroll="sec-integrating-trig-functions">Integrating Trig Functions</a></li>
+<li><a href="sec-trig-substitution.html" data-scroll="sec-trig-substitution">Trig Substitution</a></li>
+<li><a href="sec-partial-fractions.html" data-scroll="sec-partial-fractions" class="active">Partial Fractions</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-partial-fractions"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.4</span> <span class="title">Partial Fractions</span>
+</h2>
+<section class="introduction" id="introduction-12"><p id="p-253">So far we have not learned how to integrate general <code class="code-inline tex2jax_ignore">rational functions</code>. <article class="definition definition-like" id="def-rational-functions"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.4.1</span><span class="period">.</span>
+</h6>A rational function is in the form \(f(x) = \dfrac{\text{polynomial}}{\text{polynomial}}\text{.}\)</article></p>
+<p id="p-254">In order to do this we will use partial fractions. An example of how partial fractions work is as follows:</p>
+<div class="displaymath">
+\begin{align*}
+\dfrac{1}{x} - \dfrac{1}{x+1} \amp = \dfrac{1}{x}\cdot\dfrac{x+1}{x+1} - \dfrac{1}{x+1}\cdot\dfrac{x}{x} \\
+\amp = \dfrac{x+1}{x(x+1)} - \dfrac{x}{x(x+1)} \\
+\amp = \dfrac{x+1-x}{x(x+1)}\\
+\amp = \dfrac{1}{x(x+1)}\\
+\amp = \dfrac{1}{x^2+x}
+\end{align*}
+</div>
+<p data-braille="continuation">The only difference in how we use it for integrals is that the process is reversed:</p>
+<div class="displaymath">
+\begin{align*}
+\int \dfrac{1}{x^2 + x} dx \amp = \int \dfrac{1}{x} - \dfrac{1}{x+1} dx \\
+\amp = \int \dfrac{1}{x} dx - \int \dfrac{1}{x+1} dx \\
+\amp = \ln | x | - \ln | x - 1 |  + c 
+\end{align*}
+</div></section><section class="subsection" id="subsection-26"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.1</span> <span class="title">General Approach</span>
+</h3>
+<p id="p-255">Let's find the partion fraction decomposition of the following:</p>
+<div class="displaymath">
+\begin{equation*}
+\dfrac{5x-10}{x^2-3x-4} = \dfrac{5x-10}{(x-4)(x+1)} = \dfrac{A}{x-4} + \dfrac{B}{x+1}
+\end{equation*}
+</div>
+<p data-braille="continuation">How do we find <em class="emphasis">A</em> and <em class="emphasis">B</em>? Multiply both sides by \((x-4)(x+1)\) to get:</p>
+<div class="displaymath">
+\begin{align*}
+(x-4)(x+1) \cdot \dfrac{5x-10}{(x-4)(x+1)} \amp = \left( \dfrac{A}{x-4} + \dfrac{B}{x+1} \right) \cdot (x-4)(x+1) \\
+5x - 10 \amp = A(x+1) + B(x-4)
+\end{align*}
+</div>
+<p data-braille="continuation">We want this to be true for all <em class="emphasis">x</em>: <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;">
+<p id="p-256">Let \(x = 4\text{:}\)</p>
+<div class="displaymath">
+\begin{align*}
+5(4) - 10 \amp = A (x - 4) + B (x + 1) \\
+10 \amp = 5A\\
+A \amp = 2
+\end{align*}
+</div>
+</div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;">
+<p id="p-257">Let \(x = -1\text{:}\)</p>
+<div class="displaymath">
+\begin{align*}
+5(-1) - 10 \amp = A (-1 + 1) + B (-1 - 4)\\
+-15 \amp = -5 B\\
+B = 3 
+\end{align*}
+</div>
+</div>
+</div></div> So,</p>
+<div class="displaymath">
+\begin{equation*}
+\dfrac{5x-10}{x^2-3x-4} = \dfrac{2}{x-4} + \dfrac{3}{x+1}
+\end{equation*}
+</div>
+<p id="p-258">The previous example is the simplest and most general case. There are 3 types of problems that reequire differing methods:</p>
+<ol class="decimal">
+<li id="li-87"><p id="p-259">repeated factors</p></li>
+<li id="li-88"><p id="p-260">non-linear factors</p></li>
+<li id="li-89"><p id="p-261">degree of numberator \(\ge\) denominator</p></li>
+</ol></section><section class="subsection" id="sub-repeated-factors"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.2</span> <span class="title">Repeated Factors(*)</span>
+</h3></section><section class="subsection" id="sub-nonlinear-factors"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.3</span> <span class="title">Non-Linear Factors(*)</span>
+</h3></section><section class="subsection" id="sub-degree-of-num-ge-den"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.4</span> <span class="title">Degree(*)</span>
+</h3></section></section></div></main>
+</div>
+</body>
+</html>
