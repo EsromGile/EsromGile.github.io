@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-04-19T17:06:59-05:00       *-->
+<!--*       on 2021-04-22T16:38:04-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -11,7 +11,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Improper Integrals(*)</title>
+<title>Improper Integrals</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type="text/x-mathjax-config">
@@ -104,14 +104,86 @@ MathJax.Hub.Config({
 <li><a href="sec-integrating-trig-functions.html" data-scroll="sec-integrating-trig-functions">Integrating Trig Functions</a></li>
 <li><a href="sec-trig-substitution.html" data-scroll="sec-trig-substitution">Trig Substitution</a></li>
 <li><a href="sec-partial-fractions.html" data-scroll="sec-partial-fractions">Partial Fractions</a></li>
-<li><a href="sec-improper-integrals.html" data-scroll="sec-improper-integrals" class="active">Improper Integrals(*)</a></li>
+<li><a href="sec-improper-integrals.html" data-scroll="sec-improper-integrals" class="active">Improper Integrals</a></li>
 </ul>
 </li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-improper-integrals"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">3.5</span> <span class="title">Improper Integrals(*)</span>
-</h2></section></div></main>
+<span class="type">Section</span> <span class="codenumber">3.5</span> <span class="title">Improper Integrals</span>
+</h2>
+<section class="introduction" id="introduction-13"><p id="p-292">An improper integral is an integral that either contians positive or negative infinity as point <em class="emphasis">a</em> or <em class="emphasis">b</em>, or contains a function that has a verticle asymptote somewhere between or at <em class="emphasis">a</em> or <em class="emphasis">b</em>.</p>
+<p id="p-293">Contrast the following functions: <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;">
+<p id="p-294">| Regular Integral |</p>
+<div class="displaymath">
+\begin{align*}
+\int _{1} ^{10} \dfrac{1}{x^2} dx \amp = \int _{1} ^{10} x^{-2} dx \\
+\amp = \left[ \dfrac{x ^{-1} }{-1} \right] _{1} ^{10} \\
+\amp = \left( - \dfrac{1}{10} \right) - \left( - \dfrac{1}{1} \right) \\
+\amp = - \dfrac{1}{10} + 1\\
+\amp = \dfrac{9}{10} 
+\end{align*}
+</div>
+<p data-braille="continuation"><article class="note remark-like" id="note-integral-one-to-10"><h6 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">3.5.1</span><span class="period">.</span>
+</h6>
+<p id="p-295">Notice: If we were to to go take the same integral from 1 to 100 we would get \(\dfrac{99}{100}.\)</p></article></p>
+</div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;">
+<p id="p-296">| Improper Integral |</p>
+<div class="displaymath">
+\begin{align*}
+\int _1 ^{\infty} \amp = \lim_{b\to\infty} \int_{1}^{b} \dfrac{1}{x^2} dx \\
+\amp = \lim_{b\to\infty} \int_{1}^{b} x^{-2} dx \\
+\amp = \lim_{b\to\infty} \left[ \dfrac{x^{-1}}{-1} \right] _{1}^{b} \\
+\amp = \lim_{b\to\infty} \left( - \dfrac{1}{b} \right) - \left( - \dfrac{1}{1} \right) \\
+\amp = \lim_{b\to\infty} - \dfrac{1}{b} + 1 \\
+\amp = 0 + 1\\
+\amp = 1 
+\end{align*}
+</div>
+</div>
+</div></div></p></section><section class="subsection" id="sub-improper-integral-to-infinity"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.5.1</span> <span class="title">Improper Integrals to Infinity</span>
+</h3>
+<p id="p-297"><article class="assemblage assemblage-like" id="as-improper-integral-to-infinity"><p id="p-298">The improper integral of <em class="emphasis">f</em> over the interval \([a\mbox{, }+\infty)\) is defined to be:</p>
+<div class="displaymath">
+\begin{equation*}
+\int _{a}^{+\infty} f(x) dx = \lim_{b\to\infty} \int_{a}^{b} f(x) dx
+\end{equation*}
+</div>
+<ul class="disc">
+<li id="li-94"><p id="p-299">In the case where the limit exists, the improper integral converges  and the limit if the value of the integral.</p></li>
+<li id="li-95"><p id="p-300">In the case where the limit doesn't exist, the improper integral diverges and it is not assigned a value.</p></li>
+</ul></article> <article class="theorem theorem-like" id="th-improper-integral-diverging"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.5.2</span><span class="period">.</span>
+</h6>
+<p id="p-301">The integral \(\displaystyle\int _{a}^{\infty} \dfrac{1}{x^P} dx \) converges if \(P &gt; 1\text{,}\) and diverges if \(P \leq 1\text{.}\)</p></article></p>
+<p id="p-302"><article class="assemblage assemblage-like" id="as-improper-integral-from-infintiy"><p id="p-303">The improper integral of <em class="emphasis">f</em> over the interval \(( -\infty\mbox{, }b]\) is defined to be:</p>
+<div class="displaymath">
+\begin{equation*}
+\int_{-\infty}^{b} f(x) dx = \lim_{a\to - \infty} \int_{a}^{b} f(x) dx 
+\end{equation*}
+</div>
+<ul class="disc">
+<li id="li-96"><p id="p-304">In the case where the limit exists, the improper integral converges  and the limit if the value of the integral.</p></li>
+<li id="li-97"><p id="p-305">In the case where the limit doesn't exist, the improper integral diverges and it is not assigned a value.</p></li>
+</ul></article></p>
+<p id="p-306">Additionally, <article class="assemblage assemblage-like" id="as-improper-integral-from-infinity-to-infinity"><p id="p-307">The improper integral of <em class="emphasis">f</em> over the inverval \((-\infty\mbox{, }+\infty)\) is defined as:</p>
+<div class="displaymath">
+\begin{equation*}
+\int_{-\infty}^{+\infty} f(x) dx = \int_{-\infty}^{c}f(x)dx + \int_{c}^{\infty}f(x)dx 
+\end{equation*}
+</div>
+<p data-braille="continuation">where <em class="emphasis">c</em> is any real number.</p>
+<ul class="disc">
+<li id="li-98"><p id="p-308">If both converge, then the functions converges.</p></li>
+<li id="li-99"><p id="p-309">Otherwise, the function diverges.</p></li>
+</ul></article></p></section><section class="subsection" id="sub-improper-integrals-asymptotes"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.5.2</span> <span class="title">Improper Integrals -- Asymptotes</span>
+</h3>
+<p id="p-310">We can also have improper integrals due to vertical asymptotes.</p></section><section class="conclusion" id="conclusion-10"></section></section></div></main>
 </div>
 </body>
 </html>

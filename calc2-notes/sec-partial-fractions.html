@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-04-19T17:06:59-05:00       *-->
+<!--*       on 2021-04-22T16:38:04-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -104,7 +104,7 @@ MathJax.Hub.Config({
 <li><a href="sec-integrating-trig-functions.html" data-scroll="sec-integrating-trig-functions">Integrating Trig Functions</a></li>
 <li><a href="sec-trig-substitution.html" data-scroll="sec-trig-substitution">Trig Substitution</a></li>
 <li><a href="sec-partial-fractions.html" data-scroll="sec-partial-fractions" class="active">Partial Fractions</a></li>
-<li><a href="sec-improper-integrals.html" data-scroll="sec-improper-integrals">Improper Integrals(*)</a></li>
+<li><a href="sec-improper-integrals.html" data-scroll="sec-improper-integrals">Improper Integrals</a></li>
 </ul>
 </li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
@@ -283,8 +283,92 @@ B \amp = 5
 \dfrac{9x^4 - 2x - 13}{(x-3)(x^2+7)(x^2+25)^2} = \dfrac{A}{x-3} + \dfrac{Bx+C}{x^2+7} \dfrac{Dx+E}{x^2+25} + \dfrac{Fx+G}{(x^2+25)^2}
 \end{equation*}
 </div></section><section class="subsection" id="sub-degree-of-num-ge-den"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.4.4</span> <span class="title">Degree(*)</span>
-</h3></section></section></div></main>
+<span class="type">Subsection</span> <span class="codenumber">3.4.4</span> <span class="title">Degree</span>
+</h3>
+<p id="p-289">The final exception is when the degree of the numberator is greater than or equal to the degree of the denominator. For this type of problem we will have to use polynomial long division where the numerator is divided by the denominator.</p>
+<p id="p-290">Example: Divide \(x^4+3x^2-8\) by \(x^2-2x+1\) <figure class="table table-like" id="tab-polynomial-division"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.4.4<span class="period">.</span></span><span class="space"> </span>Polynomial Division</figcaption><table>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b2 r0 l0 t0 lines">\(\)</td>
+<td class="l m b2 r0 l0 t0 lines">\(\)</td>
+<td class="r m b2 r0 l0 t0 lines">\(x^2 \)</td>
+<td class="l m b2 r0 l0 t0 lines">\(+ 2x \)</td>
+<td class="l m b2 r0 l0 t0 lines">\(+ 6\)</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(+ \dfrac{10x-14}{x^2-2x+1}\)</td>
+</tr>
+<tr>
+<td class="l m b0 r2 l0 t0 lines">\(x^2-2x+1\)</td>
+<td class="r m b0 r0 l0 t0 lines">\(x^4\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(+0x^3\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(+3x^2\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(+0x\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(-8\)</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(\)</td>
+<td class="l m b2 r0 l0 t0 lines">\(-(x^4 \)</td>
+<td class="l m b2 r0 l0 t0 lines">\(-2x^3 \)</td>
+<td class="l m b2 r0 l0 t0 lines">\(+x^2) \)</td>
+<td class="l m b0 r0 l0 t0 lines">\(\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(\)</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(\)</td>
+<td class="r m b0 r0 l0 t0 lines">\(2x^3 \)</td>
+<td class="l m b0 r0 l0 t0 lines">\(+2x^2 \)</td>
+<td class="l m b0 r0 l0 t0 lines">\(+0x \)</td>
+<td class="l m b0 r0 l0 t0 lines">\(\)</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(\)</td>
+<td class="l m b2 r0 l0 t0 lines">\(-(2x^3 \)</td>
+<td class="l m b2 r0 l0 t0 lines">\(-4x^2 \)</td>
+<td class="l m b2 r0 l0 t0 lines">\(+2x) \)</td>
+<td class="l m b0 r0 l0 t0 lines">\(\)</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(\)</td>
+<td class="r m b0 r0 l0 t0 lines">\(6x^2 \)</td>
+<td class="l m b0 r0 l0 t0 lines">\(-2x \)</td>
+<td class="l m b0 r0 l0 t0 lines">\(-8 \)</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(\)</td>
+<td class="l m b2 r0 l0 t0 lines">\(-(6x^2 \)</td>
+<td class="l m b2 r0 l0 t0 lines">\(-12x \)</td>
+<td class="l m b2 r0 l0 t0 lines">\(+6) \)</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(\)</td>
+<td class="r m b0 r0 l0 t0 lines">\(10x \)</td>
+<td class="l m b0 r0 l0 t0 lines">\(-14 \)</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\)</td>
+</tr>
+</table></figure></p>
+<div class="displaymath" id="p-291">
+\begin{align*}
+\text{So, } \int \dfrac{x^4+3x^2-8}{x^2-2x+1} dx \amp= \int x^2+2x+6 + \dfrac{10x-14}{x^2-2x+1} dx \\
+\amp = \int x^2+2x+6 + \dfrac{10x-14}{(x-1)^2} dx \\
+\amp = \int x^2+2x+6 + \dfrac{10}{x-1} - \dfrac{14}{(x-1)^2} dx \\
+\amp \vdots
+\end{align*}
+</div>
+<p data-braille="continuation">We would then just follow the same steps as with any of the previous examples.</p></section></section></div></main>
 </div>
 </body>
 </html>
