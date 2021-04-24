@@ -1,5 +1,2 @@
 Messages from application of /home/eli/.local/lib/python3.9/site-packages/pretext/static/xsl/pretext-html.xsl:
-MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("audo, audo") and widths ("45% 45% ") are percentages of the form "nn%")
-             located within: "sec-integrating-trig-functions" (xml:id), "Integrating Trig Functions" (title)
-MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("audo, audo") and widths ("45% 45% ") are percentages of the form "nn%")
-             located within: "sec-integrating-trig-functions" (xml:id), "Integrating Trig Functions" (title)
+MBX:WARNING:    The @xml:id "as-asymptote-improper=integrals-with-discontinuity" is invalid.  Use only letters, numbers, hyphens and underscores.

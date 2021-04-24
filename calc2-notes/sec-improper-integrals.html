@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-04-22T16:38:04-05:00       *-->
+<!--*       on 2021-04-23T19:32:52-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -115,7 +115,7 @@ MathJax.Hub.Config({
 <section class="introduction" id="introduction-13"><p id="p-292">An improper integral is an integral that either contians positive or negative infinity as point <em class="emphasis">a</em> or <em class="emphasis">b</em>, or contains a function that has a verticle asymptote somewhere between or at <em class="emphasis">a</em> or <em class="emphasis">b</em>.</p>
 <p id="p-293">Contrast the following functions: <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
 <div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;">
-<p id="p-294">| Regular Integral |</p>
+<p id="p-294">Regular Integral</p>
 <div class="displaymath">
 \begin{align*}
 \int _{1} ^{10} \dfrac{1}{x^2} dx \amp = \int _{1} ^{10} x^{-2} dx \\
@@ -131,7 +131,7 @@ MathJax.Hub.Config({
 <p id="p-295">Notice: If we were to to go take the same integral from 1 to 100 we would get \(\dfrac{99}{100}.\)</p></article></p>
 </div>
 <div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;">
-<p id="p-296">| Improper Integral |</p>
+<p id="p-296">Improper Integral</p>
 <div class="displaymath">
 \begin{align*}
 \int _1 ^{\infty} \amp = \lim_{b\to\infty} \int_{1}^{b} \dfrac{1}{x^2} dx \\
@@ -183,7 +183,45 @@ MathJax.Hub.Config({
 </ul></article></p></section><section class="subsection" id="sub-improper-integrals-asymptotes"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.5.2</span> <span class="title">Improper Integrals -- Asymptotes</span>
 </h3>
-<p id="p-310">We can also have improper integrals due to vertical asymptotes.</p></section><section class="conclusion" id="conclusion-10"></section></section></div></main>
+<p id="p-310">We can also have improper integrals due to vertical asymptotes. <article class="assemblage assemblage-like" id="as-asymptote-improper-integrals"><p id="p-311">If <em class="emphasis">f</em> is continuous on \([a\mbox{, }b]\) except for an infinite discontinuity at <em class="emphasis">b</em>, then it is defined as:</p>
+<div class="displaymath">
+\begin{equation*}
+\int _{a} ^{b} f(x) dx = \lim _{k \to b^{-}} \int _{a}^{k} f(x) dx
+\end{equation*}
+</div>
+<p data-braille="continuation">or if there is an infinite discontinuity at <em class="emphasis">a</em>, then it is defined as:</p>
+<div class="displaymath">
+\begin{equation*}
+\int _{a}^{b} f(x) dx = \lim _{k \to a^+} \int _{k}^{b} f(x) dx
+\end{equation*}
+</div></article> <article class="project project-like" id="proj-asymptote-improper-integral-example"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.1</span><span class="period">.</span>
+</h6>
+<p id="p-312">Evaluate: \(\displaystyle\int _0 ^8 \dfrac{1}{\sqrt[3]{x}} dx \)</p>
+<p id="p-313"><a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-5" id="answer-5"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-5"><div class="answer solution-like"><div class="displaymath">
+\begin{align*}
+\int _0 ^8 \dfrac{1}{\sqrt[3]{x}} dx \amp = \lim _{k \to 0^{+}} \int _k ^8 \dfrac{1}{\sqrt[3]{x}} dx \\
+\amp = \lim _{k \to 0^{+}} \int _k ^8 x ^{-\frac{1}{3}} dx \\
+\amp = \lim _{k \to 0^{+}} \left[ \dfrac{x ^{\frac{2}{3}}}{\frac{2}{3}} \right] _k ^8 \\
+\amp = \lim _{k \to 0^{+}} \left[ \dfrac{3}{2} x ^{\frac{2}{3}} \right] _k ^8 \\
+\amp = \lim _{k \to 0^{+}} \left( \dfrac{3}{2} (8) ^{\frac{2}{3}} - \dfrac{3}{2} (k) ^{\frac{2}{3}} \right)\\
+\amp = \dfrac{3}{2} (4) - \dfrac{3}{2} (0)\\
+\amp = \dfrac{12}{2} - 0\\
+\amp = 6 
+\end{align*}
+</div></div></div></p></article></p>
+<p id="p-314">Similarly to integrals to infinity, you can evaluate a function that has an asymptote between \([a\mbox{, }b]\) by splitting the function into two pieces. <article class="assemblage assemblage-like" id="as-asymptote-improper-integrals-with-discontinuity"><p id="p-315">If <em class="emphasis">f</em> is continuous on \([a\mbox{, }b]\) except for an infinite discontinuity at <em class="emphasis">c</em> in \((a\mbox{, }b\) is defined as:</p>
+<div class="displaymath">
+\begin{equation*}
+\int _a ^b f(x) dx = \int _a ^c f(x) dx + \int _c ^ b f(x) dx 
+\end{equation*}
+</div>
+<ul class="disc">
+<li id="li-100"><p id="p-316">If both converge, then the functions converges.</p></li>
+<li id="li-101"><p id="p-317">Otherwise, the function diverges.</p></li>
+</ul></article> <article class="note remark-like" id="note-improper-integral-errors"><h6 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">3.5.3</span><span class="period">.</span>
+</h6>You cannot simply apply the fundamental theorem of calculus directly to an improper integral. If you try you will get crazy results such as a negative area.</article></p></section><section class="conclusion" id="conclusion-10"></section></section></div></main>
 </div>
 </body>
 </html>
