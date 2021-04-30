@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-04-29T19:34:57-05:00       *-->
+<!--*       on 2021-04-30T17:57:53-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -140,9 +140,10 @@ V \amp = \displaystyle\lim\limits_{n\to\infty} \displaystyle\sum_{k=1}^{n} \pi(f
 \amp = \int_a^b \pi (f(x))^2dx
 \end{align*}
 </div>
-<article class="example example-like" id="ex-volume-using-disk-method"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-ex-volume-using-disk-method"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Volume Using Disk Method.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex-volume-using-disk-method"><article class="example example-like"><p id="p-11">Let's find the volume of the function \(y=\sqrt{x}\) from 1 to 9 revolved about the x-axis:</p>
+<article class="project project-like" id="proj-volume-using-disk-method"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span>
+</h6>
+<p id="p-11">Let's find the volume of the function \(y=\sqrt{x}\) from 1 to 9 revolved about the x-axis:</p>
 <div class="displaymath">
 \begin{align*}
 V\amp=\int_a^b\pi(f(x))^2dx\\
@@ -153,11 +154,11 @@ V\amp=\int_a^b\pi(f(x))^2dx\\
 \amp=\pi\left(\dfrac{80}{2}\right)\\
 \amp=40\pi
 \end{align*}
-</div></article></div></section><section class="subsection" id="sub-washer-method"><h3 class="heading hide-type">
+</div></article></section><section class="subsection" id="sub-washer-method"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.2.2</span> <span class="title">Volumes of Solids of Revolution -- Washer Method</span>
 </h3>
 <p id="p-12"><figure class="figure figure-like" id="fig-washer-method"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/example_3.png" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.3<span class="period">.</span></span><span class="space"> </span></figcaption></figure> How do we find the volume of the solid of revolution in this case?</p>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.2<span class="period">.</span></span><span class="space"> </span></figcaption></figure> How do we find the volume of the solid of revolution in this case?</p>
 <p id="p-13">Similarly to the disk method, we need to cut up the functions into even subintervals. In this case though, when we revolve these subintervals around the x-axis, we end up with a washer instead of a disk.</p>
 <p id="p-14">What is the volume of the washer? We can think of it as the volume of a larger disk minus the volume of a smaller disk.</p>
 <ul class="disc">
@@ -179,9 +180,10 @@ V\amp=\int_a^b\pi(f(x))^2dx\\
 V = \int_a^b \pi \left( (f(x))^2 - (g(x))^2 \right) dx
 \end{equation*}
 </div>
-<article class="example example-like" id="ex-volume-using-washer-method"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-ex-volume-using-washer-method"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Volume Using Washer Method.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex-volume-using-washer-method"><article class="example example-like"><p id="p-23">Let's set up the integral to find the volume of the image above revolved around the x-axis. The area is bound above by \(f(x)=sin(x)+3\text{,}\) below by \(g(x)=cos(x)+2\text{,}\) to the left by \(x = 1\text{,}\) and the right by \(x = 4\text{.}\)</p>
+<article class="project project-like" id="proj-volume-using-washer-method"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span>
+</h6>
+<p id="p-23">Let's set up the integral to find the volume of the image above revolved around the x-axis. The area is bound above by \(f(x)=sin(x)+3\text{,}\) below by \(g(x)=cos(x)+2\text{,}\) to the left by \(x = 1\text{,}\) and the right by \(x = 4\text{.}\)</p>
 <div class="displaymath">
 \begin{align*}
 V \amp = \int_a^b \pi \left( (f(x))^2 - (g(x))^2 \right) dx\\
@@ -190,11 +192,11 @@ V \amp = \int_a^b \pi \left( (f(x))^2 - (g(x))^2 \right) dx\\
 \amp = \int_1^4 \pi \left(sin^2(x)+6sin(x) + 9 - cos^2(x)-4cos(x)-4 \right) dx\\
 \amp = \pi \int_1^4 sin^2(x)+6sin(x) - cos^2(x)-4cos(x)+5 dx
 \end{align*}
-</div></article></div></section><section class="subsection" id="sub-shell-method"><h3 class="heading hide-type">
+</div></article></section><section class="subsection" id="sub-shell-method"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.2.3</span> <span class="title">Volumes of Solids of Revolution -- Shell Method</span>
 </h3>
 <p id="p-24"><figure class="figure figure-like" id="fig-washer-method"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/example_4.jpg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.5<span class="period">.</span></span><span class="space"> </span></figcaption></figure> What if we wanted to revolve a function around the y-axis? We can approach this in a similar manner as the previous two methods. Again, we will split the function into equally sized subintervals along the x-axis. If we revolve one of these subintervals around the y-axis, we get a cylindrical shell.</p>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.3<span class="period">.</span></span><span class="space"> </span></figcaption></figure> What if we wanted to revolve a function around the y-axis? We can approach this in a similar manner as the previous two methods. Again, we will split the function into equally sized subintervals along the x-axis. If we revolve one of these subintervals around the y-axis, we get a cylindrical shell.</p>
 <p id="p-25">If we "peel" open this shell, we roughly get a box shaped like a stick of gum. We can find the volume of the box by using the equation: \(V_{shell} \approx V_{box} = l \cdot w \cdot h\text{.}\) Now we need to changes this equations into terms of the fucntion:</p>
 <ul class="disc">
 <li id="li-11"><p id="p-26">\(w = \Delta x\) (the thickness of the shell)</p></li>
@@ -208,9 +210,10 @@ V \amp = \int_a^b \pi \left( (f(x))^2 - (g(x))^2 \right) dx\\
 V = \int_a^b 2\pi x \left(f(x) - g(x)\right) dx
 \end{equation*}
 </div>
-<article class="example example-like" id="ex-volume-using-shell-method"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-ex-volume-using-shell-method"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Volume Using Shell Method.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex-volume-using-shell-method"><article class="example example-like"><p id="p-30">Let's set up the integral to find the volume of the image above revolved around the y-axis. The area is bound above by \(f(x)=x^2\text{,}\) on the left by \(x=0\text{,}\) and on the right by \(x=2\text{.}\)</p>
+<article class="project project-like" id="proj-volume-using-shell-method"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span>
+</h6>
+<p id="p-30">Let's set up the integral to find the volume of the image above revolved around the y-axis. The area is bound above by \(f(x)=x^2\text{,}\) on the left by \(x=0\text{,}\) and on the right by \(x=2\text{.}\)</p>
 <div class="displaymath">
 \begin{align*}
 V \amp = \int_a^b 2\pi x \left(f(x) - g(x)\right) dx\\
@@ -221,7 +224,7 @@ V \amp = \int_a^b 2\pi x \left(f(x) - g(x)\right) dx\\
 \amp = 2 \pi \left( \dfrac{16}{4} \right)\\
 \amp = 8 \pi
 \end{align*}
-</div></article></div></section><section class="conclusion" id="conclusion-1"></section></section></div></main>
+</div></article></section><section class="conclusion" id="conclusion-1"></section></section></div></main>
 </div>
 </body>
 </html>
