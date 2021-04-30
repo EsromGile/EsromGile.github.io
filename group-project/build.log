@@ -1,7 +1,4 @@
 Messages from application of /home/eli/.local/lib/python3.9/site-packages/pretext/static/xsl/pretext-html.xsl:
-PTX:BUG:   an element ("exercise") does not know its level
-             located within: "check-math-notation" (xml:id), "Math Notation" (title)
-PTX:BUG:   an element ("exercise") does not know its level
-             located within: "check-math-notation" (xml:id), "Math Notation" (title)
-PTX:BUG:   an element ("exercise") does not know its level
-             located within: "check-math-notation" (xml:id), "Math Notation" (title)
+MBX:DEPRECATE: (2017-09-10) the "paragraphs" element (outside of a "sidebyside") now requires a "title" (but you can xref individual "p" now, if that is your purpose) (1 time)
+             located within: "sample-devon" (xml:id)
+--------------

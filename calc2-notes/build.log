@@ -1,2 +1,6 @@
 Messages from application of /home/eli/.local/lib/python3.9/site-packages/pretext/static/xsl/pretext-html.xsl:
-MBX:WARNING:    The @xml:id "as-asymptote-improper=integrals-with-discontinuity" is invalid.  Use only letters, numbers, hyphens and underscores.
+MBX:WARNING: tabular rule thickness not recognized: use none, minor, medium, major
+MBX:WARNING: tabular rule thickness not recognized: use none, minor, medium, major
+MBX:WARNING: tabular rule thickness not recognized: use none, minor, medium, major
+MBX:WARNING: tabular rule thickness not recognized: use none, minor, medium, major
+MBX:WARNING: tabular rule thickness not recognized: use none, minor, medium, major
