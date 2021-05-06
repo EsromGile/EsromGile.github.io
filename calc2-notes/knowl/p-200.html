@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-05T15:57:20-05:00       *-->
+<!--*       on 2021-05-06T17:25:58-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,11 +15,51 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<ul class="disc">
-<li><p xmlns:svg="http://www.w3.org/2000/svg">\(\displaystyle \dfrac{d}{dx}( \sin(x)) = \cos(x) \)</p></li>
-<li><p xmlns:svg="http://www.w3.org/2000/svg">\(\displaystyle \dfrac{d}{dx}(\cos(x)) = -\sin(x) \)</p></li>
-<li><p xmlns:svg="http://www.w3.org/2000/svg">\(\displaystyle \dfrac{d}{dx}(\tan(x)) = \sec^2(x) \)</p></li>
-</ul>
-<span class="incontext"><a href="sec-integrating-trig-functions.html#p-200">in-context</a></span>
+<p>If \(f(x) = \sinh(x)\) what is \(f'(x)\text{?}\)</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\sinh(x) \amp = \dfrac{1}{2}e^x - \dfrac{1}{2}e^{-x} \\
+\dfrac{d}{dx} \left( \sinh(x) \right) \amp = \dfrac{d}{dx} \left( \dfrac{1}{2}e^x - \dfrac{1}{2}e^{-x} \right) \\
+\amp = \dfrac{1}{2}e^x - \left( \dfrac{1}{2}e^{-x} \cdot -1 \right) \\
+\amp = \dfrac{1}{2}e^x + \dfrac{1}{2}e^{-x} \\
+\amp = \cosh(x) 
+\end{align*}
+</div>
+<p data-braille="continuation">Here is a table containing the derivatives of the hyperbolic trig functions: <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:63.1578947368421%;justify-content:flex-start;"><p xmlns:svg="http://www.w3.org/2000/svg"><figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">6.6.7<span class="period">.</span></span><span class="space"> </span>Hyperboic Trig Derivatives</figcaption><table>
+<tr>
+<td class="c m b2 r0 l0 t0 lines">Function</td>
+<td class="c m b2 r0 l0 t0 lines" data-braille="last-cell">Derivative</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">\(\sinh(x)\)</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">\(\cosh(x)\)</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">\(\cosh(x)\)</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">\(\sinh(x)\)</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">\(\tanh(x) \)</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">\(\sech^{2}(x)\)</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">\(\csch(x)\)</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">\(- \csch(x) \coth(x) \)</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">\(\sech(x)\)</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">\(- \sech(x) \tanh(x) \)</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">\(\coth(x) \)</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">\(- \csch^2(x) \)</td>
+</tr>
+</table></figure></p></div>
+<div class="sbspanel" style="width:31.5789473684211%;justify-content:flex-start;"><p xmlns:svg="http://www.w3.org/2000/svg"><article class="note remark-like"><h6 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">6.6.8</span><span class="period">.</span><span class="space"> </span><span class="title">Different Signs.</span>
+</h6> Notice that these are the same as the derivatives of the regular trig functions except that for two, \(\cosh(x)\) and \(\sech(x)\text{,}\) that have the opposite sign from what might be expected.</article></p></div>
+</div></div></p>
+<span class="incontext"><a href="sec-hyperbolic-trig-functions.html#p-200">in-context</a></span>
 </body>
 </html>

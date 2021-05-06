@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-05T15:57:20-05:00       *-->
+<!--*       on 2021-05-06T17:25:58-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,10 +15,17 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p xmlns:svg="http://www.w3.org/2000/svg"><figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">7.2.1<span class="period">.</span></span><span class="space"> </span></figcaption><table>
-<tr><td class="l m b0 r2 l2 t0 lines" data-braille="last-cell">\(u = \sin(x) \)</td></tr>
-<tr><td class="l m b0 r2 l2 t0 lines" data-braille="last-cell">\(du = \cos(x)dx \)</td></tr>
-</table></figure></p>
-<span class="incontext"><a href="sec-integrating-trig-functions.html#p-210">in-context</a></span>
+<p>We can take the integtal with respect to \(x\) of both sides of the above formula to get:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\int \dfrac{d}{dx}(uv)dx \amp = \int u \dfrac{d}{dx} + u \dfrac{d}{dx} dx \\
+uv \amp = \int u \dfrac{dv}{dx}dx + \int v \dfrac{du}{dx} dx \\
+uv \amp = \int udv + \int v du
+\end{align*}
+</div>
+<p data-braille="continuation"><article class="note remark-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">7.1.1</span><span class="period">.</span>
+</h6>Notice that the <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">dx</em>'s cancel.</article></p>
+<span class="incontext"><a href="sec-integration-by-parts.html#p-210">in-context</a></span>
 </body>
 </html>
