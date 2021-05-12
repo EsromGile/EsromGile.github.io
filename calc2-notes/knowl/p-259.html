@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-06T17:25:58-05:00       *-->
+<!--*       on 2021-05-12T13:25:29-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,18 +15,20 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p xmlns:svg="http://www.w3.org/2000/svg">U-substitution can also be used in specific situations: <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<p xmlns:svg="http://www.w3.org/2000/svg">Another example of using trig identities for would be \(\int \cos^2(x)dx\text{.}\) <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel" style="width:50%;justify-content:flex-start;"><div class="displaymath">
 \begin{align*}
-\int \sin^4(x) \cos(x) dx \amp = \int u^4 du\\
-\amp = \dfrac{u^5}{5} + c\\
-\amp \dfrac{1}{5}\sin^5(x) + c
+\int \cos^2(x)dx \amp = \int \dfrac{1}{2} (1 + \cos(2x)) dx \\
+\amp = \dfrac{1}{2} \int 1 + \cos(2x) dx \\
+\amp = \dfrac{1}{2} (x + \dfrac{1}{2} sin(2x)) + c \\
+\amp = \dfrac{1}{2}x + \dfrac{1}{4}\sin(2x) + c 
 \end{align*}
 </div></div>
-<div class="sbspanel" style="width:50%;justify-content:flex-start;"><p><figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">7.2.4<span class="period">.</span></span><span class="space"> </span></figcaption><table>
-<tr><td class="l m b0 r2 l2 t0 lines" data-braille="last-cell">\(u = \sin(x) \)</td></tr>
-<tr><td class="l m b0 r2 l2 t0 lines" data-braille="last-cell">\(du = \cos(x)dx\)</td></tr>
-</table></figure></p></div>
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><p><article class="assemblage assemblage-like"><p>Recall the following identities:</p>
+<ul class="disc">
+<li><p>\(\displaystyle sin^2(x) = \dfrac{1}{2} (1 - \cos(2x)) \)</p></li>
+<li><p>\(\displaystyle cos^2(x) = \dfrac{1}{2} (1 + \cos(2x)) \)</p></li>
+</ul></article></p></div>
 </div></div></p>
 <span class="incontext"><a href="sec-integrating-trig-functions.html#p-259">in-context</a></span>
 </body>

@@ -1,6 +1,17 @@
 Messages from application of /home/eli/.local/lib/python3.9/site-packages/pretext/static/xsl/pretext-html.xsl:
-MBX:WARNING: tabular rule thickness not recognized: use none, minor, medium, major
-MBX:WARNING: tabular rule thickness not recognized: use none, minor, medium, major
-MBX:WARNING: tabular rule thickness not recognized: use none, minor, medium, major
-MBX:WARNING: tabular rule thickness not recognized: use none, minor, medium, major
-MBX:WARNING: tabular rule thickness not recognized: use none, minor, medium, major
+MBX:ERROR:   left margin of a <sidebyside> ("-20%") is outside the interval [0%, 100%], (this may be computed, check consistency of "@margins" and "@widths")
+             located within: "sec-intro-to-limits" (xml:id), "Intro to Limits (*)" (title)
+MBX:ERROR:   right margin of a <sidebyside> ("-20%") is outside the interval [0%, 100%], (this may be computed, check consistency of "@margins" and "@widths")
+             located within: "sec-intro-to-limits" (xml:id), "Intro to Limits (*)" (title)
+MBX:WARNING: a <sidebyside> or <sbsgroup> has extra "@widths" (did you confuse singular and plural attribute names?)
+             located within: "sec-intro-to-limits" (xml:id), "Intro to Limits (*)" (title)
+MBX:ERROR:   computed space between panels of a <sidebyside> ("-40%") is negative (this value is computed, check consistency of "@margins" and "@widths")
+             located within: "sec-intro-to-limits" (xml:id), "Intro to Limits (*)" (title)
+MBX:ERROR:   left margin of a <sidebyside> ("-20%") is outside the interval [0%, 100%], (this may be computed, check consistency of "@margins" and "@widths")
+             located within: "sec-intro-to-limits" (xml:id), "Intro to Limits (*)" (title)
+MBX:ERROR:   right margin of a <sidebyside> ("-20%") is outside the interval [0%, 100%], (this may be computed, check consistency of "@margins" and "@widths")
+             located within: "sec-intro-to-limits" (xml:id), "Intro to Limits (*)" (title)
+MBX:WARNING: a <sidebyside> or <sbsgroup> has extra "@widths" (did you confuse singular and plural attribute names?)
+             located within: "sec-intro-to-limits" (xml:id), "Intro to Limits (*)" (title)
+MBX:ERROR:   computed space between panels of a <sidebyside> ("-40%") is negative (this value is computed, check consistency of "@margins" and "@widths")
+             located within: "sec-intro-to-limits" (xml:id), "Intro to Limits (*)" (title)

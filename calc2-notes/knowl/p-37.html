@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-06T17:25:57-05:00       *-->
+<!--*       on 2021-05-12T13:25:28-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,13 +15,51 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>To find the exact volume of a solid of revolution, we must take the limit of the above equation, turning this into a definite integral.</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{align*}
-V \amp = \displaystyle\lim\limits_{n\to\infty} \displaystyle\sum_{k=1}^{n} \pi(f(x_k^*))^2 \Delta x\\
-\amp = \int_a^b \pi (f(x))^2dx
-\end{align*}
-</div>
-<span class="incontext"><a href="sec-volumes-by-slicing.html#p-37">in-context</a></span>
+<p xmlns:svg="http://www.w3.org/2000/svg">While this should generally be avoided, it can give us meaningful insights. Consider the function \(f(x) = \dfrac{1}{(x-5)^2}\text{.}\) Notice that \(f(5)\) is undefined as a result of an attempt to divide by zero. <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p><figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.1.8<span class="period">.</span></span><span class="space"> </span></figcaption><table>
+<tr>
+<td class="l m b2 r2 l0 t0 lines">\(\)x</td>
+<td class="l m b2 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{1}{(x-5)^2}\)</td>
+</tr>
+<tr>
+<td class="l m b2 r2 l0 t0 lines">\(4\)</td>
+<td class="l m b2 r0 l0 t0 lines" data-braille="last-cell">\(1\)</td>
+</tr>
+<tr>
+<td class="l m b2 r2 l0 t0 lines">\(4.9\)</td>
+<td class="l m b2 r0 l0 t0 lines" data-braille="last-cell">\(100\)</td>
+</tr>
+<tr>
+<td class="l m b2 r2 l0 t0 lines">\(4.99\)</td>
+<td class="l m b2 r0 l0 t0 lines" data-braille="last-cell">\(10,000\)</td>
+</tr>
+<tr>
+<td class="l m b2 r2 l0 t0 lines">\(5\)</td>
+<td class="l m b2 r0 l0 t0 lines" data-braille="last-cell">\(- \)</td>
+</tr>
+<tr>
+<td class="l m b2 r2 l0 t0 lines">\(5.01\)</td>
+<td class="l m b2 r0 l0 t0 lines" data-braille="last-cell">\(10,000\)</td>
+</tr>
+<tr>
+<td class="l m b2 r2 l0 t0 lines">\(5.1\)</td>
+<td class="l m b2 r0 l0 t0 lines" data-braille="last-cell">\(100\)</td>
+</tr>
+<tr>
+<td class="l m b0 r2 l0 t0 lines">\(6\)</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(1\)</td>
+</tr>
+</table></figure></p></div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><ul class="disc">
+<li><p>\(\displaystyle \displaystyle\lim_{x \to 5^{-}} \dfrac{1}{(x-5)^2} = \infty\)</p></li>
+<li><p>\(\displaystyle \displaystyle\lim_{x \to 5^{+}} \dfrac{1}{(x-5)^2} = \infty\)</p></li>
+<li><p>unlike before we can actually state the two-sided limit: \(\displaystyle\lim_{x \to 5} \dfrac{1}{(x-5)^2} = \infty\)</p></li>
+</ul></div>
+</div></div> We can make a sketch of the graph: <figure class="figure figure-like"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/limit_intro_5.png" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.9<span class="period">.</span></span><span class="space"> </span></figcaption></figure> <article class="note remark-like"><h6 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">1.1.10</span><span class="period">.</span>
+</h6>
+<p>Technicality: \(\infty\) is not a number, but we can't use it for arithmetic purposes. Technically the limit \(\displaystyle\lim_{x \to 0} \dfrac{1}{x} = DNE\) because the function does not approach a single number. Here the labeling as \(\infty\) provides useful info about the graph.</p></article> <article class="assemblage assemblage-like"><p>HINT: for a one-sided limit, we always use a number, \(\infty\text{,}\) \(- \infty\text{.}\) Reserve "DNE" for two-sided limits.</p></article></p>
+<span class="incontext"><a href="sec-intro-to-limits.html#p-37">in-context</a></span>
 </body>
 </html>

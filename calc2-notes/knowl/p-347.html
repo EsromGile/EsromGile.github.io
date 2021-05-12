@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-06T17:25:58-05:00       *-->
+<!--*       on 2021-05-12T13:25:29-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,18 +15,20 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>If <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">f</em> is continuous on \([a\mbox{, }b]\) except for an infinite discontinuity at <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">b</em>, then it is defined as:</p>
+<p>Regular Integral</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-\int _{a} ^{b} f(x) dx = \lim _{k \to b^{-}} \int _{a}^{k} f(x) dx
-\end{equation*}
+\begin{align*}
+\int _{1} ^{10} \dfrac{1}{x^2} dx \amp = \int _{1} ^{10} x^{-2} dx \\
+\amp = \left[ \dfrac{x ^{-1} }{-1} \right] _{1} ^{10} \\
+\amp = \left( - \dfrac{1}{10} \right) - \left( - \dfrac{1}{1} \right) \\
+\amp = - \dfrac{1}{10} + 1\\
+\amp = \dfrac{9}{10} 
+\end{align*}
 </div>
-<p data-braille="continuation">or if there is an infinite discontinuity at <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">a</em>, then it is defined as:</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-\int _{a}^{b} f(x) dx = \lim _{k \to a^+} \int _{k}^{b} f(x) dx
-\end{equation*}
-</div>
+<p data-braille="continuation"><article class="note remark-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">7.5.1</span><span class="period">.</span>
+</h6>
+<p xmlns:svg="http://www.w3.org/2000/svg">Notice: If we were to to go take the same integral from 1 to 100 we would get \(\dfrac{99}{100}.\)</p></article></p>
 <span class="incontext"><a href="sec-improper-integrals.html#p-347">in-context</a></span>
 </body>
 </html>

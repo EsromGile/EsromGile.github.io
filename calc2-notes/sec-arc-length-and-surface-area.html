@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-06T17:25:57-05:00       *-->
+<!--*       on 2021-05-12T13:25:28-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -80,10 +80,10 @@ MathJax.Hub.Config({
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
 <nav id="toc"><ul>
-<li class="link part"><a href="calc-1.html" data-scroll="calc-1"><span class="codenumber">I</span> <span class="title">Calculus I (*)</span></a></li>
+<li class="link part"><a href="calc-1.html" data-scroll="calc-1"><span class="codenumber">I</span> <span class="title">Calculus I</span></a></li>
 <li class="link">
-<a href="chap-intro-to-calculus.html" data-scroll="chap-intro-to-calculus"><span class="codenumber">1</span> <span class="title">Intro to Calculus (*)</span></a><ul>
-<li><a href="sec-intro-to-limits.html" data-scroll="sec-intro-to-limits">Intro to Limits (*)</a></li>
+<a href="chap-intro-to-calculus.html" data-scroll="chap-intro-to-calculus"><span class="codenumber">1</span> <span class="title">Intro to Calculus</span></a><ul>
+<li><a href="sec-intro-to-limits.html" data-scroll="sec-intro-to-limits">Intro to Limits</a></li>
 <li><a href="sec-algebraic-approach-to-limits.html" data-scroll="sec-algebraic-approach-to-limits">Algebraic Approach to Limits (*)</a></li>
 <li><a href="sec-end-behavior.html" data-scroll="sec-end-behavior">End Behavior (*)</a></li>
 <li><a href="sec-continuity.html" data-scroll="sec-continuity">Continuity (*)</a></li>
@@ -151,29 +151,30 @@ MathJax.Hub.Config({
 <a href="chap-differential-equations.html" data-scroll="chap-differential-equations"><span class="codenumber">8</span> <span class="title">Differential Equations</span></a><ul><li><a href="sec-intro-to-differential-equations.html" data-scroll="sec-intro-to-differential-equations">Intro to Differential Equations</a></li></ul>
 </li>
 <li class="link part"><a href="calc-3.html" data-scroll="calc-3"><span class="codenumber">III</span> <span class="title">Calculus III (*)</span></a></li>
+<li class="link part"><a href="calc-4.html" data-scroll="calc-4"><span class="codenumber">IV</span> <span class="title">Calculus IV (*)</span></a></li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-arc-length-and-surface-area"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">5.3</span> <span class="title">Arc Length and Surface Area</span>
 </h2>
-<section class="introduction" id="introduction-2"><p id="p-58">In this section we cover how to find and use arc length and surface area of a function when revolved around an axis.</p></section><section class="subsection" id="sub-arc-length"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-2"><p id="p-75">In this section we cover how to find and use arc length and surface area of a function when revolved around an axis.</p></section><section class="subsection" id="sub-arc-length"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.3.1</span> <span class="title">Arc Length</span>
 </h3>
-<p id="p-59"><figure class="figure figure-like" id="fig-arc-length"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/example_5.png" style="width: 100%; height: auto;" alt=""></div>
+<p id="p-76"><figure class="figure figure-like" id="fig-arc-length"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/example_5.png" style="width: 100%; height: auto;" alt=""></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.3.1<span class="period">.</span></span><span class="space"> </span></figcaption></figure> How do we find the length of the above curve from \(x=1\text{,}\) to \(x=3\text{?}\)</p>
-<p id="p-60">Similarly to previous section, we need to divide the function into subintervals along the x-axis. If we place dots at the subinterval points and connect the dots, we can get an approximation of the length of the function.</p>
-<p id="p-61">To do this accurately we use the mean value theorum or MVT to find the mean slope between two points using the formula \(slope = \dfrac{f(b)-f(a)}{b-a}\text{.}\) <article class="definition definition-like" id="def-mvt"><h6 class="heading">
+<p id="p-77">Similarly to previous section, we need to divide the function into subintervals along the x-axis. If we place dots at the subinterval points and connect the dots, we can get an approximation of the length of the function.</p>
+<p id="p-78">To do this accurately we use the mean value theorum or MVT to find the mean slope between two points using the formula \(slope = \dfrac{f(b)-f(a)}{b-a}\text{.}\) <article class="definition definition-like" id="def-mvt"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">MVT.</span>
 </h6>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
-<div class="sbspanel" style="width:47.3684210526316%;justify-content:center;"><p id="p-62">Essentially, MVT says that there is at least one tangent line that has the slope of the trinagle's hypotenus where \(f'(c)=\dfrac{f(b)-f(a)}{b-a}\text{.}\)</p></div>
-<div class="sbspanel" style="width:47.3684210526316%;justify-content:center;"><p id="p-63"><figure class="figure figure-like" id="fig-mvt"><img src="images/definition_1.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.3.3<span class="period">.</span></span><span class="space"> </span></figcaption></figure></p></div>
-</div></div></article> <article class="assemblage assemblage-like" id="as-mvt"><p id="p-64">In order to use MVT or find the arc length of a function, the function must be differentiable on the inteval (a, b) and continuous on the interval [a, b].</p></article> Apply MVT to each subinterval to get the "c" in the above function.</p>
-<p id="p-65">By using the pythagorean theorum, we can find that \(c=\sqrt{1 + f'(x_k^*)^2} \Delta x\text{.}\) <article class="remark remark-like" id="rem-pythagorean-theorum"><h6 class="heading">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:center;"><p id="p-79">Essentially, MVT says that there is at least one tangent line that has the slope of the trinagle's hypotenus where \(f'(c)=\dfrac{f(b)-f(a)}{b-a}\text{.}\)</p></div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:center;"><p id="p-80"><figure class="figure figure-like" id="fig-mvt"><img src="images/definition_1.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.3.3<span class="period">.</span></span><span class="space"> </span></figcaption></figure></p></div>
+</div></div></article> <article class="assemblage assemblage-like" id="as-mvt"><p id="p-81">In order to use MVT or find the arc length of a function, the function must be differentiable on the inteval (a, b) and continuous on the interval [a, b].</p></article> Apply MVT to each subinterval to get the "c" in the above function.</p>
+<p id="p-82">By using the pythagorean theorum, we can find that \(c=\sqrt{1 + f'(x_k^*)^2} \Delta x\text{.}\) <article class="remark remark-like" id="rem-pythagorean-theorum"><h6 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">5.3.4</span><span class="period">.</span>
 </h6>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel" style="width:50%;justify-content:flex-start;"><div class="displaymath" id="p-66">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><div class="displaymath" id="p-83">
 \begin{align*}
 c^2 \amp = (\Delta x)^2 + (f'(x_k^*)\Delta x)^2\\
 c \amp = \sqrt{ \Delta x^2 + (f'(x_k^*)\Delta x)^2}\\
@@ -183,21 +184,21 @@ c \amp = \sqrt{ \Delta x^2 + (f'(x_k^*)\Delta x)^2}\\
 \amp = \sqrt{1 + (f'(x_k^*)^2} \Delta x
 \end{align*}
 </div></div>
-<div class="sbspanel" style="width:50%;justify-content:flex-start;"><p id="p-67"><figure class="figure figure-like" id="fig-pythagorean-theorum"><img src="images/definition_2.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.3.5<span class="period">.</span></span><span class="space"> </span></figcaption></figure></p></div>
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><p id="p-84"><figure class="figure figure-like" id="fig-pythagorean-theorum"><img src="images/definition_2.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.3.5<span class="period">.</span></span><span class="space"> </span></figcaption></figure></p></div>
 </div></div></article></p>
-<p id="p-68">To find the total length we need to sum up all of the subintervals:</p>
+<p id="p-85">To find the total length we need to sum up all of the subintervals:</p>
 <div class="displaymath">
 \begin{equation*}
 L_n = \displaystyle\sum_{k=1}^{n} \sqrt{1 + f'(x_k^*)^2} \Delta x
 \end{equation*}
 </div>
-<p id="p-69">And to find the <em class="emphasis">exact</em> length, we must take the limit to inifinity:</p>
+<p id="p-86">And to find the <em class="emphasis">exact</em> length, we must take the limit to inifinity:</p>
 <div class="displaymath">
 \begin{equation*}
 L = \displaystyle\lim\limits_{n\to\infty} \displaystyle\sum_{k=1}^{n} \sqrt{1 + f'(x_k^*)^2} \Delta x
 \end{equation*}
 </div>
-<p id="p-70">Finally, applying the definition of a definite integral we get:</p>
+<p id="p-87">Finally, applying the definition of a definite integral we get:</p>
 <div class="displaymath">
 \begin{equation*}
 L = \int_a^b\sqrt{1 + f'(x)^2}dx
@@ -206,7 +207,7 @@ L = \int_a^b\sqrt{1 + f'(x)^2}dx
 <article class="project project-like" id="proj-arc-length"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.1</span><span class="period">.</span>
 </h6>
-<p id="p-71">Using the figure at the top of the page, let's set up the definite integral:</p>
+<p id="p-88">Using the figure at the top of the page, let's set up the definite integral:</p>
 <div class="displaymath">
 \begin{gather*}
 L = \int_a^b\sqrt{1 + f'(x)^2}dx\\
@@ -217,15 +218,15 @@ L = \int_1^3\sqrt{1 + cos^2(x)}dx
 <span class="type">Subsection</span> <span class="codenumber">5.3.2</span> <span class="title">Area of a Surface of Revolution</span>
 </h3>
 <figure class="figure figure-like" id="fig-area-suface-of-revolution"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/example_6.png" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.3.6<span class="period">.</span></span><span class="space"> </span></figcaption></figure><p id="p-72">Building on the previous equation, how can we find the surface area of a function that has been revolved around an axis?</p>
-<p id="p-73">Like the previous section, we need to divide the function into equal subsections along the x-axis. If we rotate these subintervals around the x-axis, we get very thin "rubber bands".If we were to "cut open" the rubber band, we would get a rectangle.</p>
-<p id="p-74">We know that the area of a rectangle is \(SA = l \cdot w\text{.}\) In order to apply this, we need to change this equation into variables of out function.</p>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.3.6<span class="period">.</span></span><span class="space"> </span></figcaption></figure><p id="p-89">Building on the previous equation, how can we find the surface area of a function that has been revolved around an axis?</p>
+<p id="p-90">Like the previous section, we need to divide the function into equal subsections along the x-axis. If we rotate these subintervals around the x-axis, we get very thin "rubber bands".If we were to "cut open" the rubber band, we would get a rectangle.</p>
+<p id="p-91">We know that the area of a rectangle is \(SA = l \cdot w\text{.}\) In order to apply this, we need to change this equation into variables of out function.</p>
 <ul class="disc">
-<li id="li-24"><p id="p-75">\(l = \sqrt{1 + (f'(x_k^*))^2} \Delta x\) : the lendth is equal to the arc length of the subinterval</p></li>
-<li id="li-25"><p id="p-76">\(w = 2 \pi r = 2 \pi (f(x_k^*))\) : the width would be equal to the curcumference of the "rubber band"</p></li>
+<li id="li-31"><p id="p-92">\(l = \sqrt{1 + (f'(x_k^*))^2} \Delta x\) : the lendth is equal to the arc length of the subinterval</p></li>
+<li id="li-32"><p id="p-93">\(w = 2 \pi r = 2 \pi (f(x_k^*))\) : the width would be equal to the curcumference of the "rubber band"</p></li>
 </ul>
 <p data-braille="continuation">When we plug those in we get \(SA_{band} = 2 \pi (f(x_k^*)) \cdot \sqrt{1 + (f'(x_k^*))^2} \Delta x \text{.}\)</p>
-<p id="p-77">If we sum up all of the subsection, we get the total estimated surface area of the function when revolved around the x-axis, and if we take the limit of the sumation to infinity and apply the definition of the definite integral we get:</p>
+<p id="p-94">If we sum up all of the subsection, we get the total estimated surface area of the function when revolved around the x-axis, and if we take the limit of the sumation to infinity and apply the definition of the definite integral we get:</p>
 <div class="displaymath">
 \begin{equation*}
 SA = \int_a^b = 2 \pi f(x) \cdot \sqrt{1 + (f'(x))^2} dx
@@ -236,7 +237,7 @@ SA = \int_a^b = 2 \pi f(x) \cdot \sqrt{1 + (f'(x))^2} dx
 </h6>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
 <div class="sbspanel" style="width:57.8947368421053%;justify-content:center;">
-<p id="p-78">Let's find the surface area of the graph above, \(f(x)=x^3\text{,}\) from [1,3] revolved around the x-axis.</p>
+<p id="p-95">Let's find the surface area of the graph above, \(f(x)=x^3\text{,}\) from [1,3] revolved around the x-axis.</p>
 <div class="displaymath">
 \begin{align*}
 SA \amp = \int_a^b 2 \pi f(x) \cdot \sqrt{1 + (f'(x))^2} dx \\
@@ -253,7 +254,7 @@ SA \amp = \dfrac{730\sqrt{730}\pi}{27} - \dfrac{10\sqrt{10}\pi}{27} \approx 2291
 \end{align*}
 </div>
 </div>
-<div class="sbspanel" style="width:36.8421052631579%;justify-content:center;"><p id="p-79"><figure class="table table-like" id="area-of-revolution-u-sub"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">5.3.7<span class="period">.</span></span><span class="space"> </span></figcaption><table>
+<div class="sbspanel" style="width:36.8421052631579%;justify-content:center;"><p id="p-96"><figure class="table table-like" id="area-of-revolution-u-sub"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">5.3.7<span class="period">.</span></span><span class="space"> </span></figcaption><table>
 <tr><td class="l m b0 r2 l2 t0 lines" data-braille="last-cell">\(u = 1 + 9x^4\)</td></tr>
 <tr><td class="l m b0 r2 l2 t0 lines" data-braille="last-cell">du = 36x^3dx\(\)</td></tr>
 <tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell"></td></tr>
