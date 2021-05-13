@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-12T13:25:28-05:00       *-->
+<!--*       on 2021-05-13T14:26:47-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -84,7 +84,7 @@ MathJax.Hub.Config({
 <li class="link">
 <a href="chap-intro-to-calculus.html" data-scroll="chap-intro-to-calculus"><span class="codenumber">1</span> <span class="title">Intro to Calculus</span></a><ul>
 <li><a href="sec-intro-to-limits.html" data-scroll="sec-intro-to-limits">Intro to Limits</a></li>
-<li><a href="sec-algebraic-approach-to-limits.html" data-scroll="sec-algebraic-approach-to-limits">Algebraic Approach to Limits (*)</a></li>
+<li><a href="sec-algebraic-approach-to-limits.html" data-scroll="sec-algebraic-approach-to-limits">Algebraic Approach to Limits</a></li>
 <li><a href="sec-end-behavior.html" data-scroll="sec-end-behavior">End Behavior (*)</a></li>
 <li><a href="sec-continuity.html" data-scroll="sec-continuity">Continuity (*)</a></li>
 <li><a href="sec-limits-of-trig-functions.html" data-scroll="sec-limits-of-trig-functions">Limits of Trig Functions (*)</a></li>
@@ -157,13 +157,13 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-integration-by-parts"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">7.1</span> <span class="title">Integration by Parts</span>
 </h2>
-<section class="introduction" id="introduction-10"><p id="p-225">Suppose <em class="emphasis">u</em> and <em class="emphasis">v</em> are functions of \(x\text{.}\) <article class="assemblage assemblage-like" id="as-product-rule"><p id="p-226">Recall the produce rule:</p>
+<section class="introduction" id="introduction-10"><p id="p-256">Suppose <em class="emphasis">u</em> and <em class="emphasis">v</em> are functions of \(x\text{.}\) <article class="assemblage assemblage-like" id="as-product-rule"><p id="p-257">Recall the produce rule:</p>
 <div class="displaymath">
 \begin{equation*}
 \dfrac{d}{dx}(uv) = u \dfrac{d}{dx} + u \dfrac{d}{dx}
 \end{equation*}
 </div></article></p>
-<p id="p-227">We can take the integtal with respect to \(x\) of both sides of the above formula to get:</p>
+<p id="p-258">We can take the integtal with respect to \(x\) of both sides of the above formula to get:</p>
 <div class="displaymath">
 \begin{align*}
 \int \dfrac{d}{dx}(uv)dx \amp = \int u \dfrac{d}{dx} + u \dfrac{d}{dx} dx \\
@@ -174,7 +174,7 @@ uv \amp = \int udv + \int v du
 <p data-braille="continuation"><article class="note remark-like" id="note-dx-canel"><h6 class="heading">
 <span class="type">Note</span><span class="space"> </span><span class="codenumber">7.1.1</span><span class="period">.</span>
 </h6>Notice that the <em class="emphasis">dx</em>'s cancel.</article></p>
-<p id="p-228">If re rearange the terms we get the integration by parts formula:</p>
+<p id="p-259">If re rearange the terms we get the integration by parts formula:</p>
 <div class="displaymath">
 \begin{equation*}
 \int u dv = uv - \int v du 
@@ -183,15 +183,15 @@ uv \amp = \int udv + \int v du
 <article class="project project-like" id="proj-integration-by-parts"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1.1</span><span class="period">.</span>
 </h6>
-<p id="p-229">SSolve using integration by parts: \(\int x \cos(x) dx\) <p id="p-230"><a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-1" id="answer-1"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1"><div class="answer solution-like"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel" style="width:50%;justify-content:flex-start;"><div class="displaymath" id="p-231">
+<p id="p-260">SSolve using integration by parts: \(\int x \cos(x) dx\) <p id="p-261"><a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-1" id="answer-1"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1"><div class="answer solution-like"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><div class="displaymath" id="p-262">
 \begin{align*}
 \int x \cos(x) dx \amp = x \sin(x) - \int \sin(x) \cdot 1 dx\\
 \amp = x \sin(x) - ( - \cos(x)) + c \\
 \amp = x \sin(x) +  \cos(x) + c 
 \end{align*}
 </div></div>
-<div class="sbspanel" style="width:50%;justify-content:flex-start;"><div class="displaymath" id="p-232">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><div class="displaymath" id="p-263">
 \begin{equation*}
 \begin{cases}
 \text{}\\
@@ -203,17 +203,17 @@ dv = \cos(x) dx
 \end{equation*}
 </div></div>
 </div></div></div></div></p></p></article><article class="assemblage assemblage-like" id="as-rule-of-thumb"><h6 class="heading"><span class="title">Rule of Thumb.</span></h6>
-<p id="p-233">From left to right:</p>
-<p id="p-234">logrithmic, inverse trig, algebraic, trig, exponential</p>
-<p id="p-235">Where,</p>
+<p id="p-264">From left to right:</p>
+<p id="p-265">logrithmic, inverse trig, algebraic, trig, exponential</p>
+<p id="p-266">Where,</p>
 <ul class="disc">
-<li id="li-84"><p id="p-236"><em class="emphasis">u</em> is the earliest in the list</p></li>
-<li id="li-85"><p id="p-237"><em class="emphasis">dv</em> is the latest in the list</p></li>
+<li id="li-103"><p id="p-267"><em class="emphasis">u</em> is the earliest in the list</p></li>
+<li id="li-104"><p id="p-268"><em class="emphasis">dv</em> is the latest in the list</p></li>
 </ul>
 <p data-braille="continuation">This doesn't awlays work, but works enough to be helpful.</p></article></section><section class="subsection" id="sub-tabular-integration"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">7.1.1</span> <span class="title">Tabular Integration</span>
 </h3>
-<p id="p-238">A quick way to integrate where you would otherwise have to integrate by parts multiple times. You do this by differenciating the <em class="emphasis">u</em> until it reaches zero and then taking the integral of the <em class="emphasis">dv</em> the same number of times. <figure class="table table-like" id="tab-tabular-integration-example-1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">7.1.2<span class="period">.</span></span><span class="space"> </span>Tabular Integration</figcaption><table>
+<p id="p-269">A quick way to integrate where you would otherwise have to integrate by parts multiple times. You do this by differenciating the <em class="emphasis">u</em> until it reaches zero and then taking the integral of the <em class="emphasis">dv</em> the same number of times. <figure class="table table-like" id="tab-tabular-integration-example-1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">7.1.2<span class="period">.</span></span><span class="space"> </span>Tabular Integration</figcaption><table>
 <tr>
 <td class="l m b2 r0 l0 t0 lines"></td>
 <td class="l m b2 r0 l0 t0 lines">derivative</td>
@@ -250,7 +250,7 @@ dv = \cos(x) dx
 \int (x^3 + 5x^2 + 7x + 4) \cdot 3^{2x} dx = (x^3 + 5x^2 + 7x + 4) \cdot \dfrac{1}{2} e^{2x} - (3x^2 + 10x + 7) \cdot \dfrac{1}{4} e^{2x} + (6x+10) \cdot \dfrac{1}{8} e^{2x} - \dfrac{6}{16}e^{2x} + c
 \end{equation*}
 </div>
-<p id="p-239">What would we do if <em class="emphasis">u</em> is not a polynomial or if repeated differentiation of <em class="emphasis">u</em> doesn't eventually give 0? For example \(\int \ln(x)dx\text{:}\) <figure class="table table-like" id="tab-tabular-integration-example-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">7.1.3<span class="period">.</span></span><span class="space"> </span>Tabular Integration (Repeating)</figcaption><table>
+<p id="p-270">What would we do if <em class="emphasis">u</em> is not a polynomial or if repeated differentiation of <em class="emphasis">u</em> doesn't eventually give 0? For example \(\int \ln(x)dx\text{:}\) <figure class="table table-like" id="tab-tabular-integration-example-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">7.1.3<span class="period">.</span></span><span class="space"> </span>Tabular Integration (Repeating)</figcaption><table>
 <tr>
 <td class="l m b2 r0 l0 t0 lines"></td>
 <td class="l m b2 r0 l0 t0 lines">derivative</td>
@@ -280,15 +280,15 @@ dv = \cos(x) dx
 </div></section><section class="subsection" id="sub-spectial-technique"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">7.1.2</span> <span class="title">A Special Integration Technique</span>
 </h3>
-<p id="p-240">There is a special integration technique used where the original integral appears in the answer when integrating by parts. <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
-<div class="sbspanel" style="width:73.6842105263158%;justify-content:flex-start;"><div class="displaymath" id="p-241">
+<p id="p-271">There is a special integration technique used where the original integral appears in the answer when integrating by parts. <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:73.6842105263158%;justify-content:flex-start;"><div class="displaymath" id="p-272">
 \begin{align*}
 \int \sin (x) \cdot e^x dx \amp = \sin(x) \cdot e^x - \int \cos (x) \cdot e^x dx \\
 \amp = \sin(x) \cdot e^x - ( \cos(x) \cdot e^x - \int e^x ( - \sin(x) )dx)\\
 \amp = \sin(x) \cdot e^x - \cos(x) \cdot e^x - \int \sin(x) \cdot e^x dx
 \end{align*}
 </div></div>
-<div class="sbspanel" style="width:21.0526315789474%;justify-content:flex-start;"><p id="p-242"><figure class="table table-like" id="tab-special-integral-technique-1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">7.1.4<span class="period">.</span></span><span class="space"> </span></figcaption><table>
+<div class="sbspanel" style="width:21.0526315789474%;justify-content:flex-start;"><p id="p-273"><figure class="table table-like" id="tab-special-integral-technique-1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">7.1.4<span class="period">.</span></span><span class="space"> </span></figcaption><table>
 <tr>
 <td class="l m b0 r0 l2 t0 lines">\(u = \sin(x)\)</td>
 <td class="l m b0 r2 l0 t0 lines" data-braille="last-cell">\(v = e^x\)</td>

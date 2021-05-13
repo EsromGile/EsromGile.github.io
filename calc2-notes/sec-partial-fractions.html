@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-12T13:25:28-05:00       *-->
+<!--*       on 2021-05-13T14:26:47-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -84,7 +84,7 @@ MathJax.Hub.Config({
 <li class="link">
 <a href="chap-intro-to-calculus.html" data-scroll="chap-intro-to-calculus"><span class="codenumber">1</span> <span class="title">Intro to Calculus</span></a><ul>
 <li><a href="sec-intro-to-limits.html" data-scroll="sec-intro-to-limits">Intro to Limits</a></li>
-<li><a href="sec-algebraic-approach-to-limits.html" data-scroll="sec-algebraic-approach-to-limits">Algebraic Approach to Limits (*)</a></li>
+<li><a href="sec-algebraic-approach-to-limits.html" data-scroll="sec-algebraic-approach-to-limits">Algebraic Approach to Limits</a></li>
 <li><a href="sec-end-behavior.html" data-scroll="sec-end-behavior">End Behavior (*)</a></li>
 <li><a href="sec-continuity.html" data-scroll="sec-continuity">Continuity (*)</a></li>
 <li><a href="sec-limits-of-trig-functions.html" data-scroll="sec-limits-of-trig-functions">Limits of Trig Functions (*)</a></li>
@@ -157,10 +157,10 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-partial-fractions"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">7.4</span> <span class="title">Partial Fractions</span>
 </h2>
-<section class="introduction" id="introduction-12"><p id="p-306">So far we have not learned how to integrate general <code class="code-inline tex2jax_ignore">rational functions</code>. <article class="definition definition-like" id="def-rational-functions"><h6 class="heading">
+<section class="introduction" id="introduction-12"><p id="p-337">So far we have not learned how to integrate general <code class="code-inline tex2jax_ignore">rational functions</code>. <article class="definition definition-like" id="def-rational-functions"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.4.1</span><span class="period">.</span>
 </h6>A rational function is in the form \(f(x) = \dfrac{\text{polynomial}}{\text{polynomial}}\text{.}\)</article></p>
-<p id="p-307">In order to do this we will use partial fractions. An example of how partial fractions work is as follows:</p>
+<p id="p-338">In order to do this we will use partial fractions. An example of how partial fractions work is as follows:</p>
 <div class="displaymath">
 \begin{align*}
 \dfrac{1}{x} - \dfrac{1}{x+1} \amp = \dfrac{1}{x}\cdot\dfrac{x+1}{x+1} - \dfrac{1}{x+1}\cdot\dfrac{x}{x} \\
@@ -180,7 +180,7 @@ MathJax.Hub.Config({
 </div></section><section class="subsection" id="subsection-27"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">7.4.1</span> <span class="title">General Approach</span>
 </h3>
-<p id="p-308">Let's find the partion fraction decomposition of the following:</p>
+<p id="p-339">Let's find the partion fraction decomposition of the following:</p>
 <div class="displaymath">
 \begin{equation*}
 \dfrac{5x-10}{x^2-3x-4} = \dfrac{5x-10}{(x-4)(x+1)} = \dfrac{A}{x-4} + \dfrac{B}{x+1}
@@ -195,7 +195,7 @@ MathJax.Hub.Config({
 </div>
 <p data-braille="continuation">We want this to be true for all <em class="emphasis">x</em>: <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
 <div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;">
-<p id="p-309">Let \(x = 4\text{:}\)</p>
+<p id="p-340">Let \(x = 4\text{:}\)</p>
 <div class="displaymath">
 \begin{align*}
 5(4) - 10 \amp = A (x - 4) + B (x + 1) \\
@@ -205,7 +205,7 @@ A \amp = 2
 </div>
 </div>
 <div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;">
-<p id="p-310">Let \(x = -1\text{:}\)</p>
+<p id="p-341">Let \(x = -1\text{:}\)</p>
 <div class="displaymath">
 \begin{align*}
 5(-1) - 10 \amp = A (-1 + 1) + B (-1 - 4)\\
@@ -220,36 +220,36 @@ B = 3
 \dfrac{5x-10}{x^2-3x-4} = \dfrac{2}{x-4} + \dfrac{3}{x+1}
 \end{equation*}
 </div>
-<p id="p-311">The previous example is the simplest and most general case. There are 3 types of problems that reequire differing methods:</p>
+<p id="p-342">The previous example is the simplest and most general case. There are 3 types of problems that reequire differing methods:</p>
 <ol class="decimal">
-<li id="li-104"><p id="p-312">repeated factors</p></li>
-<li id="li-105"><p id="p-313">irreducible quadratic factors</p></li>
-<li id="li-106"><p id="p-314">degree of numberator \(\ge\) denominator</p></li>
+<li id="li-123"><p id="p-343">repeated factors</p></li>
+<li id="li-124"><p id="p-344">irreducible quadratic factors</p></li>
+<li id="li-125"><p id="p-345">degree of numberator \(\ge\) denominator</p></li>
 </ol></section><section class="subsection" id="sub-repeated-factors"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">7.4.2</span> <span class="title">Repeated Factors</span>
 </h3>
-<p id="p-315">One of the issues that we come across when evaluating partial fractions is when there are repeated factors in the denominator. An example of this would be \(\dfrac{x+3}{(x+2)^2}\text{.}\) If we simplify this it would be \(\dfrac{x+3}{(x+8)(x+8)}\text{.}\) When we have this issue we cannot follow the normal procedure:</p>
+<p id="p-346">One of the issues that we come across when evaluating partial fractions is when there are repeated factors in the denominator. An example of this would be \(\dfrac{x+3}{(x+2)^2}\text{.}\) If we simplify this it would be \(\dfrac{x+3}{(x+8)(x+8)}\text{.}\) When we have this issue we cannot follow the normal procedure:</p>
 <div class="displaymath">
 \begin{equation*}
 \dfrac{x+3}{(x+8)(x+8)} \neq \dfrac{A}{x+8} + \dfrac{B}{x+8}
 \end{equation*}
 </div>
-<p id="p-316">In order to evaluate this correctly, we do the following: <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
-<div class="sbspanel" style="width:57.8947368421053%;justify-content:center;"><div class="displaymath" id="p-317">
+<p id="p-347">In order to evaluate this correctly, we do the following: <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:57.8947368421053%;justify-content:center;"><div class="displaymath" id="p-348">
 \begin{align*}
 \dfrac{x+3}{(x+8)(x+8)} \amp = \dfrac{A}{x+8} + \dfrac{B}{(x+8)^2} \\
 1(x) + 3 \amp = A(x+8) + B\\
 \amp = Ax + 8A  + B
 \end{align*}
 </div></div>
-<div class="sbspanel" style="width:36.8421052631579%;justify-content:center;"><p id="p-318"><p id="p-319">* multiply both sides by \((x+8)(x+8)\)</p></p></div>
+<div class="sbspanel" style="width:36.8421052631579%;justify-content:center;"><p id="p-349"><p id="p-350">* multiply both sides by \((x+8)(x+8)\)</p></p></div>
 </div></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
-<div class="sbspanel" style="width:36.8421052631579%;justify-content:flex-start;"><div class="displaymath" id="p-320">
+<div class="sbspanel" style="width:36.8421052631579%;justify-content:flex-start;"><div class="displaymath" id="p-351">
 \begin{gather*}
 A = 1
 \end{gather*}
 </div></div>
-<div class="sbspanel" style="width:57.8947368421053%;justify-content:flex-start;"><div class="displaymath" id="p-321">
+<div class="sbspanel" style="width:57.8947368421053%;justify-content:flex-start;"><div class="displaymath" id="p-352">
 \begin{align*}
 8A + B \amp = 3\\
 8(1) + B \amp = 3\\
@@ -257,7 +257,7 @@ B \amp = -5
 \end{align*}
 </div></div>
 </div></div> So, \(\dfrac{x+3}{(x+8)^2} = \dfrac{1}{x+8} + \dfrac{-5}{(x+5)^2}\)</p>
-<p id="p-322">If there are highter exponents for the denominator, you get something that is in the form of the following:</p>
+<p id="p-353">If there are highter exponents for the denominator, you get something that is in the form of the following:</p>
 <div class="displaymath">
 \begin{equation*}
 \dfrac{5x+3}{x(x+5)^3} = \dfrac{A}{x} + \dfrac{B}{x+5} + \dfrac{C}{(x+5)^2} + \dfrac{D}{(x+5)^3}
@@ -265,33 +265,33 @@ B \amp = -5
 </div></section><section class="subsection" id="sub-nonlinear-factors"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">7.4.3</span> <span class="title">Irreducable Quadratic Factors</span>
 </h3>
-<p id="p-323">Another type of partial fractions that will give us some trouble is one that contains an irreducable quadratic factor. <article class="definition definition-like" id="def-irreducable-quadratic-factor"><h6 class="heading">
+<p id="p-354">Another type of partial fractions that will give us some trouble is one that contains an irreducable quadratic factor. <article class="definition definition-like" id="def-irreducable-quadratic-factor"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.4.2</span><span class="period">.</span>
 </h6>
-<p id="p-324">An irreducable factor is one that has no real zeros; it cannot factor without using imaginary numbers.</p></article></p>
-<p id="p-325">Again we cannot follow the normal procedure: <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
-<div class="sbspanel" style="width:47.3684210526316%;justify-content:center;"><div class="displaymath" id="p-326">
+<p id="p-355">An irreducable factor is one that has no real zeros; it cannot factor without using imaginary numbers.</p></article></p>
+<p id="p-356">Again we cannot follow the normal procedure: <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:center;"><div class="displaymath" id="p-357">
 \begin{equation*}
 \dfrac{7x^2+5x+18}{x(x^2+9)} \neq \dfrac{A}{x} + \dfrac{B}{x^2 + 9}
 \end{equation*}
 </div></div>
-<div class="sbspanel" style="width:47.3684210526316%;justify-content:center;"><p id="p-327"><article class="assemblage assemblage-like" id="as-irreducable-imaginary-numbers"><p id="p-328">Recall: \((x^2 + 9)\) would simplify to \((x + 3i)(x - 3i)\)</p></article></p></div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:center;"><p id="p-358"><article class="assemblage assemblage-like" id="as-irreducable-imaginary-numbers"><p id="p-359">Recall: \((x^2 + 9)\) would simplify to \((x + 3i)(x - 3i)\)</p></article></p></div>
 </div></div> <article class="note remark-like" id="note-irreducable-function-find"><h6 class="heading">
 <span class="type">Note</span><span class="space"> </span><span class="codenumber">7.4.3</span><span class="period">.</span>
 </h6>
-<p id="p-329">There are two ways to determine if a function has an irreducable factor:</p>
+<p id="p-360">There are two ways to determine if a function has an irreducable factor:</p>
 <ul class="disc">
-<li id="li-107">
-<p id="p-330">using a graph</p>
+<li id="li-126">
+<p id="p-361">using a graph</p>
 <ul class="circle">
-<li id="li-108"><p id="p-331">reducable: touches the x-axis</p></li>
-<li id="li-109"><p id="p-332">irreducable: never touches the x-axis</p></li>
+<li id="li-127"><p id="p-362">reducable: touches the x-axis</p></li>
+<li id="li-128"><p id="p-363">irreducable: never touches the x-axis</p></li>
 </ul>
 </li>
-<li id="li-110"><p id="p-333">formula: if \(b^2 - 4ac \geq 0\text{,}\) then reducable, otherwise irreducable.</p></li>
+<li id="li-129"><p id="p-364">formula: if \(b^2 - 4ac \geq 0\text{,}\) then reducable, otherwise irreducable.</p></li>
 </ul>
-<p id="p-334">Also, keep in mind, every polynomial function with real coefficients can be factored into linear and/or irreducable quadratic functions.</p></article></p> We have to follow the general steps below to deal with irreducables: <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
-<div class="sbspanel" style="width:57.8947368421053%;justify-content:center;"><div class="displaymath" id="p-335">
+<p id="p-365">Also, keep in mind, every polynomial function with real coefficients can be factored into linear and/or irreducable quadratic functions.</p></article></p> We have to follow the general steps below to deal with irreducables: <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:57.8947368421053%;justify-content:center;"><div class="displaymath" id="p-366">
 \begin{align*}
 \dfrac{7x^2+5x+18}{x(x^2+9)} \amp = \dfrac{A}{x} + \dfrac{Bx+C}{x^2 + 9} \\
 7x^2+5x+18 \amp = A(x^2+9) + x(Bx + C) \\
@@ -299,21 +299,21 @@ B \amp = -5
 \amp = (A + B)x^2 + Cx + 9A
 \end{align*}
 </div></div>
-<div class="sbspanel" style="width:36.8421052631579%;justify-content:center;"><p id="p-336">* multiply both sides by \(x(x^2+9)\)</p></div>
+<div class="sbspanel" style="width:36.8421052631579%;justify-content:center;"><p id="p-367">* multiply both sides by \(x(x^2+9)\)</p></div>
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
-<div class="sbspanel" style="width:31.0344827586207%;justify-content:flex-start;"><div class="displaymath" id="p-337">
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:flex-start;"><div class="displaymath" id="p-368">
 \begin{equation*}
 C = 8
 \end{equation*}
 </div></div>
-<div class="sbspanel" style="width:31.0344827586207%;justify-content:flex-start;"><div class="displaymath" id="p-338">
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:flex-start;"><div class="displaymath" id="p-369">
 \begin{align*}
 9A \amp = 18 \\
 A \amp = 2 
 \end{align*}
 </div></div>
-<div class="sbspanel" style="width:31.0344827586207%;justify-content:flex-start;"><div class="displaymath" id="p-339">
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:flex-start;"><div class="displaymath" id="p-370">
 \begin{align*}
 A + B \amp = 7 \\
 2 + B \amp = 7 \\
@@ -321,8 +321,8 @@ B \amp = 5
 \end{align*}
 </div></div>
 </div></div>
-<p id="p-340">So, \(\dfrac{7x^2+5x+18}{x(x^2+9)} = \dfrac{2}{x} + \dfrac{5x+8}{x^2+9} \)</p>
-<p id="p-341">If we mix the last two methods we would get something of the form:</p>
+<p id="p-371">So, \(\dfrac{7x^2+5x+18}{x(x^2+9)} = \dfrac{2}{x} + \dfrac{5x+8}{x^2+9} \)</p>
+<p id="p-372">If we mix the last two methods we would get something of the form:</p>
 <div class="displaymath">
 \begin{equation*}
 \dfrac{9x^4 - 2x - 13}{(x-3)(x^2+7)(x^2+25)^2} = \dfrac{A}{x-3} + \dfrac{Bx+C}{x^2+7} \dfrac{Dx+E}{x^2+25} + \dfrac{Fx+G}{(x^2+25)^2}
@@ -330,8 +330,8 @@ B \amp = 5
 </div></section><section class="subsection" id="sub-degree-of-num-ge-den"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">7.4.4</span> <span class="title">Degree</span>
 </h3>
-<p id="p-342">The final exception is when the degree of the numberator is greater than or equal to the degree of the denominator. For this type of problem we will have to use polynomial long division where the numerator is divided by the denominator.</p>
-<p id="p-343">Example: Divide \(x^4+3x^2-8\) by \(x^2-2x+1\) <figure class="table table-like" id="tab-polynomial-division"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">7.4.4<span class="period">.</span></span><span class="space"> </span>Polynomial Division</figcaption><table>
+<p id="p-373">The final exception is when the degree of the numberator is greater than or equal to the degree of the denominator. For this type of problem we will have to use polynomial long division where the numerator is divided by the denominator.</p>
+<p id="p-374">Example: Divide \(x^4+3x^2-8\) by \(x^2-2x+1\) <figure class="table table-like" id="tab-polynomial-division"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">7.4.4<span class="period">.</span></span><span class="space"> </span>Polynomial Division</figcaption><table>
 <tr>
 <td class="l m b0 r0 l0 t0 lines"></td>
 <td class="l m b2 r0 l0 t0 lines">\(\)</td>
@@ -405,7 +405,7 @@ B \amp = 5
 <td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\)</td>
 </tr>
 </table></figure></p>
-<div class="displaymath" id="p-344">
+<div class="displaymath" id="p-375">
 \begin{align*}
 \text{So, } \int \dfrac{x^4+3x^2-8}{x^2-2x+1} dx \amp= \int x^2+2x+6 + \dfrac{10x-14}{x^2-2x+1} dx \\
 \amp = \int x^2+2x+6 + \dfrac{10x-14}{(x-1)^2} dx \\

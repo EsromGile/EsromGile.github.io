@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-12T13:25:28-05:00       *-->
+<!--*       on 2021-05-13T14:26:46-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -11,7 +11,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Algebraic Approach to Limits (*)</title>
+<title>Algebraic Approach to Limits</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type="text/x-mathjax-config">
@@ -84,7 +84,7 @@ MathJax.Hub.Config({
 <li class="link">
 <a href="chap-intro-to-calculus.html" data-scroll="chap-intro-to-calculus"><span class="codenumber">1</span> <span class="title">Intro to Calculus</span></a><ul>
 <li><a href="sec-intro-to-limits.html" data-scroll="sec-intro-to-limits">Intro to Limits</a></li>
-<li><a href="sec-algebraic-approach-to-limits.html" data-scroll="sec-algebraic-approach-to-limits" class="active">Algebraic Approach to Limits (*)</a></li>
+<li><a href="sec-algebraic-approach-to-limits.html" data-scroll="sec-algebraic-approach-to-limits" class="active">Algebraic Approach to Limits</a></li>
 <li><a href="sec-end-behavior.html" data-scroll="sec-end-behavior">End Behavior (*)</a></li>
 <li><a href="sec-continuity.html" data-scroll="sec-continuity">Continuity (*)</a></li>
 <li><a href="sec-limits-of-trig-functions.html" data-scroll="sec-limits-of-trig-functions">Limits of Trig Functions (*)</a></li>
@@ -155,8 +155,107 @@ MathJax.Hub.Config({
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-algebraic-approach-to-limits"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">1.2</span> <span class="title">Algebraic Approach to Limits (*)</span>
-</h2></section></div></main>
+<span class="type">Section</span> <span class="codenumber">1.2</span> <span class="title">Algebraic Approach to Limits</span>
+</h2>
+<article class="theorem theorem-like" id="the-1-2-1"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span>
+</h6>
+<ol class="lower-alpha">
+<li id="li-18"><div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:center;"><p id="p-45">\(\displaystyle\lim_{x \to a} k = k\) <figure class="figure figure-like" id="fig-k-equals-k"><img src="images/k-equals-k.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.2<span class="period">.</span></span><span class="space"> </span></figcaption></figure></p></div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:center;"><p id="p-46">the limit of a constant function is that constant value as \(x\) approaches any number</p></div>
+</div></div></li>
+<li id="li-19"><div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:center;"><p id="p-47">\(\displaystyle\lim_{x \to a} x = a\) <figure class="figure figure-like" id="fig-x-to-a"><img src="images/x-to-a.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.3<span class="period">.</span></span><span class="space"> </span></figcaption></figure></p></div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:center;"><p id="p-48">the limit of a function at a y-value of \(a\) is \(a\) as x approaches \(a\)</p></div>
+</div></div></li>
+</ol></article><p id="p-49">The algebraic approach is reliable and specificially helpful if we don't have the graph. It is also more elegant than tables of values (which may be a lot of work as well as misleading).</p>
+<article class="theorem theorem-like" id="the-1-2-2"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span>
+</h6>
+<p id="p-50">Let \(a\text{,}\) \(L_{1}\text{,}\) and \(L_{2}\) be real numbers.</p>
+<div class="displaymath">
+\begin{equation*}
+\displaystyle\lim_{x \to a} f(x) = L_{1} \mbox{ , } 
+\displaystyle\lim_{x \to a} g(x) = L_{2} 
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-20"><div class="sidebyside"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel" style="width:76.9230769230769%;justify-content:flex-start;"><p id="p-51">\(\displaystyle\lim_{x \to a} \left( f(x) + g(x) \right) = \left( \displaystyle\lim_{x \to a} f(x) \right) + \left( \displaystyle\lim_{x \to a} g(x) \right) = L_{1}  + L_{2} \)</p></div>
+<div class="sbspanel" style="width:20.5128205128205%;justify-content:flex-start;"><p id="p-52"><article class="note remark-like" id="note-sum-of-limits"><h6 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="period">.</span>
+</h6>The limit of of the sum is the sum of the limits.</article></p></div>
+</div></div></li>
+<li id="li-21"><p id="p-53">The above is true also for the difference.</p></li>
+<li id="li-22">\(\displaystyle \displaystyle\lim_{x \to a} \left( f(x) \cdot g(x) \right)  = \left( \displaystyle\lim_{x \to a} f(x) \right) \cdot \left( \displaystyle\lim_{x \to a} g(x) \right)\)</li>
+<li id="li-23"><div class="sidebyside"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel" style="width:76.9230769230769%;justify-content:flex-start;"><p id="p-54">\(\displaystyle\lim_{x \to a} \left( f(x) / g(x) \right)  = \left( \displaystyle\lim_{x \to a} f(x) \right) / \left( \displaystyle\lim_{x \to a} g(x) \right)\)</p></div>
+<div class="sbspanel" style="width:20.5128205128205%;justify-content:flex-start;"><p id="p-55"><article class="note remark-like" id="note-dividing-limits"><h6 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="period">.</span>
+</h6>This is true provided that \(\displaystyle\lim_{x \to a} f(x) \neq 0\text{.}\)</article></p></div>
+</div></div></li>
+<li id="li-24"><div class="sidebyside"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel" style="width:76.9230769230769%;justify-content:flex-start;"><p id="p-56">\(\displaystyle\lim_{x \to a} \sqrt[n]{f(x)} = \sqrt[n]{\displaystyle\lim_{x \to a} f(x)}\)</p></div>
+<div class="sbspanel" style="width:20.5128205128205%;justify-content:flex-start;"><p id="p-57"><article class="note remark-like" id="note-sqrt-limits"><h6 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">1.2.7</span><span class="period">.</span>
+</h6>This is true provided that \(\displaystyle\lim_{x \to a} f(x) &gt; 0\) if \(n\) is even.</article></p></div>
+</div></div></li>
+</ol></article><p id="p-58">Polynomials like \(f(x) = x^2\) are built by multiplying powers of \(x\) constants and adding other similar powers of \(x\) (ex: \(3x^2 + 5x^4\)).</p>
+<article class="theorem theorem-like" id="the-1-2-3"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.2.8</span><span class="period">.</span>
+</h6>
+<p id="p-59">Let any polynomial \(p(x) = C_{0} + C_{1}x^{1} + \dots + C_{n}x^{n}\) and any real number \(a\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+\lim_{x \to a} p(x) \amp = \lim_{x \to a} \left( C_{0} + C_{1}x^{1} + \dots + C_{n}x^{n} \right) \\
+\amp = \left(\lim_{x \to a} C_{0} \right) + \left(\lim_{x \to a}C_{1}x^{1} \right) + \dots + \left( \lim_{x \to a}C_{n}x^{n}\right)\\
+\amp = C_{0} + C_{1}a + \dots + C_{n}a^{n} \\
+\lim_{x \to a} p(x) \amp = p(a)
+\end{align*}
+</div></article><article class="theorem theorem-like" id="the-1-2-4"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.2.9</span><span class="period">.</span>
+</h6>
+<p id="p-60">Let \(f(x)  = \dfrac{p(x)}{q(x)}\) be a rational function (\(p(x)\) and \(q(x)\) are both polynomials),</p>
+<ol class="lower-alpha">
+<li id="li-25"><p id="p-61">if \(q(a) \neq 0\text{,}\) then \(\displaystyle\lim_{x \to a} f(x) = f(a)\)</p></li>
+<li id="li-26"><p id="p-62">if \(q(a) = 0\text{,}\) then the limit is technically DNE</p></li>
+</ol>
+<p id="p-63">For limit of the form \(f(x) = \dfrac{p(x)}{q(x)}\) as \(x \to a\)</p>
+<ol class="lower-alpha">
+<li id="li-27"><p id="p-64">if there are no zeros, just plug in</p></li>
+<li id="li-28"><p id="p-65">if there is a zero only on top, not a problem \(f(x) = 0\)</p></li>
+<li id="li-29"><p id="p-66">if there is a zero on botton, the 2-sided limit will be \(\infty\text{,}\) \(- \infty\text{,}\) or DNE (will need more work)</p></li>
+<li id="li-30">
+<p id="p-67">if there are zeros on top and bottom is an indeterminate form (factor, simplify, rationalize, and take calc II)</p>
+<article class="note remark-like" id="note-limit-indeterminate-forms"><h6 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">1.2.10</span><span class="period">.</span>
+</h6>
+<p id="p-68">Getting a result of \(\frac{0}{0}\) means the numberof the limit we are looking at gives \(p(a) = 0\) and \(q(a) = 0\) and that \(x-a\) is a factor of each polynomial; this factor can be divided out.</p></article>
+</li>
+</ol></article><article class="project project-like" id="proj-example-limit-indeterminate-forms"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span>
+</h6>
+<ul class="disc">
+<li id="li-31"><div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p id="p-69">\(\displaystyle\lim_{x \to 2} \dfrac{x^2+x-6}{x^2+2x-8}\)</p></div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p id="p-70">check: does plugging in work?</p></div>
+</div></div></li>
+<li id="li-32"><div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p id="p-71">\(\displaystyle\lim_{x \to 2} \dfrac{4 + 2 - 6}{4 + 4 - 8}\)</p></div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p id="p-72">this results in something of the form \(\frac{0}{0}\)</p></div>
+</div></div></li>
+<li id="li-33"><p id="p-73">we have to factor in this instance</p></li>
+<li id="li-34">
+<p id="p-74">\(x^2 + x - 6 = (x-2)(x+3) \)</p>
+<p id="p-75">\(x^2 + 2x - 8 = (x-2)(x+4) \)</p>
+</li>
+<li id="li-35">\(\displaystyle \displaystyle\lim_{x \to 2}\dfrac{x^2 + x - 6}{x^2 + 2x - 8} = \displaystyle\lim_{x \to 2} \dfrac{x + 3}{x + 5}\)</li>
+<li id="li-36">\(\dfrac{\displaystyle\lim_{x \to 2}(x + 3)}{\displaystyle\lim_{x \to 2}(x + 5)} = \frac{5}{6}\) <article class="note remark-like" id="note-lim-indeterminate-form-example"><h6 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">1.2.11</span><span class="period">.</span>
+</h6>This only works after removing the common factor.</article>
+</li>
+</ul></article></section></div></main>
 </div>
 </body>
 </html>

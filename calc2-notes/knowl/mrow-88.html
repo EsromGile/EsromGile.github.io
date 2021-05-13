@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-12T13:25:29-05:00       *-->
+<!--*       on 2021-05-13T14:26:47-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,14 +16,20 @@
 <body>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{align*}
-y \amp = \dfrac{(x^4 + 7) \sqrt{x}}{\sin(x)}\\
-\ln(y) \amp = \ln \left( \dfrac{(x^4 + 7) \sqrt{x}}{ \sin(x)} \right) \\
-\amp = \ln((x^4 + 7)\sqrt{x})-\ln(\sin(x)) \\
-\amp = \ln(x^4 + 7) + \ln(\sqrt{x})-\ln(\sin(x)) \\
-\amp = \ln(x^4 + 7) + \frac{1}{2}\ln(x)-\ln(\sin(x))\\
-\frac{1}{y} \cdot \dfrac{dy}{dx} \amp = \dfrac{1}{x^4+7} \cdot 4x^3 + \frac{1}{2} \cdot \frac{1}{x} - \dfrac{1}{\sin(x)} \cdot \cos(x) \\
-\dfrac{dy}{dx} \amp = \left( \dfrac{1}{x^4+7} \cdot 4x^3 + \frac{1}{2} \cdot \frac{1}{x} - \dfrac{1}{\sin(x)} \cdot \cos(x) \right) \cdot y \\
-\dfrac{dy}{dx} \amp = \left( \dfrac{4x^3}{x^4+7} + \frac{1}{2x} - \dfrac{\cos(x)}{\sin(x)} \right) \cdot \left( \dfrac{(x^4+7)(\sqrt{x})}{\sin(x)} \right) 
+f'(x) \amp = \lim\limits_{h\to 0} \dfrac{f(x+h) - f(x)}{h} \\
+\amp = \lim\limits_{h\to 0} \dfrac{\ln(x+h) - \ln(x)}{h} \\
+\amp = \lim\limits_{h\to 0} \dfrac{\ln(\dfrac{x+h}{x})}{h} \\
+\amp = \lim\limits_{h\to 0} \dfrac{\ln(\dfrac{x}{x}+\frac{h}{x})}{h} \\
+\amp = \lim\limits_{h\to 0} \dfrac{\ln\left(1+\dfrac{h}{x}\right)}{h} \\
+\amp = \lim\limits_{h\to 0} \dfrac{1}{h} \ln\left(1 + \dfrac{h}{x}\right) \\
+\amp = \lim\limits_{v\to 0} \dfrac{1}{vx} \ln(1+v) \\
+\amp = \lim\limits_{v\to 0} \dfrac{1}{v} \cdot \dfrac{1}{x} \ln(1+v) \\
+\amp = \dfrac{1}{x} \lim\limits_{v\to 0} \dfrac{1}{v} \ln(1+v) \\
+\amp = \dfrac{1}{x} \lim\limits_{v\to 0} \ln\left((1+v)^{\dfrac{1}{v}}\right)\\
+\amp = \dfrac{1}{x} \ln\left(\lim\limits_{v\to 0} (1+v)^{\dfrac{1}{v}}\right) \\
+\amp = \dfrac{1}{x} \ln(e) \\
+\amp = \dfrac{1}{x} (1) \\
+f'(x)\amp = \dfrac{1}{x} 
 \end{align*}
 </div>
 <span class="incontext"><a href="sec-derivatives-and-integrals-of-logs.html#mjx-eqn-mrow-88">in-context</a></span>
