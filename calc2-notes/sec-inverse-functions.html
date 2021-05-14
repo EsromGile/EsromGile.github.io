@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-13T14:26:46-05:00       *-->
+<!--*       on 2021-05-14T14:43:33-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -85,7 +85,7 @@ MathJax.Hub.Config({
 <a href="chap-intro-to-calculus.html" data-scroll="chap-intro-to-calculus"><span class="codenumber">1</span> <span class="title">Intro to Calculus</span></a><ul>
 <li><a href="sec-intro-to-limits.html" data-scroll="sec-intro-to-limits">Intro to Limits</a></li>
 <li><a href="sec-algebraic-approach-to-limits.html" data-scroll="sec-algebraic-approach-to-limits">Algebraic Approach to Limits</a></li>
-<li><a href="sec-end-behavior.html" data-scroll="sec-end-behavior">End Behavior (*)</a></li>
+<li><a href="sec-end-behavior.html" data-scroll="sec-end-behavior">End Behavior</a></li>
 <li><a href="sec-continuity.html" data-scroll="sec-continuity">Continuity (*)</a></li>
 <li><a href="sec-limits-of-trig-functions.html" data-scroll="sec-limits-of-trig-functions">Limits of Trig Functions (*)</a></li>
 </ul>
@@ -160,15 +160,15 @@ MathJax.Hub.Config({
 <section class="introduction" id="introduction-6"><article class="definition definition-like" id="def-inverse-functions"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.3.1</span><span class="period">.</span>
 </h6>
-<p id="p-175">Two functions \(f\) and \(g\) are said to be inverses of each other if:</p>
+<p id="p-202">Two functions \(f\) and \(g\) are said to be inverses of each other if:</p>
 <ul class="disc">
-<li id="li-73"><p id="p-176">\(\displaystyle f(g(x)) = x \)</p></li>
-<li id="li-74"><p id="p-177">\(\displaystyle g(f(x)) = x \)</p></li>
+<li id="li-82"><p id="p-203">\(\displaystyle f(g(x)) = x \)</p></li>
+<li id="li-83"><p id="p-204">\(\displaystyle g(f(x)) = x \)</p></li>
 </ul>
 <p data-braille="continuation">for all \(x\text{;}\) if \(g\) is the inverse of \(f\text{,}\) we often write \(f^{-1}\) instead of \(g\text{.}\)</p></article><article class="project project-like" id="proj-inverse-functions"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.1</span><span class="period">.</span>
 </h6>
-<p id="p-178">How can we show that \(f(x)=x^3+7\) and \(g(x)=\sqrt[3]{x-7}\) are inverses?</p>
+<p id="p-205">How can we show that \(f(x)=x^3+7\) and \(g(x)=\sqrt[3]{x-7}\) are inverses?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-3" id="solution-3"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-3"><div class="solution solution-like">
 <div class="displaymath">
 \begin{align*}
@@ -185,29 +185,29 @@ g(f(x)) \amp = g(x^3+7)\\
 \amp = x
 \end{align*}
 </div>
-</div></div></article><p id="p-179">Inverses are reflections of each other over the line \(y = x\text{.}\) Also, not every function has an inverse. A function has an inverse if, and only if, it is a one-to-one funcion. <article class="assemblage assemblage-like" id="as-one-to-one-function"><h6 class="heading"><span class="title">One-to-One Function.</span></h6>
-<p id="p-180">One-to-one meas that for every one input, the function only returns one output (or passes both the horizontal and vertical line tests).</p></article></p></section><section class="subsection" id="sub-formula-for-inverse-functions"><h3 class="heading hide-type">
+</div></div></article><p id="p-206">Inverses are reflections of each other over the line \(y = x\text{.}\) Also, not every function has an inverse. A function has an inverse if, and only if, it is a one-to-one funcion. <article class="assemblage assemblage-like" id="as-one-to-one-function"><h6 class="heading"><span class="title">One-to-One Function.</span></h6>
+<p id="p-207">One-to-one meas that for every one input, the function only returns one output (or passes both the horizontal and vertical line tests).</p></article></p></section><section class="subsection" id="sub-formula-for-inverse-functions"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.3.1</span> <span class="title">Obtaining Formulas for Inverse Functions</span>
 </h3>
-<p id="p-181">The Steps:</p>
+<p id="p-208">The Steps:</p>
 <ol class="decimal">
-<li id="li-75"><p id="p-182">replace \(f(x)\) with y</p></li>
-<li id="li-76"><p id="p-183">interchange \(x\) and \(y\) variables</p></li>
-<li id="li-77"><p id="p-184">solve for \(y\)</p></li>
-<li id="li-78"><p id="p-185">replace \(y\) with \(f^{-1}(x)\)</p></li>
+<li id="li-84"><p id="p-209">replace \(f(x)\) with y</p></li>
+<li id="li-85"><p id="p-210">interchange \(x\) and \(y\) variables</p></li>
+<li id="li-86"><p id="p-211">solve for \(y\)</p></li>
+<li id="li-87"><p id="p-212">replace \(y\) with \(f^{-1}(x)\)</p></li>
 </ol>
 <p data-braille="continuation"><article class="example example-like" id="ex-formula-inverse-function"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-ex-formula-inverse-function"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.2</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex-formula-inverse-function"><article class="example example-like"><p id="p-186">Function: \(f(x) = 2x^3 + 5\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex-formula-inverse-function"><article class="example example-like"><p id="p-213">Function: \(f(x) = 2x^3 + 5\)</p>
 <ol class="decimal">
-<li id="li-79"><p id="p-187">\(\displaystyle y = 2x^3 + 5\)</p></li>
-<li id="li-80"><p id="p-188">\(\displaystyle x = 2y^3 + 5\)</p></li>
-<li id="li-81"><p id="p-189"><p id="p-190">\(x - 5 = 2y^3\)</p> <p id="p-191">\(\dfrac{x-5}{2} = y^3\)</p> <p id="p-192">\(y = \sqrt[3]{\dfrac{x-5}{2}}\)</p></p></li>
-<li id="li-82"><p id="p-193">\(\displaystyle f^{-1}(x) = \sqrt[3]{\dfrac{x-5}{2}}\)</p></li>
+<li id="li-88"><p id="p-214">\(\displaystyle y = 2x^3 + 5\)</p></li>
+<li id="li-89"><p id="p-215">\(\displaystyle x = 2y^3 + 5\)</p></li>
+<li id="li-90"><p id="p-216"><p id="p-217">\(x - 5 = 2y^3\)</p> <p id="p-218">\(\dfrac{x-5}{2} = y^3\)</p> <p id="p-219">\(y = \sqrt[3]{\dfrac{x-5}{2}}\)</p></p></li>
+<li id="li-91"><p id="p-220">\(\displaystyle f^{-1}(x) = \sqrt[3]{\dfrac{x-5}{2}}\)</p></li>
 </ol></article></div></p></section><section class="subsection" id="sub-derivatives-of-inverse-functions"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.3.2</span> <span class="title">Derivatives of Inverse Functions</span>
 </h3>
-<p id="p-194"><article class="definition definition-like" id="def-formula-for-derivative-of-inverse"><h6 class="heading">
+<p id="p-221"><article class="definition definition-like" id="def-formula-for-derivative-of-inverse"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Formula for Derivative of an Inverse Function.</span>
 </h6>
 <div class="displaymath">
@@ -218,8 +218,8 @@ g(f(x)) \amp = g(x^3+7)\\
 <section class="worksheet" id="work-inverse-example-problem"><h4 class="heading hide-type">
 <span class="type">Worksheet</span> <span class="codenumber">6.3.2.1</span> <span class="title">Example Problem</span>
 </h4>
-<p id="p-195">Let \(f(x) = x^3 + x + 2\text{,}\) find \((f^{-1})'(4)\text{.}\)</p>
-<p id="p-196"><figure class="table table-like" id="tab-inverse-example-problem"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">6.3.4<span class="period">.</span></span><span class="space"> </span>Inverse Function Example</figcaption><table>
+<p id="p-222">Let \(f(x) = x^3 + x + 2\text{,}\) find \((f^{-1})'(4)\text{.}\)</p>
+<p id="p-223"><figure class="table table-like" id="tab-inverse-example-problem"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">6.3.4<span class="period">.</span></span><span class="space"> </span>Inverse Function Example</figcaption><table>
 <tr>
 <td class="l m b2 r2 l0 t0 lines">Old Way</td>
 <td class="l m b2 r0 l0 t0 lines" data-braille="last-cell">New Way</td>

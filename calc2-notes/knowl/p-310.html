@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-13T14:26:48-05:00       *-->
+<!--*       on 2021-05-14T14:43:35-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,25 +15,20 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p xmlns:svg="http://www.w3.org/2000/svg"><article class="assemblage assemblage-like"><p>Here is a procedure to evaluate functions of the form \(\displaystyle\int\sin^m(x)\cos^n(x)dx\text{:}\)</p>
-<ul class="disc">
-<li><div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
-<div class="sbspanel" style="width:20.6896551724138%;justify-content:flex-start;"><p>n is odd</p></div>
-<div class="sbspanel" style="width:31.0344827586207%;justify-content:flex-start;"><p>split off a factor of \(\cos(x)\text{,}\) apply relevant identity, make u-sub where \(u = \sin(x)\)</p></div>
-<div class="sbspanel" style="width:41.3793103448276%;justify-content:flex-start;"><p>\(\cos^2(x) = 1 - sin^2(x)\)</p></div>
-</div></div></li>
-<li><div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
-<div class="sbspanel" style="width:20.6896551724138%;justify-content:flex-start;"><p>m is odd</p></div>
-<div class="sbspanel" style="width:31.0344827586207%;justify-content:flex-start;"><p>split off a factor of \(\sin(x)\text{,}\) apply relevant identity, make u-sub where \(u=\cos(x)\)</p></div>
-<div class="sbspanel" style="width:41.3793103448276%;justify-content:flex-start;"><p>\(\sin^2(x) = 1 - \cos^2(x)\)&gt;</p></div>
-</div></div></li>
-<li><div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
-<div class="sbspanel" style="width:20.6896551724138%;justify-content:flex-start;"><p>\(\begin{cases} \text{m is even} \\ \text{n is even} \end{cases} \)</p></div>
-<div class="sbspanel" style="width:31.0344827586207%;justify-content:flex-start;"><p>use the relevant identities to reduce the powers on \(sin(x) \mbox{ and } \cos(x) \)</p></div>
-<div class="sbspanel" style="width:41.3793103448276%;justify-content:flex-start;"><p>\(\begin{cases} \sin^2(x) = \dfrac{1}{2}(1 - \cos(2x)) \\
-\cos^2(x) = \dfrac{1}{2}(1 + \cos(2x)) \end{cases}\)</p></div>
-</div></div></li>
-</ul></article></p>
+<p xmlns:svg="http://www.w3.org/2000/svg">With our current methods we are able to easily solve the integrals of the right hand side of the functions above (ex: \(\int \sec^2 (x) dx = \tan(x) + c \)), but we do not currently have methods for most of the left hand side (ex: \(\int \sec(x) dx\)). The only exception currently is how to find the integral of \(\tan(x) \mbox{ and } \cot(x) \text{.}\) <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:center;"><div class="displaymath">
+\begin{align*}
+\int \cot(x) dx \amp = \int \dfrac{\cos(x)}{\sin(x)} dx \\
+\amp = \int \dfrac{1}{u} du \\
+\amp = \ln|u| + c \\
+\amp = \ln| \sin(x)| + c 
+\end{align*}
+</div></div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:center;"><p><figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">7.2.1<span class="period">.</span></span><span class="space"> </span></figcaption><table>
+<tr><td class="l m b0 r2 l2 t0 lines" data-braille="last-cell">\(u = \sin(x) \)</td></tr>
+<tr><td class="l m b0 r2 l2 t0 lines" data-braille="last-cell">\(du = \cos(x)dx \)</td></tr>
+</table></figure></p></div>
+</div></div></p>
 <span class="incontext"><a href="sec-integrating-trig-functions.html#p-310">in-context</a></span>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-13T14:26:47-05:00       *-->
+<!--*       on 2021-05-14T14:43:34-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,21 +15,25 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Let's try the example above, find the area between \(f(x)=x+5\) and \(g(x)=\dfrac{x^2}{10}+1 \) from 0 to 5:</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{align*}
-A \amp = \int_a^b f(x)-g(x)dx \\
-\amp = \int_0^5 (x+5)-(\dfrac{x^2}{10} + 1) dx \\
-\amp = \int_0^5 x+5-\dfrac{x^2}{10} - 1 dx \\
-\amp = \int_0^5 -\dfrac{x^2}{10} + x + 4 dx \\
-\amp = \left[-\dfrac{x^3}{30} + \dfrac{x^2}{2} + 4x \right]_0^5 \\
-\amp = \left( -\dfrac{(5)^3}{30}+\dfrac{(5)^2}{2} + 4(5) \right) - 0 \\
-\amp = -\dfrac{125}{30} + \dfrac{25}{2} + 20 \\
-\amp = -\dfrac{125}{30} + \dfrac{375}{30} + \dfrac{600}{30} \\
-\amp = \dfrac{850}{30} \\
-A \amp = \dfrac{85}{3} 
-\end{align*}
-</div>
-<span class="incontext"><a href="sec-area-between-curves.html#p-78">in-context</a></span>
+<p>Let's try taking the limit of \(\displaystyle\lim_{x \to 4}\dfrac{x+3}{(x-2)(x-4)}\text{.}\) This function is of the form \(\displaystyle\lim_{x \to a}\dfrac{p(x)}{q(x)}\) where \(p(a) \neq 0\) but \(q(a) = 0\text{.}\) The earlier theorem states that the result is DNE -- can we do better? If the one-sided limits agree, we can give a "better" answer.</p>
+<ul class="disc">
+<li><div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p xmlns:svg="http://www.w3.org/2000/svg">\(\displaystyle\lim_{x \to 4^{-}}\dfrac{x+3}{(x-2)(x-4)}\)</p></div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p xmlns:svg="http://www.w3.org/2000/svg">imagine plugging in numbers a little less than 4</p></div>
+</div></div></li>
+<li><div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p xmlns:svg="http://www.w3.org/2000/svg">\(\displaystyle\lim_{x \to 4^{-}}\dfrac{(x+3)^{(+)}}{(x-2)^{(+)}(x-4)^{(-)}} = - \infty\)</p></div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p xmlns:svg="http://www.w3.org/2000/svg">this is of the form \(x - 4\) factored as \(x \to 4^{-}\)(the negative is from the ratio of signs)</p></div>
+</div></div></li>
+<li><div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p xmlns:svg="http://www.w3.org/2000/svg">\(\displaystyle\lim_{x \to 4^{+}}\dfrac{x+3}{(x-2)(x-4)}\)</p></div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p xmlns:svg="http://www.w3.org/2000/svg">imagine plugging in numbers a little more than 4</p></div>
+</div></div></li>
+<li><div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p xmlns:svg="http://www.w3.org/2000/svg">\(\displaystyle\lim_{x \to 4^{+}}\dfrac{(x+3)^{(+)}}{(x-2)^{(+)}(x-4)^{(+)}} = + \infty\)</p></div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p xmlns:svg="http://www.w3.org/2000/svg">this time the result is positive</p></div>
+</div></div></li>
+</ul>
+<span class="incontext"><a href="sec-algebraic-approach-to-limits.html#p-78">in-context</a></span>
 </body>
 </html>

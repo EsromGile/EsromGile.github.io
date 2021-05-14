@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-13T14:26:48-05:00       *-->
+<!--*       on 2021-05-14T14:43:35-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,24 +15,25 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>In order to do this we will use partial fractions. An example of how partial fractions work is as follows:</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{align*}
-\dfrac{1}{x} - \dfrac{1}{x+1} \amp = \dfrac{1}{x}\cdot\dfrac{x+1}{x+1} - \dfrac{1}{x+1}\cdot\dfrac{x}{x} \\
-\amp = \dfrac{x+1}{x(x+1)} - \dfrac{x}{x(x+1)} \\
-\amp = \dfrac{x+1-x}{x(x+1)}\\
-\amp = \dfrac{1}{x(x+1)}\\
-\amp = \dfrac{1}{x^2+x}
-\end{align*}
-</div>
-<p data-braille="continuation">The only difference in how we use it for integrals is that the process is reversed:</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{align*}
-\int \dfrac{1}{x^2 + x} dx \amp = \int \dfrac{1}{x} - \dfrac{1}{x+1} dx \\
-\amp = \int \dfrac{1}{x} dx - \int \dfrac{1}{x+1} dx \\
-\amp = \ln | x | - \ln | x - 1 |  + c 
-\end{align*}
-</div>
-<span class="incontext"><a href="sec-partial-fractions.html#p-338">in-context</a></span>
+<p>Here is a procedure to evaluate functions of the form \(\displaystyle\int\sin^m(x)\cos^n(x)dx\text{:}\)</p>
+<ul class="disc">
+<li><div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
+<div class="sbspanel" style="width:20.6896551724138%;justify-content:flex-start;"><p xmlns:svg="http://www.w3.org/2000/svg">n is odd</p></div>
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:flex-start;"><p xmlns:svg="http://www.w3.org/2000/svg">split off a factor of \(\cos(x)\text{,}\) apply relevant identity, make u-sub where \(u = \sin(x)\)</p></div>
+<div class="sbspanel" style="width:41.3793103448276%;justify-content:flex-start;"><p xmlns:svg="http://www.w3.org/2000/svg">\(\cos^2(x) = 1 - sin^2(x)\)</p></div>
+</div></div></li>
+<li><div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
+<div class="sbspanel" style="width:20.6896551724138%;justify-content:flex-start;"><p xmlns:svg="http://www.w3.org/2000/svg">m is odd</p></div>
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:flex-start;"><p xmlns:svg="http://www.w3.org/2000/svg">split off a factor of \(\sin(x)\text{,}\) apply relevant identity, make u-sub where \(u=\cos(x)\)</p></div>
+<div class="sbspanel" style="width:41.3793103448276%;justify-content:flex-start;"><p xmlns:svg="http://www.w3.org/2000/svg">\(\sin^2(x) = 1 - \cos^2(x)\)&gt;</p></div>
+</div></div></li>
+<li><div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
+<div class="sbspanel" style="width:20.6896551724138%;justify-content:flex-start;"><p xmlns:svg="http://www.w3.org/2000/svg">\(\begin{cases} \text{m is even} \\ \text{n is even} \end{cases} \)</p></div>
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:flex-start;"><p xmlns:svg="http://www.w3.org/2000/svg">use the relevant identities to reduce the powers on \(sin(x) \mbox{ and } \cos(x) \)</p></div>
+<div class="sbspanel" style="width:41.3793103448276%;justify-content:flex-start;"><p xmlns:svg="http://www.w3.org/2000/svg">\(\begin{cases} \sin^2(x) = \dfrac{1}{2}(1 - \cos(2x)) \\
+\cos^2(x) = \dfrac{1}{2}(1 + \cos(2x)) \end{cases}\)</p></div>
+</div></div></li>
+</ul>
+<span class="incontext"><a href="sec-integrating-trig-functions.html#p-338">in-context</a></span>
 </body>
 </html>

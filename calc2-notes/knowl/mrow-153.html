@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-13T14:26:48-05:00       *-->
+<!--*       on 2021-05-14T14:43:35-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,13 +16,14 @@
 <body>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{align*}
-\sinh(x) \amp = \dfrac{1}{2}e^x - \dfrac{1}{2}e^{-x} \\
-\dfrac{d}{dx} \left( \sinh(x) \right) \amp = \dfrac{d}{dx} \left( \dfrac{1}{2}e^x - \dfrac{1}{2}e^{-x} \right) \\
-\amp = \dfrac{1}{2}e^x - \left( \dfrac{1}{2}e^{-x} \cdot -1 \right) \\
-\amp = \dfrac{1}{2}e^x + \dfrac{1}{2}e^{-x} \\
-\amp = \cosh(x) 
+y \amp = \displaystyle \lim_{x \to 0^+} x^3 \cdot \ln(x) \\
+\amp = \displaystyle \lim_{x \to 0^+} \dfrac{\ln(x)}{x^{-3}}\\
+\amp = \displaystyle \lim_{x \to 0^+} \dfrac{\dfrac{1}{x}}{-3x^{-4}} \text{  *apply L'Hoptital's rule}\\
+\amp = \displaystyle \lim_{x \to 0^+} \dfrac{1}{x} \cdot \dfrac{x^4}{-3}\\
+\amp = \displaystyle \lim_{x \to 0^+} \dfrac{x^3}{-3}\\
+\amp = 0 
 \end{align*}
 </div>
-<span class="incontext"><a href="sec-hyperbolic-trig-functions.html#mjx-eqn-mrow-153">in-context</a></span>
+<span class="incontext"><a href="sec-lhapitals-rule.html#mjx-eqn-mrow-153">in-context</a></span>
 </body>
 </html>
