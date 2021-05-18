@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-14T14:43:35-05:00       *-->
+<!--*       on 2021-05-18T15:54:14-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,11 +16,14 @@
 <body>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{align*}
-\int x \cos(x) dx \amp = x \sin(x) - \int \sin(x) \cdot 1 dx\\
-\amp = x \sin(x) - ( - \cos(x)) + c \\
-\amp = x \sin(x) +  \cos(x) + c 
+y \amp = \displaystyle \lim_{x \to 0^+} x^3 \cdot \ln(x) \\
+\amp = \displaystyle \lim_{x \to 0^+} \dfrac{\ln(x)}{x^{-3}}\\
+\amp = \displaystyle \lim_{x \to 0^+} \dfrac{\dfrac{1}{x}}{-3x^{-4}} \text{  *apply L'Hoptital's rule}\\
+\amp = \displaystyle \lim_{x \to 0^+} \dfrac{1}{x} \cdot \dfrac{x^4}{-3}\\
+\amp = \displaystyle \lim_{x \to 0^+} \dfrac{x^3}{-3}\\
+\amp = 0 
 \end{align*}
 </div>
-<span class="incontext"><a href="sec-integration-by-parts.html#mjx-eqn-mrow-170">in-context</a></span>
+<span class="incontext"><a href="sec-lhapitals-rule.html#mjx-eqn-mrow-170">in-context</a></span>
 </body>
 </html>

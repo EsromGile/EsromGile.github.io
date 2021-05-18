@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-14T14:43:33-05:00       *-->
+<!--*       on 2021-05-18T15:54:12-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -11,7 +11,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Continuity (*)</title>
+<title>Continuity</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type="text/x-mathjax-config">
@@ -86,7 +86,7 @@ MathJax.Hub.Config({
 <li><a href="sec-intro-to-limits.html" data-scroll="sec-intro-to-limits">Intro to Limits</a></li>
 <li><a href="sec-algebraic-approach-to-limits.html" data-scroll="sec-algebraic-approach-to-limits">Algebraic Approach to Limits</a></li>
 <li><a href="sec-end-behavior.html" data-scroll="sec-end-behavior">End Behavior</a></li>
-<li><a href="sec-continuity.html" data-scroll="sec-continuity" class="active">Continuity (*)</a></li>
+<li><a href="sec-continuity.html" data-scroll="sec-continuity" class="active">Continuity</a></li>
 <li><a href="sec-limits-of-trig-functions.html" data-scroll="sec-limits-of-trig-functions">Limits of Trig Functions (*)</a></li>
 </ul>
 </li>
@@ -155,8 +155,68 @@ MathJax.Hub.Config({
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-continuity"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">1.4</span> <span class="title">Continuity (*)</span>
-</h2></section></div></main>
+<span class="type">Section</span> <span class="codenumber">1.4</span> <span class="title">Continuity</span>
+</h2>
+<article class="assemblage assemblage-like" id="as-continuity-def"><p id="p-111">A continuous graph can be thought of as a graph that you can draw without lifting your pencil.</p></article><p id="p-112">Here are some examples of discontinuities:</p>
+<ul class="disc">
+<li id="li-46"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><p id="p-113"><figure class="figure figure-like" id="fig-des-removeable-discontinuity"><iframe src="https://www.desmos.com/calculator/24i8cuovg2" id="interactive-6" width="270" height="270"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.4.1<span class="period">.</span></span><span class="space"> </span>Removeable Discontinuity</figcaption></figure></p></div>
+<div class="sbspanel" style="width:38.8888888888889%;justify-content:flex-start;"><p id="p-114">This is an example of a removeable discontinuity. These can have or not have a point, and it simply a hole on an otherwise continuous graph.</p></div>
+</div></div></li>
+<li id="li-47"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><p id="p-115"><figure class="figure figure-like" id="fig-des-jump-discontinuity"><iframe src="https://www.desmos.com/calculator/t7on9yeuzs" id="interactive-7" width="270" height="270"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.4.2<span class="period">.</span></span><span class="space"> </span>Jump Discontinuity</figcaption></figure></p></div>
+<div class="sbspanel" style="width:38.8888888888889%;justify-content:flex-start;"><p id="p-116">This is a jump discontinuity. Pretty self explanitory.</p></div>
+</div></div></li>
+<li id="li-48"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><p id="p-117"><figure class="figure figure-like" id="fig-des-infinite-discontinuity"><iframe src="https://www.desmos.com/calculator/hotpagjym9" id="interactive-8" width="270" height="270"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.4.3<span class="period">.</span></span><span class="space"> </span>Infinite Discontinuity</figcaption></figure></p></div>
+<div class="sbspanel" style="width:38.8888888888889%;justify-content:flex-start;"><p id="p-118">Finally, this is an infinite discontinuity. These can be describes as having an asymptotes in one or more directions.</p></div>
+</div></div></li>
+</ul>
+<p id="p-119"><article class="definition definition-like" id="def-continuity"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">Continuity.</span>
+</h6>
+<p id="p-120">A given function \(f(x)\) is said to be continuous as a point \(x = c\) provided:</p>
+<div class="displaymath">
+\begin{equation*}
+\lim_{x \to c} f(x) = f(c)
+\end{equation*}
+</div>
+<p id="p-121">We say a function is continuous on the open interval \((a \mbox{ , } b)\) if it is continuous at all point inside the interval.</p>
+<p id="p-122">We say that a function is continuous everywhere if it is continuous at all point on the interval \((- \infty \mbox{ , } \infty)\text{.}\)</p></article></p>
+<p id="p-123"><article class="theorem theorem-like" id="the-continuity"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.4.5</span><span class="period">.</span><span class="space"> </span><span class="title">Continuity.</span>
+</h6>
+<ol id="p-124" class="decimal">
+<li id="li-49"><p id="p-125">a polynomial is continuous everywhere</p></li>
+<li id="li-50"><p id="p-126">a rational function is continuous at every point where the denominator is not equal to zero and discontinuous where the denominator equals zero</p></li>
+</ol>
+<p data-braille="continuation"><article class="assemblage assemblage-like" id="as-continuity-theorem"><p id="p-127">For the function \(P_{n}(x) = C_0 + C_1x^1 + \dots + C_nx^n\text{,}\) to find \(\displaystyle\lim_{x \to c} P_n(x)\text{,}\) we would take the limit of the formula, reducing to:</p>
+<div class="displaymath">
+\begin{equation*}
+\lim_{x \to c} P_n(x) = P_n(c)
+\end{equation*}
+</div></article></p></article> <article class="theorem theorem-like" id="the-properties-of-continuity"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.4.6</span><span class="period">.</span><span class="space"> </span><span class="title">Properties of Continuity.</span>
+</h6>
+<p id="p-128">If \(f(x)\) and \(g(x)\) are continuous at \(x = c\text{:}\)</p>
+<ol class="decimal">
+<li id="li-51"><p id="p-129">\(f(x) + g(x)\) is continuous at \(x = c\)</p></li>
+<li id="li-52"><p id="p-130">\(f(x) - g(x)\) is continuous at \(x = c\)</p></li>
+<li id="li-53"><p id="p-131">\(f(x) \cdot g(x)\) is continuous at \(x = c\)</p></li>
+<li id="li-54">
+<p id="p-132">\(f(x) / g(x)\) is continuous at \(x = c\) provided \(g(x) \neq 0\)</p>
+<p id="p-133">(if \(g(x) = 0\) then \(f(x) / g(x)\) has a disconinuity)</p>
+</li>
+</ol></article> <article class="theorem theorem-like" id="the-intermediate-value-theorem"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.4.7</span><span class="period">.</span><span class="space"> </span><span class="title">Intermediate Value Theorem.</span>
+</h6>
+<p id="p-134">If \(f(x)\) is continuous on a closed interval, \([ a \mbox{ , } b]\text{,}\) and \(k\) is any number at or between \(f(a) \mbox{ and } f(b)\text{,}\) then there is at least one number, \(x\text{,}\) in  \([ a \mbox{ , } b]\) such that \(f(x) = k\text{.}\) <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p id="p-135"><figure class="figure figure-like" id="fig-des-discontinuity-ivt"><iframe src="https://www.desmos.com/calculator/6dosrnv3so" id="interactive-9" width="270" height="270"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.4.8<span class="period">.</span></span><span class="space"> </span></figcaption></figure></p></div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p id="p-136"><figure class="figure figure-like" id="fig-des-continuity-ivt"><iframe src="https://www.desmos.com/calculator/t6lbjpjvns" id="interactive-10" width="270" height="270"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.4.9<span class="period">.</span></span><span class="space"> </span></figcaption></figure></p></div>
+</div></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p id="p-137">\(f(x)\) isn't continuous on \([ a \mbox{ , } b]\) because \(f(a) \neq \displaystyle\lim_{x \to a^+} f(x)\)</p></div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p id="p-138">\(f(x)\) is continuous on \([ a \mbox{ , } b]\) because \(f(a) = \displaystyle\lim_{x \to a^+} f(x)\) and \(f(b) = \displaystyle\lim_{x \to b^-} f(x)\)</p></div>
+</div></div></p></article></p></section></div></main>
 </div>
 </body>
 </html>

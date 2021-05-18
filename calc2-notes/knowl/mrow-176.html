@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-14T14:43:35-05:00       *-->
+<!--*       on 2021-05-18T15:54:14-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,11 +16,13 @@
 <body>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{align*}
-\int \sin (x) \cdot e^x dx \amp = \sin(x) \cdot e^x - \cos(x) \cdot e^x - \int \sin(x) \cdot e^x dx \\
-2 \int \sin (x) \cdot e^x dx \amp = \sin(x) \cdot e^x - \cos(x) \cdot e^x \\
-\int \sin (x) \cdot e^x dx \amp = \dfrac{1}{2} ( \sin(x) \cdot e^x - \cos(x) \cdot e^x) + c 
+\sinh(x) \amp = \dfrac{1}{2}e^x - \dfrac{1}{2}e^{-x} \\
+\dfrac{d}{dx} \left( \sinh(x) \right) \amp = \dfrac{d}{dx} \left( \dfrac{1}{2}e^x - \dfrac{1}{2}e^{-x} \right) \\
+\amp = \dfrac{1}{2}e^x - \left( \dfrac{1}{2}e^{-x} \cdot -1 \right) \\
+\amp = \dfrac{1}{2}e^x + \dfrac{1}{2}e^{-x} \\
+\amp = \cosh(x) 
 \end{align*}
 </div>
-<span class="incontext"><a href="sec-integration-by-parts.html#mjx-eqn-mrow-176">in-context</a></span>
+<span class="incontext"><a href="sec-hyperbolic-trig-functions.html#mjx-eqn-mrow-176">in-context</a></span>
 </body>
 </html>
