@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-18T15:54:13-05:00       *-->
+<!--*       on 2021-05-20T15:48:08-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -87,12 +87,12 @@ MathJax.Hub.Config({
 <li><a href="sec-algebraic-approach-to-limits.html" data-scroll="sec-algebraic-approach-to-limits">Algebraic Approach to Limits</a></li>
 <li><a href="sec-end-behavior.html" data-scroll="sec-end-behavior">End Behavior</a></li>
 <li><a href="sec-continuity.html" data-scroll="sec-continuity">Continuity</a></li>
-<li><a href="sec-limits-of-trig-functions.html" data-scroll="sec-limits-of-trig-functions">Limits of Trig Functions (*)</a></li>
+<li><a href="sec-limits-of-trig-functions.html" data-scroll="sec-limits-of-trig-functions">Limits of Trig Functions</a></li>
 </ul>
 </li>
 <li class="link">
 <a href="chap-derivatives.html" data-scroll="chap-derivatives"><span class="codenumber">2</span> <span class="title">Derivatives (*)</span></a><ul>
-<li><a href="sec-derivatives.html" data-scroll="sec-derivatives">Intro to Derivatives (*)</a></li>
+<li><a href="sec-derivatives.html" data-scroll="sec-derivatives">Intro to Derivatives</a></li>
 <li><a href="sec-techniques-of-differentiation.html" data-scroll="sec-techniques-of-differentiation">Differentiation Techniques (*)</a></li>
 <li><a href="sec-products-and-quotients.html" data-scroll="sec-products-and-quotients">Products and Quotients of Functions (*)</a></li>
 <li><a href="sec-trig-functions.html" data-scroll="sec-trig-functions">Trig Functions (*)</a></li>
@@ -157,10 +157,10 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-improper-integrals"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">7.5</span> <span class="title">Improper Integrals</span>
 </h2>
-<section class="introduction" id="introduction-14"><p id="p-439">An improper integral is an integral that either contians positive or negative infinity as point <em class="emphasis">a</em> or <em class="emphasis">b</em>, or contains a function that has a verticle asymptote somewhere between or at <em class="emphasis">a</em> or <em class="emphasis">b</em>.</p>
-<p id="p-440">Contrast the following functions: <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<section class="introduction" id="introduction-15"><p id="p-489">An improper integral is an integral that either contians positive or negative infinity as point <em class="emphasis">a</em> or <em class="emphasis">b</em>, or contains a function that has a verticle asymptote somewhere between or at <em class="emphasis">a</em> or <em class="emphasis">b</em>.</p>
+<p id="p-490">Contrast the following functions: <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
 <div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;">
-<p id="p-441">Regular Integral</p>
+<p id="p-491">Regular Integral</p>
 <div class="displaymath">
 \begin{align*}
 \int _{1} ^{10} \dfrac{1}{x^2} dx \amp = \int _{1} ^{10} x^{-2} dx \\
@@ -173,10 +173,10 @@ MathJax.Hub.Config({
 <p data-braille="continuation"><article class="note remark-like" id="note-integral-one-to-10"><h6 class="heading">
 <span class="type">Note</span><span class="space"> </span><span class="codenumber">7.5.1</span><span class="period">.</span>
 </h6>
-<p id="p-442">Notice: If we were to to go take the same integral from 1 to 100 we would get \(\dfrac{99}{100}.\)</p></article></p>
+<p id="p-492">Notice: If we were to to go take the same integral from 1 to 100 we would get \(\dfrac{99}{100}.\)</p></article></p>
 </div>
 <div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;">
-<p id="p-443">Improper Integral</p>
+<p id="p-493">Improper Integral</p>
 <div class="displaymath">
 \begin{align*}
 \int _1 ^{\infty} \amp = \lim_{b\to\infty} \int_{1}^{b} \dfrac{1}{x^2} dx \\
@@ -192,30 +192,30 @@ MathJax.Hub.Config({
 </div></div></p></section><section class="subsection" id="sub-improper-integral-to-infinity"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">7.5.1</span> <span class="title">Improper Integrals to Infinity</span>
 </h3>
-<p id="p-444"><article class="assemblage assemblage-like" id="as-improper-integral-to-infinity"><p id="p-445">The improper integral of <em class="emphasis">f</em> over the interval \([a\mbox{, }+\infty)\) is defined to be:</p>
+<p id="p-494"><article class="assemblage assemblage-like" id="as-improper-integral-to-infinity"><p id="p-495">The improper integral of <em class="emphasis">f</em> over the interval \([a\mbox{, }+\infty)\) is defined to be:</p>
 <div class="displaymath">
 \begin{equation*}
 \int _{a}^{+\infty} f(x) dx = \lim_{b\to\infty} \int_{a}^{b} f(x) dx
 \end{equation*}
 </div>
 <ul class="disc">
-<li id="li-148"><p id="p-446">In the case where the limit exists, the improper integral converges  and the limit if the value of the integral.</p></li>
-<li id="li-149"><p id="p-447">In the case where the limit doesn't exist, the improper integral diverges and it is not assigned a value.</p></li>
+<li id="li-166"><p id="p-496">In the case where the limit exists, the improper integral converges  and the limit if the value of the integral.</p></li>
+<li id="li-167"><p id="p-497">In the case where the limit doesn't exist, the improper integral diverges and it is not assigned a value.</p></li>
 </ul></article> <article class="theorem theorem-like" id="th-improper-integral-diverging"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">7.5.2</span><span class="period">.</span>
 </h6>
-<p id="p-448">The integral \(\displaystyle\int _{a}^{\infty} \dfrac{1}{x^P} dx \) converges if \(P &gt; 1\text{,}\) and diverges if \(P \leq 1\text{.}\)</p></article></p>
-<p id="p-449"><article class="assemblage assemblage-like" id="as-improper-integral-from-infintiy"><p id="p-450">The improper integral of <em class="emphasis">f</em> over the interval \(( -\infty\mbox{, }b]\) is defined to be:</p>
+<p id="p-498">The integral \(\displaystyle\int _{a}^{\infty} \dfrac{1}{x^P} dx \) converges if \(P &gt; 1\text{,}\) and diverges if \(P \leq 1\text{.}\)</p></article></p>
+<p id="p-499"><article class="assemblage assemblage-like" id="as-improper-integral-from-infintiy"><p id="p-500">The improper integral of <em class="emphasis">f</em> over the interval \(( -\infty\mbox{, }b]\) is defined to be:</p>
 <div class="displaymath">
 \begin{equation*}
 \int_{-\infty}^{b} f(x) dx = \lim_{a\to - \infty} \int_{a}^{b} f(x) dx 
 \end{equation*}
 </div>
 <ul class="disc">
-<li id="li-150"><p id="p-451">In the case where the limit exists, the improper integral converges  and the limit if the value of the integral.</p></li>
-<li id="li-151"><p id="p-452">In the case where the limit doesn't exist, the improper integral diverges and it is not assigned a value.</p></li>
+<li id="li-168"><p id="p-501">In the case where the limit exists, the improper integral converges  and the limit if the value of the integral.</p></li>
+<li id="li-169"><p id="p-502">In the case where the limit doesn't exist, the improper integral diverges and it is not assigned a value.</p></li>
 </ul></article></p>
-<p id="p-453">Additionally, <article class="assemblage assemblage-like" id="as-improper-integral-from-infinity-to-infinity"><p id="p-454">The improper integral of <em class="emphasis">f</em> over the inverval \((-\infty\mbox{, }+\infty)\) is defined as:</p>
+<p id="p-503">Additionally, <article class="assemblage assemblage-like" id="as-improper-integral-from-infinity-to-infinity"><p id="p-504">The improper integral of <em class="emphasis">f</em> over the inverval \((-\infty\mbox{, }+\infty)\) is defined as:</p>
 <div class="displaymath">
 \begin{equation*}
 \int_{-\infty}^{+\infty} f(x) dx = \int_{-\infty}^{c}f(x)dx + \int_{c}^{\infty}f(x)dx 
@@ -223,12 +223,12 @@ MathJax.Hub.Config({
 </div>
 <p data-braille="continuation">where <em class="emphasis">c</em> is any real number.</p>
 <ul class="disc">
-<li id="li-152"><p id="p-455">If both converge, then the functions converges.</p></li>
-<li id="li-153"><p id="p-456">Otherwise, the function diverges.</p></li>
+<li id="li-170"><p id="p-505">If both converge, then the functions converges.</p></li>
+<li id="li-171"><p id="p-506">Otherwise, the function diverges.</p></li>
 </ul></article></p></section><section class="subsection" id="sub-improper-integrals-asymptotes"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">7.5.2</span> <span class="title">Improper Integrals -- Asymptotes</span>
 </h3>
-<p id="p-457">We can also have improper integrals due to vertical asymptotes. <article class="assemblage assemblage-like" id="as-asymptote-improper-integrals"><p id="p-458">If <em class="emphasis">f</em> is continuous on \([a\mbox{, }b]\) except for an infinite discontinuity at <em class="emphasis">b</em>, then it is defined as:</p>
+<p id="p-507">We can also have improper integrals due to vertical asymptotes. <article class="assemblage assemblage-like" id="as-asymptote-improper-integrals"><p id="p-508">If <em class="emphasis">f</em> is continuous on \([a\mbox{, }b]\) except for an infinite discontinuity at <em class="emphasis">b</em>, then it is defined as:</p>
 <div class="displaymath">
 \begin{equation*}
 \int _{a} ^{b} f(x) dx = \lim _{k \to b^{-}} \int _{a}^{k} f(x) dx
@@ -242,8 +242,8 @@ MathJax.Hub.Config({
 </div></article> <article class="project project-like" id="proj-asymptote-improper-integral-example"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">7.5.1</span><span class="period">.</span>
 </h6>
-<p id="p-459">Evaluate: \(\displaystyle\int _0 ^8 \dfrac{1}{\sqrt[3]{x}} dx \)</p>
-<p id="p-460"><a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-5" id="answer-5"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-5"><div class="answer solution-like"><div class="displaymath">
+<p id="p-509">Evaluate: \(\displaystyle\int _0 ^8 \dfrac{1}{\sqrt[3]{x}} dx \)</p>
+<p id="p-510"><a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-5" id="answer-5"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-5"><div class="answer solution-like"><div class="displaymath">
 \begin{align*}
 \int _0 ^8 \dfrac{1}{\sqrt[3]{x}} dx \amp = \lim _{k \to 0^{+}} \int _k ^8 \dfrac{1}{\sqrt[3]{x}} dx \\
 \amp = \lim _{k \to 0^{+}} \int _k ^8 x ^{-\frac{1}{3}} dx \\
@@ -255,15 +255,15 @@ MathJax.Hub.Config({
 \amp = 6 
 \end{align*}
 </div></div></div></p></article></p>
-<p id="p-461">Similarly to integrals to infinity, you can evaluate a function that has an asymptote between \([a\mbox{, }b]\) by splitting the function into two pieces. <article class="assemblage assemblage-like" id="as-asymptote-improper-integrals-with-discontinuity"><p id="p-462">If <em class="emphasis">f</em> is continuous on \([a\mbox{, }b]\) except for an infinite discontinuity at <em class="emphasis">c</em> in \((a\mbox{, }b\) is defined as:</p>
+<p id="p-511">Similarly to integrals to infinity, you can evaluate a function that has an asymptote between \([a\mbox{, }b]\) by splitting the function into two pieces. <article class="assemblage assemblage-like" id="as-asymptote-improper-integrals-with-discontinuity"><p id="p-512">If <em class="emphasis">f</em> is continuous on \([a\mbox{, }b]\) except for an infinite discontinuity at <em class="emphasis">c</em> in \((a\mbox{, }b\) is defined as:</p>
 <div class="displaymath">
 \begin{equation*}
 \int _a ^b f(x) dx = \int _a ^c f(x) dx + \int _c ^ b f(x) dx 
 \end{equation*}
 </div>
 <ul class="disc">
-<li id="li-154"><p id="p-463">If both converge, then the functions converges.</p></li>
-<li id="li-155"><p id="p-464">Otherwise, the function diverges.</p></li>
+<li id="li-172"><p id="p-513">If both converge, then the functions converges.</p></li>
+<li id="li-173"><p id="p-514">Otherwise, the function diverges.</p></li>
 </ul></article> <article class="note remark-like" id="note-improper-integral-errors"><h6 class="heading">
 <span class="type">Note</span><span class="space"> </span><span class="codenumber">7.5.3</span><span class="period">.</span>
 </h6>You cannot simply apply the fundamental theorem of calculus directly to an improper integral. If you try you will get crazy results such as a negative area.</article></p></section><section class="conclusion" id="conclusion-10"></section></section></div></main>

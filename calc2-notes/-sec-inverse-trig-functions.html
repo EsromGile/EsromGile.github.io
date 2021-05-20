@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-18T15:54:13-05:00       *-->
+<!--*       on 2021-05-20T15:48:07-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -87,12 +87,12 @@ MathJax.Hub.Config({
 <li><a href="sec-algebraic-approach-to-limits.html" data-scroll="sec-algebraic-approach-to-limits">Algebraic Approach to Limits</a></li>
 <li><a href="sec-end-behavior.html" data-scroll="sec-end-behavior">End Behavior</a></li>
 <li><a href="sec-continuity.html" data-scroll="sec-continuity">Continuity</a></li>
-<li><a href="sec-limits-of-trig-functions.html" data-scroll="sec-limits-of-trig-functions">Limits of Trig Functions (*)</a></li>
+<li><a href="sec-limits-of-trig-functions.html" data-scroll="sec-limits-of-trig-functions">Limits of Trig Functions</a></li>
 </ul>
 </li>
 <li class="link">
 <a href="chap-derivatives.html" data-scroll="chap-derivatives"><span class="codenumber">2</span> <span class="title">Derivatives (*)</span></a><ul>
-<li><a href="sec-derivatives.html" data-scroll="sec-derivatives">Intro to Derivatives (*)</a></li>
+<li><a href="sec-derivatives.html" data-scroll="sec-derivatives">Intro to Derivatives</a></li>
 <li><a href="sec-techniques-of-differentiation.html" data-scroll="sec-techniques-of-differentiation">Differentiation Techniques (*)</a></li>
 <li><a href="sec-products-and-quotients.html" data-scroll="sec-products-and-quotients">Products and Quotients of Functions (*)</a></li>
 <li><a href="sec-trig-functions.html" data-scroll="sec-trig-functions">Trig Functions (*)</a></li>
@@ -157,38 +157,38 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="-sec-inverse-trig-functions"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">6.5</span> <span class="title">Inverse Trig Functions</span>
 </h2>
-<section class="introduction" id="introduction-9"><p id="p-284">Does \(f(x)=\sin(x)\) have an inverse function?</p>
-<p id="p-285">No, it is not one-to-one. However, if we restrict the domain to \(\left[ -\dfrac{\pi}{2} \mbox{ , } \dfrac{\pi}{2} \right]\text{,}\) then it is a one-to-one function. This is called the "restricted" sine function, and the inverse gives \(\arcsin(x) \mbox{ or } \sin^{-1}(x)\text{.}\) <div class="sidebyside"><div class="sbsrow" style="margin-left:6.25%;margin-right:6.25%;">
+<section class="introduction" id="introduction-10"><p id="p-334">Does \(f(x)=\sin(x)\) have an inverse function?</p>
+<p id="p-335">No, it is not one-to-one. However, if we restrict the domain to \(\left[ -\dfrac{\pi}{2} \mbox{ , } \dfrac{\pi}{2} \right]\text{,}\) then it is a one-to-one function. This is called the "restricted" sine function, and the inverse gives \(\arcsin(x) \mbox{ or } \sin^{-1}(x)\text{.}\) <div class="sidebyside"><div class="sbsrow" style="margin-left:6.25%;margin-right:6.25%;">
 <div class="sbspanel" style="width:51.4285714285714%;justify-content:center;"><figure class="figure figure-like" id="fig-sin"><img src="images/sin.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.5.1<span class="period">.</span></span><span class="space"> </span>restricted sin(x)</figcaption></figure></div>
 <div class="sbspanel" style="width:34.2857142857143%;justify-content:center;"><figure class="figure figure-like" id="fig-arcsin"><img src="images/arcsin.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.5.2<span class="period">.</span></span><span class="space"> </span>arcsin(x)</figcaption></figure></div>
 </div></div></p>
-<p id="p-286">A similar thing is true for cosine. Inverse of restricted cosine with a domain of \(\left[ 0 \mbox{ , } \pi \right]\text{,}\) gives us \(\arccos(x) \mbox{ or } \cos^{-1}(x)\text{.}\) <div class="sidebyside"><div class="sbsrow" style="margin-left:6.25%;margin-right:6.25%;">
+<p id="p-336">A similar thing is true for cosine. Inverse of restricted cosine with a domain of \(\left[ 0 \mbox{ , } \pi \right]\text{,}\) gives us \(\arccos(x) \mbox{ or } \cos^{-1}(x)\text{.}\) <div class="sidebyside"><div class="sbsrow" style="margin-left:6.25%;margin-right:6.25%;">
 <div class="sbspanel" style="width:51.4285714285714%;justify-content:center;"><figure class="figure figure-like" id="fig-cos"><img src="images/cos.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.5.3<span class="period">.</span></span><span class="space"> </span>cos(x)</figcaption></figure></div>
 <div class="sbspanel" style="width:34.2857142857143%;justify-content:center;"><figure class="figure figure-like" id="fig-arcos"><img src="images/arccos.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.5.4<span class="period">.</span></span><span class="space"> </span>arccos(x)</figcaption></figure></div>
 </div></div></p>
-<p id="p-287">Tangent on the other hand repeats and can be restricted to \(\left( -\dfrac{\pi}{2} \mbox{ , } \dfrac{\pi}{2} \right)\) where it has two vertical asymptotes. When inversed, there are then two horizontal asymptotes from \(\left[ -\infty \mbox{ , } \infty \right]\text{.}\) <div class="sidebyside"><div class="sbsrow" style="margin-left:6.25%;margin-right:6.25%;">
+<p id="p-337">Tangent on the other hand repeats and can be restricted to \(\left( -\dfrac{\pi}{2} \mbox{ , } \dfrac{\pi}{2} \right)\) where it has two vertical asymptotes. When inversed, there are then two horizontal asymptotes from \(\left[ -\infty \mbox{ , } \infty \right]\text{.}\) <div class="sidebyside"><div class="sbsrow" style="margin-left:6.25%;margin-right:6.25%;">
 <div class="sbspanel" style="width:34.2857142857143%;justify-content:center;"><figure class="figure figure-like" id="fig-tan"><img src="images/tan.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.5.5<span class="period">.</span></span><span class="space"> </span>tan(x)</figcaption></figure></div>
 <div class="sbspanel" style="width:51.4285714285714%;justify-content:center;"><figure class="figure figure-like" id="fig-arctan"><img src="images/arctan.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.5.6<span class="period">.</span></span><span class="space"> </span>arctan(x)</figcaption></figure></div>
 </div></div></p></section><section class="subsection" id="sub-triangle-method"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.5.1</span> <span class="title">Triangle Method</span>
 </h3>
-<p id="p-288">What is \(\sin(\tan^{-1}(x))\text{?}\)</p>
-<p id="p-289">Recall that tangent is opposite of adjacent, so we can represent this as \(\dfrac{x}{1}\text{,}\) plug it in, and then solve for the hypotenuse. This leaves us with the image below. <figure class="figure figure-like" id="fig-triangle-method"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/triangle-method-example.png" style="width: 100%; height: auto;" alt=""></div>
+<p id="p-338">What is \(\sin(\tan^{-1}(x))\text{?}\)</p>
+<p id="p-339">Recall that tangent is opposite of adjacent, so we can represent this as \(\dfrac{x}{1}\text{,}\) plug it in, and then solve for the hypotenuse. This leaves us with the image below. <figure class="figure figure-like" id="fig-triangle-method"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/triangle-method-example.png" style="width: 100%; height: auto;" alt=""></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.5.7<span class="period">.</span></span><span class="space"> </span></figcaption></figure> Now, let's take the sine of this function. That would be opposite over hypotenuse or \(\dfrac{x}{\sqrt{(1+x^2)}}\text{.}\) That is our final answer.</p>
-<p id="p-290"></p></section><section class="subsection" id="sub-derivates-inverse-trig-functions"><h3 class="heading hide-type">
+<p id="p-340"></p></section><section class="subsection" id="sub-derivates-inverse-trig-functions"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.5.2</span> <span class="title">Derivatives</span>
 </h3>
-<p id="p-291">How would we find the derivative of \(y = \sin^{-1}(x)\text{?}\) <article class="note remark-like" id="note-derivative-of-inverse-trig-functions"><h6 class="heading">
+<p id="p-341">How would we find the derivative of \(y = \sin^{-1}(x)\text{?}\) <article class="note remark-like" id="note-derivative-of-inverse-trig-functions"><h6 class="heading">
 <span class="type">Note</span><span class="space"> </span><span class="codenumber">6.5.8</span><span class="period">.</span>
 </h6>
-<p id="p-292">If \(y = \sin^{-1}(x)\text{,}\) then \(\sin(y) = \sin(\sin^{-1}(x))\) and \(\sin(y) = x\text{.}\)</p></article></p>
+<p id="p-342">If \(y = \sin^{-1}(x)\text{,}\) then \(\sin(y) = \sin(\sin^{-1}(x))\) and \(\sin(y) = x\text{.}\)</p></article></p>
 <div class="displaymath">
 \begin{equation*}
 \sin(y) = x
 \end{equation*}
 </div>
 <p data-braille="continuation">Now, take the derivative of both sides with respect to x. <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel" style="width:30%;justify-content:center;"><div class="displaymath" id="p-293">
+<div class="sbspanel" style="width:30%;justify-content:center;"><div class="displaymath" id="p-343">
 \begin{align*}
 \cos(y) \cdot \dfrac{dy}{dx} \amp = 1 \\
 \dfrac{dy}{dx} \amp = \dfrac{1}{\cos(y)} \\
@@ -196,21 +196,21 @@ MathJax.Hub.Config({
 \amp = \dfrac{1}{\sqrt{1-x^2}}
 \end{align*}
 </div></div>
-<div class="sbspanel" style="width:70%;justify-content:center;"><p id="p-294"><figure class="figure figure-like" id="figure-36"><img src="images/inverse-sin-example.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.5.9<span class="period">.</span></span><span class="space"> </span></figcaption></figure></p></div>
+<div class="sbspanel" style="width:70%;justify-content:center;"><p id="p-344"><figure class="figure figure-like" id="figure-42"><img src="images/inverse-sin-example.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.5.9<span class="period">.</span></span><span class="space"> </span></figcaption></figure></p></div>
 </div></div></p>
-<p id="p-295">If we repeat this process for the other trig functions we get the following list:</p>
+<p id="p-345">If we repeat this process for the other trig functions we get the following list:</p>
 <ul class="disc">
-<li id="li-108"><p id="p-296">\(\displaystyle \dfrac{dy}{dx}(\sin^{-1}(x) = \dfrac{1}{\sqrt{1-x^2}} \)</p></li>
-<li id="li-109"><p id="p-297">\(\displaystyle \dfrac{dy}{dx}(\cos^{-1}(x) = - \dfrac{1}{\sqrt{1-x^2}} \)</p></li>
-<li id="li-110"><p id="p-298">\(\displaystyle \dfrac{dy}{dx}(\tan^{-1}(x) = \dfrac{1}{1+x^2} \)</p></li>
+<li id="li-126"><p id="p-346">\(\displaystyle \dfrac{dy}{dx}(\sin^{-1}(x) = \dfrac{1}{\sqrt{1-x^2}} \)</p></li>
+<li id="li-127"><p id="p-347">\(\displaystyle \dfrac{dy}{dx}(\cos^{-1}(x) = - \dfrac{1}{\sqrt{1-x^2}} \)</p></li>
+<li id="li-128"><p id="p-348">\(\displaystyle \dfrac{dy}{dx}(\tan^{-1}(x) = \dfrac{1}{1+x^2} \)</p></li>
 </ul></section><section class="subsection" id="sub-inverse-trig-function-integrals"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.5.3</span> <span class="title">Integrals</span>
 </h3>
-<p id="p-299">Idefinite intregrals are just the opposite of derivatives, so we can simply reverse the opperations and add <em class="emphasis">c</em>.</p>
+<p id="p-349">Idefinite intregrals are just the opposite of derivatives, so we can simply reverse the opperations and add <em class="emphasis">c</em>.</p>
 <ul class="disc">
-<li id="li-111"><p id="p-300">\(\displaystyle \int \dfrac{1}{\sqrt{1-x^2}} dx = \sin^{-1}(x) + c \)</p></li>
-<li id="li-112"><p id="p-301">\(\displaystyle - \int \dfrac{1}{\sqrt{1-x^2}} dx = \cos^{-1}(x) + c \)</p></li>
-<li id="li-113"><p id="p-302">\(\displaystyle \int \dfrac{1}{1+x^2} dx = \tan^{-1}(x) + c \)</p></li>
+<li id="li-129"><p id="p-350">\(\displaystyle \int \dfrac{1}{\sqrt{1-x^2}} dx = \sin^{-1}(x) + c \)</p></li>
+<li id="li-130"><p id="p-351">\(\displaystyle - \int \dfrac{1}{\sqrt{1-x^2}} dx = \cos^{-1}(x) + c \)</p></li>
+<li id="li-131"><p id="p-352">\(\displaystyle \int \dfrac{1}{1+x^2} dx = \tan^{-1}(x) + c \)</p></li>
 </ul></section><section class="conclusion" id="conclusion-7"></section></section></div></main>
 </div>
 </body>

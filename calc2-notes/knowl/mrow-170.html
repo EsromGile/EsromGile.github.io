@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-18T15:54:14-05:00       *-->
+<!--*       on 2021-05-20T15:48:09-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,11 +16,12 @@
 <body>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{align*}
-y \amp = \displaystyle \lim_{x \to 0^+} x^3 \cdot \ln(x) \\
-\amp = \displaystyle \lim_{x \to 0^+} \dfrac{\ln(x)}{x^{-3}}\\
-\amp = \displaystyle \lim_{x \to 0^+} \dfrac{\dfrac{1}{x}}{-3x^{-4}} \text{  *apply L'Hoptital's rule}\\
-\amp = \displaystyle \lim_{x \to 0^+} \dfrac{1}{x} \cdot \dfrac{x^4}{-3}\\
-\amp = \displaystyle \lim_{x \to 0^+} \dfrac{x^3}{-3}\\
+y \amp = \displaystyle \lim_{x \to 0^+} \left( \dfrac{1}{\sin(x)} - \dfrac{1}{x} \right) \\
+\amp = \displaystyle \lim_{x \to 0^+} \left( \dfrac{x}{x \cdot \sin(x)} - \dfrac{\sin(x)}{x \cdot \sin(x)} \right) \\
+\amp = \displaystyle \lim_{x \to 0^+} \left( \dfrac{x - \sin(x)}{x \cdot \sin(x)} \right) \\
+\amp = \displaystyle \lim_{x \to 0^+} \left( \dfrac{1 - \cos(x)}{x \cdot \cos(x) + \sin(x) \cdot 1} \right) \text{  *apply L'Hopital's rule} \\
+\amp = \displaystyle \lim_{x \to 0^+} \left( \dfrac{\sin(x)}{x \cdot -\sin(x) + \cos(x) \cdot 1 + \sin(x)} \right) \text{  *apply L'Hopital's rule again} \\
+\amp = \dfrac{0}{2} \\
 \amp = 0 
 \end{align*}
 </div>

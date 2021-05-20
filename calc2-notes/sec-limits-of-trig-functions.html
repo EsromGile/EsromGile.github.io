@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-18T15:54:12-05:00       *-->
+<!--*       on 2021-05-20T15:48:07-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -11,7 +11,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Limits of Trig Functions (*)</title>
+<title>Limits of Trig Functions</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type="text/x-mathjax-config">
@@ -87,12 +87,12 @@ MathJax.Hub.Config({
 <li><a href="sec-algebraic-approach-to-limits.html" data-scroll="sec-algebraic-approach-to-limits">Algebraic Approach to Limits</a></li>
 <li><a href="sec-end-behavior.html" data-scroll="sec-end-behavior">End Behavior</a></li>
 <li><a href="sec-continuity.html" data-scroll="sec-continuity">Continuity</a></li>
-<li><a href="sec-limits-of-trig-functions.html" data-scroll="sec-limits-of-trig-functions" class="active">Limits of Trig Functions (*)</a></li>
+<li><a href="sec-limits-of-trig-functions.html" data-scroll="sec-limits-of-trig-functions" class="active">Limits of Trig Functions</a></li>
 </ul>
 </li>
 <li class="link">
 <a href="chap-derivatives.html" data-scroll="chap-derivatives"><span class="codenumber">2</span> <span class="title">Derivatives (*)</span></a><ul>
-<li><a href="sec-derivatives.html" data-scroll="sec-derivatives">Intro to Derivatives (*)</a></li>
+<li><a href="sec-derivatives.html" data-scroll="sec-derivatives">Intro to Derivatives</a></li>
 <li><a href="sec-techniques-of-differentiation.html" data-scroll="sec-techniques-of-differentiation">Differentiation Techniques (*)</a></li>
 <li><a href="sec-products-and-quotients.html" data-scroll="sec-products-and-quotients">Products and Quotients of Functions (*)</a></li>
 <li><a href="sec-trig-functions.html" data-scroll="sec-trig-functions">Trig Functions (*)</a></li>
@@ -155,8 +155,57 @@ MathJax.Hub.Config({
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-limits-of-trig-functions"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">1.5</span> <span class="title">Limits of Trig Functions (*)</span>
-</h2></section></div></main>
+<span class="type">Section</span> <span class="codenumber">1.5</span> <span class="title">Limits of Trig Functions</span>
+</h2>
+<p id="p-156">If \(c\) is any number in the natural domain of the function, then the following are true: <div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:flex-start;"><ul id="p-157" class="disc">
+<li id="li-62"><p id="p-158">\(\displaystyle \lim_{x \to c} \sin(x) = \sin(c)\)</p></li>
+<li id="li-63"><p id="p-159">\(\displaystyle \lim_{x \to c} \csc(x) = \csc(c)\)</p></li>
+</ul></div>
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:flex-start;"><ul id="p-160" class="disc">
+<li id="li-64"><p id="p-161">\(\displaystyle \lim_{x \to c} \cos(x) = \cos(c)\)</p></li>
+<li id="li-65"><p id="p-162">\(\displaystyle \lim_{x \to c} \sec(x) = \sec(c)\)</p></li>
+</ul></div>
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:flex-start;"><ul id="p-163" class="disc">
+<li id="li-66"><p id="p-164">\(\displaystyle \lim_{x \to c} \tan(x) = \tan(c)\)</p></li>
+<li id="li-67"><p id="p-165">\(\displaystyle \lim_{x \to c} \cot(x) = \cot(c)\)</p></li>
+</ul></div>
+</div></div></p>
+<article class="assemblage assemblage-like" id="as-natural-domain"><h6 class="heading"><span class="title">Natural Domain.</span></h6>
+<p id="p-166">\(\sin(x)\) has zeros at multiples of \(\pi\text{,}\) so \(\csc(x) = \dfrac{1}{\sin(x)}\) will be undefined at those numbers. Everywhere else is the <code class="code-inline tex2jax_ignore">natural domain</code> (allows us to bypass where the function is discontinuous).</p></article><p id="p-167">Let's start with limits at infinity.</p>
+<div class="displaymath">
+\begin{align*}
+\lim_{ x \to \infty } \sin \left( \dfrac{\pi x }{2 - 3x} \right) \amp = \sin \left( \lim_{ x \to \infty } \dfrac{\pi x }{2 - 3x} \right) \\
+\amp = \sin \left( \lim_{ x \to \infty } \dfrac{\pi x}{-3x} \right) \\
+\amp = \sin \left( \lim_{ x \to \infty } - \dfrac{\pi}{3} \right) \\
+\amp = - \sin \left( \dfrac{\pi}{3} \right) \\
+\amp = - \dfrac{\sqrt{3}}{2} 
+\end{align*}
+</div>
+<article class="assemblage assemblage-like" id="as-general-steps-trig-limits"><h6 class="heading"><span class="title">General Steps.</span></h6>
+<ul id="p-168" class="disc">
+<li id="li-68"><p id="p-169">move limit inside</p></li>
+<li id="li-69"><p id="p-170">evaluate limit</p></li>
+<li id="li-70"><p id="p-171">apply trig function to result</p></li>
+</ul></article><p id="p-172">There are a couple special limits that we should be aware of:</p>
+<div class="displaymath">
+\begin{equation*}
+\lim_{x \to 0} \dfrac{\sin(x)}{x} = 1 \mbox{ and } \lim_{x \to 0} \dfrac{1-\cos(x)}{x} = 0
+\end{equation*}
+</div>
+<p data-braille="continuation"><article class="project project-like" id="proj-special-trig-limit-example"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.1</span><span class="period">.</span>
+</h6>
+<div class="displaymath" id="p-173">
+\begin{align*}
+\lim_{x \to 0} \dfrac{\sin(7x)}{x} \amp = \lim_{x \to 0} \dfrac{\sin(7x)}{x} \cdot \dfrac{7}{7} \\
+\amp = \lim_{x \to 0} \dfrac{7(\sin(7x))}{7x} \\
+\amp = 7 \left( \lim_{x \to 0} \dfrac{\sin(7x)}{7x} \right) \\
+\amp = 7 \left( \lim_{x \to 0} \dfrac{\sin(\theta)}{\theta} \right) \\
+\amp = 7 \cdot (1)\\
+\amp = 7
+\end{align*}
+</div></article></p></section></div></main>
 </div>
 </body>
 </html>
