@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-20T15:48:09-05:00       *-->
+<!--*       on 2021-05-25T12:37:46-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,12 +15,15 @@
 </head>
 <body>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{gather*}
-L = \int_a^b\sqrt{1 + f'(x)^2}dx\\
-L = \int_1^3\sqrt{1 + (cos(x))^2}dx\\
-L = \int_1^3\sqrt{1 + cos^2(x)}dx
-\end{gather*}
+\begin{align*}
+\dfrac{d}{dx}(\tan(x)) \amp = \dfrac{d}{dx}\left( \dfrac{\sin(x)}{\cos(x)} \right)\\
+\amp = \dfrac{\cos(x) \cdot \frac{d}{dx}(\sin(x)) - \sin(x) \cdot \frac{d}{dx}(\cos(x))}{(\cos(x))^2}\\
+\amp = \dfrac{\cos(x) \cdot \cos(x) - \sin(x)(- \sin(x))}{(\cos(x))^2}\\
+\amp = \dfrac{\cos^2(x) + \sin^2(x)}{\cos^2(x)}\\
+\amp = \dfrac{1}{\cos^2(x)}\\
+\amp = \sec^2(x)
+\end{align*}
 </div>
-<span class="incontext"><a href="sec-arc-length-and-surface-area.html#mjx-eqn-mrow-85">in-context</a></span>
+<span class="incontext"><a href="sec-trig-functions.html#mjx-eqn-mrow-85">in-context</a></span>
 </body>
 </html>

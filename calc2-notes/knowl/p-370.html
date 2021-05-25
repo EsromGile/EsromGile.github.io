@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-20T15:48:09-05:00       *-->
+<!--*       on 2021-05-25T12:37:46-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,12 +15,41 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Recall the produce rule:</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-\dfrac{d}{dx}(uv) = u \dfrac{d}{dx} + u \dfrac{d}{dx}
-\end{equation*}
-</div>
-<span class="incontext"><a href="sec-integration-by-parts.html#p-370">in-context</a></span>
+<p xmlns:svg="http://www.w3.org/2000/svg"><figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">6.3.4<span class="period">.</span></span><span class="space"> </span>Inverse Function Example</figcaption><table>
+<tr>
+<td class="l m b2 r2 l0 t0 lines">Old Way</td>
+<td class="l m b2 r0 l0 t0 lines" data-braille="last-cell">New Way</td>
+</tr>
+<tr>
+<td class="l m b0 r2 l0 t0 lines"><div class="displaymath">
+\begin{align*}
+y \amp = x^3 + x + 2\\
+x \amp = y^3 + y + 2\\
+x - 2 \amp = y^3 + y\\
+y^3 + y \amp = 2 - x
+\end{align*}
+</div></td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell"><div class="displaymath">
+\begin{align*}
+f(x) \amp = x^3 + x + 2\\
+f'(x) \amp = 3x^2 + 1\\
+f'(1) \amp = 3(1)^2 + 1\\
+\amp = 4
+\end{align*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r2 l0 t0 lines">We're stuck!</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell"><div class="displaymath">
+\begin{align*}
+(f^{-1})'(x) \amp = \dfrac{1}{f'(f^{-1}(x))} \\
+(f^{-1})'(4) \amp = \dfrac{1}{f'(f^{-1}(4))} \\
+\amp = \dfrac{1}{f'(1)} \\
+\amp = {\frac{1}{4}}
+\end{align*}
+</div></td>
+</tr>
+</table></figure></p>
+<span class="incontext"><a href="sec-inverse-functions.html#p-370">in-context</a></span>
 </body>
 </html>

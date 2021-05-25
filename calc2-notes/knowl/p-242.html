@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-20T15:48:09-05:00       *-->
+<!--*       on 2021-05-25T12:37:46-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,14 +15,17 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>How much work is done in lifting a 5 lbs. book from a height of 3 ft. to 7 ft.?</p>
+<p>To calculate derivatives, all we know is the limit definition. Let's calculate the derivative of \(\cos(x)\text{:}\)</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{align*}
-W \amp = F \cdot d\\
-\amp = (5 \text{lbs})\cdot(4 \text{ft})\\
-\amp = 20 \text{ft}\cdot\text{lb} 
+\dfrac{d}{dx}(\cos(x)) \amp = \lim_{h \to 0} \dfrac{\cos(x + h) - \cos(x)}{h}\\
+\amp = \lim_{h \to 0} \dfrac{\cos(x) \cdot \cos(h) - \sin(x) \cdot \sin(h) - \cos(x)}{h}\\
+\amp = \lim_{h \to 0} - \cos(x) \left( \dfrac{1 - \cos(h)}{h} \right) - \sin(x) \left( \dfrac{1 - \sin(h)}{h} \right)\\
+\amp = - \cos(x) \left( \lim_{h \to 0}  \dfrac{1 - \cos(h)}{h} \right) - \sin(x) \left( \lim_{h \to 0}  \dfrac{1 - \sin(h)}{h} \right)\\
+\amp = - \cos(x) (0) - \sin(x) (1)\\
+\amp = - \sin(x)
 \end{align*}
 </div>
-<span class="incontext"><a href="sec-work.html#p-242">in-context</a></span>
+<span class="incontext"><a href="sec-trig-functions.html#p-242">in-context</a></span>
 </body>
 </html>

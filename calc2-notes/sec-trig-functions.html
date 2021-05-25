@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-20T15:48:07-05:00       *-->
+<!--*       on 2021-05-25T12:37:43-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -11,7 +11,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Trig Functions (*)</title>
+<title>Trig Functions</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type="text/x-mathjax-config">
@@ -91,11 +91,11 @@ MathJax.Hub.Config({
 </ul>
 </li>
 <li class="link">
-<a href="chap-derivatives.html" data-scroll="chap-derivatives"><span class="codenumber">2</span> <span class="title">Derivatives (*)</span></a><ul>
+<a href="chap-derivatives.html" data-scroll="chap-derivatives"><span class="codenumber">2</span> <span class="title">Derivatives</span></a><ul>
 <li><a href="sec-derivatives.html" data-scroll="sec-derivatives">Intro to Derivatives</a></li>
-<li><a href="sec-techniques-of-differentiation.html" data-scroll="sec-techniques-of-differentiation">Differentiation Techniques (*)</a></li>
-<li><a href="sec-products-and-quotients.html" data-scroll="sec-products-and-quotients">Products and Quotients of Functions (*)</a></li>
-<li><a href="sec-trig-functions.html" data-scroll="sec-trig-functions" class="active">Trig Functions (*)</a></li>
+<li><a href="sec-techniques-of-differentiation.html" data-scroll="sec-techniques-of-differentiation">Differentiation Techniques</a></li>
+<li><a href="sec-products-and-quotients.html" data-scroll="sec-products-and-quotients">Products and Quotients of Functions</a></li>
+<li><a href="sec-trig-functions.html" data-scroll="sec-trig-functions" class="active">Trig Functions</a></li>
 <li><a href="sec-chain-rule.html" data-scroll="sec-chain-rule">Chain Rule (*)</a></li>
 <li><a href="sec-implicit-differentiation.html" data-scroll="sec-implicit-differentiation">Implicit Differentiation (*)</a></li>
 <li><a href="sec-related-rates.html" data-scroll="sec-related-rates">Related Rates (*)</a></li>
@@ -155,8 +155,55 @@ MathJax.Hub.Config({
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-trig-functions"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">2.4</span> <span class="title">Trig Functions (*)</span>
-</h2></section></div></main>
+<span class="type">Section</span> <span class="codenumber">2.4</span> <span class="title">Trig Functions</span>
+</h2>
+<p id="p-233">Let's review the unit circle: <div class="sidebyside"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel" style="width:56.4102564102564%;justify-content:center;"><p id="p-234"><figure class="figure figure-like" id="fig-unit-circle"><img src="images/unit_circle.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.4.1<span class="period">.</span></span><span class="space"> </span>Unit Circle</figcaption></figure></p></div>
+<div class="sbspanel" style="width:41.025641025641%;justify-content:center;"><p id="p-235">A point on the circle has coordinates \((x,y) = (\cos(\theta), \sin(\theta))\text{.}\) <article class="assemblage assemblage-like" id="as-unit-circle-coordinates"><ul id="p-236" class="disc">
+<li id="li-83"><p id="p-237">\(\displaystyle \left( \dfrac{\sqrt{4}}{2}, \dfrac{\sqrt{0}}{2} \right) = 2 \pi \text{ or } 0 \)</p></li>
+<li id="li-84"><p id="p-238">\(\displaystyle \left( \dfrac{\sqrt{3}}{2}, \dfrac{\sqrt{1}}{2} \right) = \dfrac{\pi}{6} \)</p></li>
+<li id="li-85"><p id="p-239">\(\displaystyle \left( \dfrac{\sqrt{2}}{2}, \dfrac{\sqrt{2}}{2} \right) = \dfrac{\pi}{4} \)</p></li>
+<li id="li-86"><p id="p-240">\(\displaystyle \left( \dfrac{\sqrt{1}}{2}, \dfrac{\sqrt{3}}{2} \right) = \dfrac{\pi}{3} \)</p></li>
+<li id="li-87"><p id="p-241">\(\displaystyle \left( \dfrac{\sqrt{0}}{2}, \dfrac{\sqrt{4}}{2} \right) = \pi \)</p></li>
+</ul></article></p></div>
+</div></div></p>
+<p id="p-242">To calculate derivatives, all we know is the limit definition. Let's calculate the derivative of \(\cos(x)\text{:}\)</p>
+<div class="displaymath">
+\begin{align*}
+\dfrac{d}{dx}(\cos(x)) \amp = \lim_{h \to 0} \dfrac{\cos(x + h) - \cos(x)}{h}\\
+\amp = \lim_{h \to 0} \dfrac{\cos(x) \cdot \cos(h) - \sin(x) \cdot \sin(h) - \cos(x)}{h}\\
+\amp = \lim_{h \to 0} - \cos(x) \left( \dfrac{1 - \cos(h)}{h} \right) - \sin(x) \left( \dfrac{1 - \sin(h)}{h} \right)\\
+\amp = - \cos(x) \left( \lim_{h \to 0}  \dfrac{1 - \cos(h)}{h} \right) - \sin(x) \left( \lim_{h \to 0}  \dfrac{1 - \sin(h)}{h} \right)\\
+\amp = - \cos(x) (0) - \sin(x) (1)\\
+\amp = - \sin(x)
+\end{align*}
+</div>
+<p id="p-243">Similarly, \(\dfrac{d}{dx}(\sin(x)) = \cos(x)\)</p>
+<p id="p-244">Let's try finding the derivative of \(\tan(x)\) using the quotient rule:</p>
+<div class="displaymath">
+\begin{align*}
+\dfrac{d}{dx}(\tan(x)) \amp = \dfrac{d}{dx}\left( \dfrac{\sin(x)}{\cos(x)} \right)\\
+\amp = \dfrac{\cos(x) \cdot \frac{d}{dx}(\sin(x)) - \sin(x) \cdot \frac{d}{dx}(\cos(x))}{(\cos(x))^2}\\
+\amp = \dfrac{\cos(x) \cdot \cos(x) - \sin(x)(- \sin(x))}{(\cos(x))^2}\\
+\amp = \dfrac{\cos^2(x) + \sin^2(x)}{\cos^2(x)}\\
+\amp = \dfrac{1}{\cos^2(x)}\\
+\amp = \sec^2(x)
+\end{align*}
+</div>
+<p id="p-245">Similarly, \(\dfrac{d}{dx}(\cot(x)) = - \csc^2(x)\)</p>
+<p id="p-246">So far: <figure class="table table-like" id="tab-trig-function-derivatives"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.4.2<span class="period">.</span></span><span class="space"> </span>Trig Function Derivatives</figcaption><table>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{d}{dx}(\sin(x)) = \cos(x)\)</td></tr>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{d}{dx}(\cos(x)) = -\sin(x)\)</td></tr>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{d}{dx}(\tan(x)) = \sec^2(x)\)</td></tr>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{d}{dx}(\cot(x)) = -\csc^2(x)\)</td></tr>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{d}{dx}(\sec(x)) = \sec(x) \cdot \tan(x)\)</td></tr>
+<tr><td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{d}{dx}(\csc(x)) = -\csc(x) \cdot \cot(x) \)</td></tr>
+</table></figure> <article class="note remark-like" id="note-trig-function-derivatives"><h6 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">2.4.3</span><span class="period">.</span>
+</h6>
+<p id="p-247">Derivatives of the "co-" funtions are all negative in sign.</p></article></p>
+<p id="p-248"><figure class="figure figure-like" id="fig-des-slopes-trig-derivatives-graph"><iframe src="https://www.desmos.com/calculator/86mheyndcx" id="interactive-18" width="300" height="300"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.4.4<span class="period">.</span></span><span class="space"> </span>Slopes</figcaption></figure> The value of \(\cos(x)\) describe the slopes of \(\sin(x)\text{.}\)</p>
+<p id="p-249">Similarly, we could consider the graph of \(\cos(x)\text{;}\) values of \(-\sin(x)\) describe slopes of \(\cos(x)\text{.}\)</p></section></div></main>
 </div>
 </body>
 </html>

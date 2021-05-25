@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-20T15:48:09-05:00       *-->
+<!--*       on 2021-05-25T12:37:46-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,11 +16,14 @@
 <body>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{align*}
-\int \sin^4(x) \cos(x) dx \amp = \int u^4 du\\
-\amp = \dfrac{u^5}{5} + c\\
-\amp \dfrac{1}{5}\sin^5(x) + c
+y \amp = \displaystyle \lim_{x \to 0^+} x^3 \cdot \ln(x) \\
+\amp = \displaystyle \lim_{x \to 0^+} \dfrac{\ln(x)}{x^{-3}}\\
+\amp = \displaystyle \lim_{x \to 0^+} \dfrac{\dfrac{1}{x}}{-3x^{-4}} \text{  *apply L'Hoptital's rule}\\
+\amp = \displaystyle \lim_{x \to 0^+} \dfrac{1}{x} \cdot \dfrac{x^4}{-3}\\
+\amp = \displaystyle \lim_{x \to 0^+} \dfrac{x^3}{-3}\\
+\amp = 0 
 \end{align*}
 </div>
-<span class="incontext"><a href="sec-integrating-trig-functions.html#mjx-eqn-mrow-228">in-context</a></span>
+<span class="incontext"><a href="sec-lhapitals-rule.html#mjx-eqn-mrow-228">in-context</a></span>
 </body>
 </html>
