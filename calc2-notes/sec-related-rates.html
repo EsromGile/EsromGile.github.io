@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-26T14:06:03-05:00       *-->
+<!--*       on 2021-05-27T14:54:37-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -99,7 +99,7 @@ MathJax.Hub.Config({
 <li><a href="sec-chain-rule.html" data-scroll="sec-chain-rule">Chain Rule</a></li>
 <li><a href="sec-implicit-differentiation.html" data-scroll="sec-implicit-differentiation">Implicit Differentiation</a></li>
 <li><a href="sec-related-rates.html" data-scroll="sec-related-rates" class="active">Related Rates</a></li>
-<li><a href="sec-local-linear-approx-dif.html" data-scroll="sec-local-linear-approx-dif">Local Linear Approximation Differential (*)</a></li>
+<li><a href="sec-local-linear-approx-dif.html" data-scroll="sec-local-linear-approx-dif">Local Linear Approximation Differential</a></li>
 </ul>
 </li>
 <li class="link">
@@ -157,11 +157,54 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-related-rates"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">2.7</span> <span class="title">Related Rates</span>
 </h2>
-<p id="p-287">Related rates can be thought of as geometry + implicit differentiation. <article class="project project-like" id="proj-related-rates-example"><h6 class="heading">
+<p id="p-287">Related rates can be thought of as geometry + implicit differentiation. <p id="p-288">Soving these tyes of problems can be approached by a few simple steps:</p><ol start="0" class="decimal">
+<li id="li-105"><p id="p-289">draw the graph or diagram</p></li>
+<li id="li-106"><p id="p-290">name the variables</p></li>
+<li id="li-107"><p id="p-291">identify rates</p></li>
+<li id="li-108"><p id="p-292">determine the equation</p></li>
+<li id="li-109"><p id="p-293">differentiate</p></li>
+<li id="li-110"><p id="p-294">substitution</p></li>
+</ol></p>
+<p id="p-295"><article class="project project-like" id="proj-related-rates-example"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.7.1</span><span class="period">.</span>
 </h6>
-<p id="p-288">Consider a cylindrical water tower with a leaky valve at the bottom. Water leaks at a rate of 1ft^3/min. The tower has dimensions of: \(r = 20\text{ft}\text{,}\)\(h = 50\text{ft}\text{.}\)</p>
-<p id="p-289">How quickly is the height of water changing at 35ft?</p></article></p></section></div></main>
+<p id="p-296">Consider a cylindrical water tower with a leaky valve at the bottom. Water leaks at a rate of \(1\text{ft}^3\text{/min}\text{.}\) The tower has dimensions of: \(r = 20\text{ft}\text{,}\)\(h = 50\text{ft}\text{.}\)</p>
+<p id="p-297">How quickly is the height of water changing at 35ft? <figure class="figure figure-like" id="fig-cylinder-related-rates"><div class="image-box" style="width: 45%; margin-left: 27.5%; margin-right: 27.5%;"><img src="images/related_rates_cylinder.png" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.7.1<span class="period">.</span></span><span class="space"> </span></figcaption></figure></p>
+<ol class="decimal">
+<li id="li-111">
+<p id="p-298">assign letters:</p>
+<ul class="disc">
+<li id="li-112"><p id="p-299">v = volume of water in tower</p></li>
+<li id="li-113"><p id="p-300">h = height of water</p></li>
+<li id="li-114"><p id="p-301">r = radius</p></li>
+<li id="li-115"><p id="p-302">t = time</p></li>
+</ul>
+</li>
+<li id="li-116">
+<p id="p-303">identify rates:</p>
+<ul class="disc">
+<li id="li-117"><p id="p-304">\(\displaystyle \dfrac{dv}{dt} = -1 \text{ft}^3 \text{/min}\)</p></li>
+<li id="li-118"><p id="p-305">we need to find \(\dfrac{dh}{dt}|_{h = 35}\)</p></li>
+</ul>
+</li>
+<li id="li-119">
+<p id="p-306">equation:</p>
+<ul class="disc"><li id="li-120"><p id="p-307">\(\displaystyle V = \pi r^2 h\)</p></li></ul>
+</li>
+<li id="li-121">
+<p id="p-308">differentiate:</p>
+<ul class="disc">
+<li id="li-122"><p id="p-309">\(\displaystyle \dfrac{d}{dx} \left( V(t) \right) = \dfrac{d}{dt} \left( \pi r^2 h(t) \right) \)</p></li>
+<li id="li-123"><p id="p-310">\(\displaystyle \dfrac{dv}{dt} = \pi r^2 h(t) \dfrac{dh}{dt} \)</p></li>
+<li id="li-124"><p id="p-311">\(\displaystyle \dfrac{dh}{dt} = \dfrac{1}{\pi r^2} \cdot \dfrac{dv}{dt} \)</p></li>
+</ul>
+</li>
+<li id="li-125">
+<p id="p-312">substitution:</p>
+<ul class="disc"><li id="li-126"><p id="p-313">\(\displaystyle \dfrac{dh}{dt}|_{h = 35} = \dfrac{1}{\pi r^2} \cdot (-1) = -0.0008 \text{ft/min} \)</p></li></ul>
+</li>
+</ol></article></p></section></div></main>
 </div>
 </body>
 </html>

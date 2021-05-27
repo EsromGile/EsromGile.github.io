@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-26T14:06:06-05:00       *-->
+<!--*       on 2021-05-27T14:54:41-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,20 +15,24 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Regular Integral</p>
+<p>In order to do this we will use partial fractions. An example of how partial fractions work is as follows:</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{align*}
-\int _{1} ^{10} \dfrac{1}{x^2} dx \amp = \int _{1} ^{10} x^{-2} dx \\
-\amp = \left[ \dfrac{x ^{-1} }{-1} \right] _{1} ^{10} \\
-\amp = \left( - \dfrac{1}{10} \right) - \left( - \dfrac{1}{1} \right) \\
-\amp = - \dfrac{1}{10} + 1\\
-\amp = \dfrac{9}{10} 
+\dfrac{1}{x} - \dfrac{1}{x+1} \amp = \dfrac{1}{x}\cdot\dfrac{x+1}{x+1} - \dfrac{1}{x+1}\cdot\dfrac{x}{x} \\
+\amp = \dfrac{x+1}{x(x+1)} - \dfrac{x}{x(x+1)} \\
+\amp = \dfrac{x+1-x}{x(x+1)}\\
+\amp = \dfrac{1}{x(x+1)}\\
+\amp = \dfrac{1}{x^2+x}
 \end{align*}
 </div>
-<p data-braille="continuation"><article class="note remark-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
-<span class="type">Note</span><span class="space"> </span><span class="codenumber">7.5.1</span><span class="period">.</span>
-</h6>
-<p xmlns:svg="http://www.w3.org/2000/svg">Notice: If we were to to go take the same integral from 1 to 100 we would get \(\dfrac{99}{100}.\)</p></article></p>
-<span class="incontext"><a href="sec-improper-integrals.html#p-592">in-context</a></span>
+<p data-braille="continuation">The only difference in how we use it for integrals is that the process is reversed:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\int \dfrac{1}{x^2 + x} dx \amp = \int \dfrac{1}{x} - \dfrac{1}{x+1} dx \\
+\amp = \int \dfrac{1}{x} dx - \int \dfrac{1}{x+1} dx \\
+\amp = \ln | x | - \ln | x - 1 |  + c 
+\end{align*}
+</div>
+<span class="incontext"><a href="sec-partial-fractions.html#p-592">in-context</a></span>
 </body>
 </html>

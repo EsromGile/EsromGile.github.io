@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-26T14:06:05-05:00       *-->
+<!--*       on 2021-05-27T14:54:39-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,7 +15,46 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p xmlns:svg="http://www.w3.org/2000/svg">\(r=f(x_k^*)\)  where \(f(x_k^*)\) is the height of each individual "strip"</p>
-<span class="incontext"><a href="sec-volumes-by-slicing.html#p-295">in-context</a></span>
+<p xmlns:svg="http://www.w3.org/2000/svg"><article class="project project-like"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.7.1</span><span class="period">.</span>
+</h6>
+<p>Consider a cylindrical water tower with a leaky valve at the bottom. Water leaks at a rate of \(1\text{ft}^3\text{/min}\text{.}\) The tower has dimensions of: \(r = 20\text{ft}\text{,}\)\(h = 50\text{ft}\text{.}\)</p>
+<p>How quickly is the height of water changing at 35ft? <figure class="figure figure-like"><div class="image-box" style="width: 45%; margin-left: 27.5%; margin-right: 27.5%;"><img src="images/related_rates_cylinder.png" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.7.1<span class="period">.</span></span><span class="space"> </span></figcaption></figure></p>
+<ol class="decimal">
+<li>
+<p>assign letters:</p>
+<ul class="disc">
+<li><p>v = volume of water in tower</p></li>
+<li><p>h = height of water</p></li>
+<li><p>r = radius</p></li>
+<li><p>t = time</p></li>
+</ul>
+</li>
+<li>
+<p>identify rates:</p>
+<ul class="disc">
+<li><p>\(\displaystyle \dfrac{dv}{dt} = -1 \text{ft}^3 \text{/min}\)</p></li>
+<li><p>we need to find \(\dfrac{dh}{dt}|_{h = 35}\)</p></li>
+</ul>
+</li>
+<li>
+<p>equation:</p>
+<ul class="disc"><li><p>\(\displaystyle V = \pi r^2 h\)</p></li></ul>
+</li>
+<li>
+<p>differentiate:</p>
+<ul class="disc">
+<li><p>\(\displaystyle \dfrac{d}{dx} \left( V(t) \right) = \dfrac{d}{dt} \left( \pi r^2 h(t) \right) \)</p></li>
+<li><p>\(\displaystyle \dfrac{dv}{dt} = \pi r^2 h(t) \dfrac{dh}{dt} \)</p></li>
+<li><p>\(\displaystyle \dfrac{dh}{dt} = \dfrac{1}{\pi r^2} \cdot \dfrac{dv}{dt} \)</p></li>
+</ul>
+</li>
+<li>
+<p>substitution:</p>
+<ul class="disc"><li><p>\(\displaystyle \dfrac{dh}{dt}|_{h = 35} = \dfrac{1}{\pi r^2} \cdot (-1) = -0.0008 \text{ft/min} \)</p></li></ul>
+</li>
+</ol></article></p>
+<span class="incontext"><a href="sec-related-rates.html#p-295">in-context</a></span>
 </body>
 </html>
