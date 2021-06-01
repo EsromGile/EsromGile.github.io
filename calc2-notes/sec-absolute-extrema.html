@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-29T15:39:03-05:00       *-->
+<!--*       on 2021-06-01T14:51:41-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -11,7 +11,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Absolute Extrema (*)</title>
+<title>Absolute Extrema</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type="text/x-mathjax-config">
@@ -105,8 +105,8 @@ MathJax.Hub.Config({
 <li class="link">
 <a href="chap-applications-of-derivatives.html" data-scroll="chap-applications-of-derivatives"><span class="codenumber">3</span> <span class="title">Applications of Derivatives</span></a><ul>
 <li><a href="sec-appliations-of-derivatives.html" data-scroll="sec-appliations-of-derivatives">Applications of Derivatives</a></li>
-<li><a href="sec-relative-extrema.html" data-scroll="sec-relative-extrema">Relative Extrema (*)</a></li>
-<li><a href="sec-absolute-extrema.html" data-scroll="sec-absolute-extrema" class="active">Absolute Extrema (*)</a></li>
+<li><a href="sec-relative-extrema.html" data-scroll="sec-relative-extrema">Relative Extrema</a></li>
+<li><a href="sec-absolute-extrema.html" data-scroll="sec-absolute-extrema" class="active">Absolute Extrema</a></li>
 <li><a href="sec-applied-max-min.html" data-scroll="sec-applied-max-min">Applied Max-Min Problems (*)</a></li>
 </ul>
 </li>
@@ -155,8 +155,67 @@ MathJax.Hub.Config({
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-absolute-extrema"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">3.3</span> <span class="title">Absolute Extrema (*)</span>
-</h2></section></div></main>
+<span class="type">Section</span> <span class="codenumber">3.3</span> <span class="title">Absolute Extrema</span>
+</h2>
+<p id="p-383"><article class="definition definition-like" id="def-absolute-extrema"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.3.1</span><span class="period">.</span>
+</h6>
+<p id="p-384">Consider an interval in the domain of a function \(f\) and a point \(x_0\text{.}\)</p>
+<ul class="disc">
+<li id="li-154"><p id="p-385">\(f\) has an absolute maximum at \(x_0\) if \(f(x) \leq f(x_0)\) for all \(x\) in the interval.</p></li>
+<li id="li-155"><p id="p-386">\(f\) has an absolute minimum at \(x_0\) if \(f(x) \geq f(x_0)\) for all \(x\) in the interval.</p></li>
+<li id="li-156"><p id="p-387">\(f\) has an absolute extrema at \(x_0\) if \(f\) has either of the above at that point.</p></li>
+</ul></article> <article class="project project-like" id="proj-absolute-extrema-graph-ex"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.1</span><span class="period">.</span>
+</h6>
+<p id="p-388"><figure class="figure figure-like" id="fig-des-abs-min"><iframe src="https://www.desmos.com/calculator/ajb9xta8t3" id="interactive-29" width="270" height="270"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.3.2<span class="period">.</span></span><span class="space"> </span></figcaption></figure> <p id="p-389">Absolute minimum on \(( - \infty, \infty)\text{,}\) no absolute maximum.</p></p>
+<p id="p-390"><figure class="figure figure-like" id="fig-des-abs-min"><iframe src="https://www.desmos.com/calculator/ggfuaimnyc" id="interactive-30" width="270" height="270"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.3.3<span class="period">.</span></span><span class="space"> </span></figcaption></figure> <p id="p-391">No exrema on \(( - \infty, \infty)\text{.}\)</p></p>
+<p id="p-392"><figure class="figure figure-like" id="fig-des-abs-min"><iframe src="https://www.desmos.com/calculator/ln5paxsjbr" id="interactive-31" width="270" height="270"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.3.4<span class="period">.</span></span><span class="space"> </span></figcaption></figure> <p id="p-393">Absolute maximum and absolute minimum on \((- \infty, \infty)\text{.}\)</p></p></article></p>
+<article class="theorem theorem-like" id="the-extreme-value-theorem"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.3.5</span><span class="period">.</span><span class="space"> </span><span class="title">Absolute Value Theorem.</span>
+</h6>
+<p id="p-394">If a function \(f\) is continuous on a finite, closed interval, \([a,b]\text{,}\) then \(f\) has both an absolute minimum and absolute maximum on \([a,b]\text{.}\)</p>
+<p id="p-395">Extreme values will occur at critical points in the interval or at the end points.</p>
+<p id="p-396">Method to find Absolute Extrema:</p>
+<ol class="decimal">
+<li id="li-157"><p id="p-397">find critical points</p></li>
+<li id="li-158"><p id="p-398">evaluate \(f\) at critical points and endpoints</p></li>
+<li id="li-159"><p id="p-399">compare function values and decide</p></li>
+</ol></article><article class="project project-like" id="proj-absolute-extrema-ex"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.2</span><span class="period">.</span>
+</h6>
+<p id="p-400">Find the absolute extrema of \(f(x) = 2x^6 - 4x^3\) on the interval \([-1,1]\text{:}\)</p>
+<p id="p-401">(\(f\) has critical points at \(x = 0,1\))</p>
+<table>
+<tr>
+<td class="c m b2 r2 l0 t0 lines">Type</td>
+<td class="c m b2 r2 l0 t0 lines">\(x\)</td>
+<td class="c m b2 r2 l0 t0 lines">\(f(x)\)</td>
+<td class="c m b2 r0 l0 t0 lines" data-braille="last-cell">Result</td>
+</tr>
+<tr>
+<td class="l m b0 r2 l0 t0 lines">EP</td>
+<td class="l m b0 r2 l0 t0 lines">\(-1 \)</td>
+<td class="l m b0 r2 l0 t0 lines">\(6 \)</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">absolute maximum on \([-1,1]\)</td>
+</tr>
+<tr>
+<td class="l m b0 r2 l0 t0 lines">CP</td>
+<td class="l m b0 r2 l0 t0 lines">\(0\)</td>
+<td class="l m b0 r2 l0 t0 lines">\(0\)</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">-----</td>
+</tr>
+<tr>
+<td class="l m b0 r2 l0 t0 lines">EP/CP</td>
+<td class="l m b0 r2 l0 t0 lines">\(1\)</td>
+<td class="l m b0 r2 l0 t0 lines">\(-2\)</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">absolute minimum on \([-1,1]\)</td>
+</tr>
+</table>
+<article class="note remark-like" id="note-abs-extr-ex"><h6 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">3.3.6</span><span class="period">.</span>
+</h6>
+<p id="p-402">Changing the interval is likely to change the answer.</p></article></article></section></div></main>
 </div>
 </body>
 </html>

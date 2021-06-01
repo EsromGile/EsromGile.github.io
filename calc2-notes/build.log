@@ -1,43 +1,127 @@
 Messages from application of /home/eli/.local/lib/python3.9/site-packages/pretext/static/xsl/pretext-html.xsl:
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:BUG: bad unordered list label format code in HTML conversion
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:BUG: bad unordered list label format code in HTML conversion
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:BUG: bad unordered list label format code in HTML conversion
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:BUG: bad unordered list label format code in HTML conversion
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:BUG: bad unordered list label format code in HTML conversion
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:BUG: bad unordered list label format code in HTML conversion
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:BUG: bad unordered list label format code in HTML conversion
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:BUG: bad unordered list label format code in HTML conversion
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:BUG: bad unordered list label format code in HTML conversion
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:BUG: bad unordered list label format code in HTML conversion
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:BUG: bad unordered list label format code in HTML conversion
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:BUG: bad unordered list label format code in HTML conversion
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:BUG: bad unordered list label format code in HTML conversion
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:ERROR: unordered list label (dash) not recognized
-MBX:BUG: bad unordered list label format code in HTML conversion
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)
+MBX:ERROR:   computed space between panels of a <sidebyside> is not a number (this value is computed, check that margins ("NaN%, NaN%") and widths ("33% 33% 33 ") are percentages of the form "nn%")
+             located within: "proj-absolute-extrema-graph-ex" (xml:id)

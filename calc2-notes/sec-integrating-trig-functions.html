@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-05-29T15:39:04-05:00       *-->
+<!--*       on 2021-06-01T14:51:42-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -105,8 +105,8 @@ MathJax.Hub.Config({
 <li class="link">
 <a href="chap-applications-of-derivatives.html" data-scroll="chap-applications-of-derivatives"><span class="codenumber">3</span> <span class="title">Applications of Derivatives</span></a><ul>
 <li><a href="sec-appliations-of-derivatives.html" data-scroll="sec-appliations-of-derivatives">Applications of Derivatives</a></li>
-<li><a href="sec-relative-extrema.html" data-scroll="sec-relative-extrema">Relative Extrema (*)</a></li>
-<li><a href="sec-absolute-extrema.html" data-scroll="sec-absolute-extrema">Absolute Extrema (*)</a></li>
+<li><a href="sec-relative-extrema.html" data-scroll="sec-relative-extrema">Relative Extrema</a></li>
+<li><a href="sec-absolute-extrema.html" data-scroll="sec-absolute-extrema">Absolute Extrema</a></li>
 <li><a href="sec-applied-max-min.html" data-scroll="sec-applied-max-min">Applied Max-Min Problems (*)</a></li>
 </ul>
 </li>
@@ -157,19 +157,19 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-integrating-trig-functions"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">7.2</span> <span class="title">Integrating Trig Functions</span>
 </h2>
-<section class="introduction" id="introduction-13"><article class="assemblage assemblage-like" id="as-recall-trig-derivatives"><p id="p-565">Recall the following: <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel" style="width:50%;justify-content:flex-start;"><ul id="p-566" class="disc">
-<li id="li-215"><p id="p-567">\(\displaystyle \dfrac{d}{dx}( \sin(x)) = \cos(x) \)</p></li>
-<li id="li-216"><p id="p-568">\(\displaystyle \dfrac{d}{dx}(\cos(x)) = -\sin(x) \)</p></li>
-<li id="li-217"><p id="p-569">\(\displaystyle \dfrac{d}{dx}(\tan(x)) = \sec^2(x) \)</p></li>
+<section class="introduction" id="introduction-13"><article class="assemblage assemblage-like" id="as-recall-trig-derivatives"><p id="p-601">Recall the following: <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><ul id="p-602" class="disc">
+<li id="li-228"><p id="p-603">\(\displaystyle \dfrac{d}{dx}( \sin(x)) = \cos(x) \)</p></li>
+<li id="li-229"><p id="p-604">\(\displaystyle \dfrac{d}{dx}(\cos(x)) = -\sin(x) \)</p></li>
+<li id="li-230"><p id="p-605">\(\displaystyle \dfrac{d}{dx}(\tan(x)) = \sec^2(x) \)</p></li>
 </ul></div>
-<div class="sbspanel" style="width:50%;justify-content:flex-start;"><ul id="p-570" class="disc">
-<li id="li-218"><p id="p-571">\(\displaystyle \dfrac{d}{dx}(\csc(x)) = - \csc(x) \cot(x) \)</p></li>
-<li id="li-219"><p id="p-572">\(\displaystyle \dfrac{d}{dx}(\sec(x)) = \sec(x)\tan(x) \)</p></li>
-<li id="li-220"><p id="p-573">\(\displaystyle \dfrac{d}{dx}(\cot(x)) = -csc^2(x) \)</p></li>
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><ul id="p-606" class="disc">
+<li id="li-231"><p id="p-607">\(\displaystyle \dfrac{d}{dx}(\csc(x)) = - \csc(x) \cot(x) \)</p></li>
+<li id="li-232"><p id="p-608">\(\displaystyle \dfrac{d}{dx}(\sec(x)) = \sec(x)\tan(x) \)</p></li>
+<li id="li-233"><p id="p-609">\(\displaystyle \dfrac{d}{dx}(\cot(x)) = -csc^2(x) \)</p></li>
 </ul></div>
-</div></div></p></article><p id="p-574">With our current methods we are able to easily solve the integrals of the right hand side of the functions above (ex: \(\int \sec^2 (x) dx = \tan(x) + c \)), but we do not currently have methods for most of the left hand side (ex: \(\int \sec(x) dx\)). The only exception currently is how to find the integral of \(\tan(x) \mbox{ and } \cot(x) \text{.}\) <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
-<div class="sbspanel" style="width:47.3684210526316%;justify-content:center;"><div class="displaymath" id="p-575">
+</div></div></p></article><p id="p-610">With our current methods we are able to easily solve the integrals of the right hand side of the functions above (ex: \(\int \sec^2 (x) dx = \tan(x) + c \)), but we do not currently have methods for most of the left hand side (ex: \(\int \sec(x) dx\)). The only exception currently is how to find the integral of \(\tan(x) \mbox{ and } \cot(x) \text{.}\) <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:center;"><div class="displaymath" id="p-611">
 \begin{align*}
 \int \cot(x) dx \amp = \int \dfrac{\cos(x)}{\sin(x)} dx \\
 \amp = \int \dfrac{1}{u} du \\
@@ -177,24 +177,24 @@ MathJax.Hub.Config({
 \amp = \ln| \sin(x)| + c 
 \end{align*}
 </div></div>
-<div class="sbspanel" style="width:47.3684210526316%;justify-content:center;"><p id="p-576"><figure class="table table-like" id="tab-log-u-sub-trig-function"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">7.2.1<span class="period">.</span></span><span class="space"> </span></figcaption><table>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:center;"><p id="p-612"><figure class="table table-like" id="tab-log-u-sub-trig-function"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">7.2.1<span class="period">.</span></span><span class="space"> </span></figcaption><table>
 <tr><td class="l m b0 r2 l2 t0 lines" data-braille="last-cell">\(u = \sin(x) \)</td></tr>
 <tr><td class="l m b0 r2 l2 t0 lines" data-braille="last-cell">\(du = \cos(x)dx \)</td></tr>
 </table></figure></p></div>
 </div></div></p></section><section class="subsection" id="sub-using-trig-identities"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">7.2.1</span> <span class="title">Using Trig Identities</span>
 </h3>
-<p id="p-577">So, how would we find something like \(\int \tan^2(x)dx\text{?}\) <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel" style="width:50%;justify-content:flex-start;"><div class="displaymath" id="p-578">
+<p id="p-613">So, how would we find something like \(\int \tan^2(x)dx\text{?}\) <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><div class="displaymath" id="p-614">
 \begin{align*}
 \int \tan^2(x) dx \amp = \int \sec^2(x) - 1 dx \\
 \amp = \tan(x) - x + c
 \end{align*}
 </div></div>
-<div class="sbspanel" style="width:50%;justify-content:flex-start;"><p id="p-579"><article class="assemblage assemblage-like" id="as-recall-sin-cos-trig-identity"><p id="p-580">Recall: \(\sin^2(x) + \cos^2(x) = 1\text{.}\) If we divide both sides by \(cos^2(x)\) we get \(\dfrac{\sin^2(x) + \cos^2(x)}{\cos^2(x)} = \dfrac{1}{\cos^2(x)}\text{.}\) Simplified we get \(\tan^2(x) + 1 = \sec^2(x)\text{.}\)</p></article></p></div>
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><p id="p-615"><article class="assemblage assemblage-like" id="as-recall-sin-cos-trig-identity"><p id="p-616">Recall: \(\sin^2(x) + \cos^2(x) = 1\text{.}\) If we divide both sides by \(cos^2(x)\) we get \(\dfrac{\sin^2(x) + \cos^2(x)}{\cos^2(x)} = \dfrac{1}{\cos^2(x)}\text{.}\) Simplified we get \(\tan^2(x) + 1 = \sec^2(x)\text{.}\)</p></article></p></div>
 </div></div></p>
-<p id="p-581">Another example of using trig identities for would be \(\int \cos^2(x)dx\text{.}\) <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel" style="width:50%;justify-content:flex-start;"><div class="displaymath" id="p-582">
+<p id="p-617">Another example of using trig identities for would be \(\int \cos^2(x)dx\text{.}\) <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><div class="displaymath" id="p-618">
 \begin{align*}
 \int \cos^2(x)dx \amp = \int \dfrac{1}{2} (1 + \cos(2x)) dx \\
 \amp = \dfrac{1}{2} \int 1 + \cos(2x) dx \\
@@ -202,16 +202,16 @@ MathJax.Hub.Config({
 \amp = \dfrac{1}{2}x + \dfrac{1}{4}\sin(2x) + c 
 \end{align*}
 </div></div>
-<div class="sbspanel" style="width:50%;justify-content:flex-start;"><p id="p-583"><article class="assemblage assemblage-like" id="as-recall-more-trig-identities"><p id="p-584">Recall the following identities:</p>
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><p id="p-619"><article class="assemblage assemblage-like" id="as-recall-more-trig-identities"><p id="p-620">Recall the following identities:</p>
 <ul class="disc">
-<li id="li-221"><p id="p-585">\(\displaystyle sin^2(x) = \dfrac{1}{2} (1 - \cos(2x)) \)</p></li>
-<li id="li-222"><p id="p-586">\(\displaystyle cos^2(x) = \dfrac{1}{2} (1 + \cos(2x)) \)</p></li>
+<li id="li-234"><p id="p-621">\(\displaystyle sin^2(x) = \dfrac{1}{2} (1 - \cos(2x)) \)</p></li>
+<li id="li-235"><p id="p-622">\(\displaystyle cos^2(x) = \dfrac{1}{2} (1 + \cos(2x)) \)</p></li>
 </ul></article></p></div>
 </div></div></p></section><section class="subsection" id="sub-multiplying-by-one"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">7.2.2</span> <span class="title">Multiplying by One</span>
 </h3>
-<p id="p-587">For some trig functions integrals, you have to multiply by a wierd arrangement of 1, such as \(\int \sec (x) dx\text{.}\) <div class="sidebyside"><div class="sbsrow" style="margin-left:3.75%;margin-right:3.75%;">
-<div class="sbspanel" style="width:54.0540540540541%;justify-content:center;"><div class="displaymath" id="p-588">
+<p id="p-623">For some trig functions integrals, you have to multiply by a wierd arrangement of 1, such as \(\int \sec (x) dx\text{.}\) <div class="sidebyside"><div class="sbsrow" style="margin-left:3.75%;margin-right:3.75%;">
+<div class="sbspanel" style="width:54.0540540540541%;justify-content:center;"><div class="displaymath" id="p-624">
 \begin{align*}
 \int \sec (x) dx \amp = \int \sec(x) \cdot \left( \dfrac{\sec(x) + \tan(x)}{\sec(x) + \tan(x)} \right) dx\\
 \amp = \int \dfrac{\sec^2(x) + \sec(x)\tan(x)}{\sec(x) + \tan(x)} dx \\
@@ -220,26 +220,26 @@ MathJax.Hub.Config({
 \amp = \ln | \sec(x) + \tan(x) | + c 
 \end{align*}
 </div></div>
-<div class="sbspanel" style="width:37.8378378378378%;justify-content:center;"><p id="p-589"><figure class="table table-like" id="tab-trig-function-wierd-one"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">7.2.2<span class="period">.</span></span><span class="space"> </span></figcaption><table>
+<div class="sbspanel" style="width:37.8378378378378%;justify-content:center;"><p id="p-625"><figure class="table table-like" id="tab-trig-function-wierd-one"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">7.2.2<span class="period">.</span></span><span class="space"> </span></figcaption><table>
 <tr><td class="l m b0 r2 l2 t0 lines" data-braille="last-cell">\(u = \sec(x) + \tan(x)\)</td></tr>
 <tr><td class="l m b0 r2 l2 t0 lines" data-braille="last-cell">\(du = \sec(x)\tan(x) + sec^2(x) dx\)</td></tr>
 </table></figure></p></div>
 </div></div></p></section><section class="subsection" id="sub-reduction-formula"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">7.2.3</span> <span class="title">Trig Functions with Higher Powers</span>
 </h3>
-<p id="p-590">For higher powers of sine and cosine, there a few different methods of exaluating. One of these is by using one of the following reduction formulas:</p>
+<p id="p-626">For higher powers of sine and cosine, there a few different methods of exaluating. One of these is by using one of the following reduction formulas:</p>
 <ul class="disc">
-<li id="li-223"><p id="p-591">\(\displaystyle \int \sin^n(x)dx = -\dfrac{1}{n} \sin^{n-1}(x) cos(x) + \dfrac{n-1}{n} \int \sin^{n-2}(x)dx \)</p></li>
-<li id="li-224"><p id="p-592">\(\displaystyle \int \cos^n(x)dx = \dfrac{1}{n} \cos^{n-1}(x) sin(x) + \dfrac{n-1}{n} \int \cos^{n-2}(x)dx \)</p></li>
+<li id="li-236"><p id="p-627">\(\displaystyle \int \sin^n(x)dx = -\dfrac{1}{n} \sin^{n-1}(x) cos(x) + \dfrac{n-1}{n} \int \sin^{n-2}(x)dx \)</p></li>
+<li id="li-237"><p id="p-628">\(\displaystyle \int \cos^n(x)dx = \dfrac{1}{n} \cos^{n-1}(x) sin(x) + \dfrac{n-1}{n} \int \cos^{n-2}(x)dx \)</p></li>
 </ul>
 <p data-braille="continuation">When you use this method, sometimes you have to apply this method multiple times. <article class="project project-like" id="proj-reduction-formula"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">7.2.1</span><span class="period">.</span>
 </h6>
-<p id="p-593">Solve the Following using the reduction formula:</p>
+<p id="p-629">Solve the Following using the reduction formula:</p>
 <ol class="lower-alpha">
-<li id="li-225">
-<p id="p-594">\(\displaystyle\int \cos^5 (x) dx\)</p>
-<p id="p-595"><a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-2" id="answer-2"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-2"><div class="answer solution-like">
+<li id="li-238">
+<p id="p-630">\(\displaystyle\int \cos^5 (x) dx\)</p>
+<p id="p-631"><a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-2" id="answer-2"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-2"><div class="answer solution-like">
 <div class="displaymath">
 \begin{align*}
 \int \cos^5 (x) dx \amp = -\dfrac{1}{5} \cos^4(x)\sin(x) + \dfrac{4}{5} \int \cos^3 (x) dx\\
@@ -252,9 +252,9 @@ MathJax.Hub.Config({
 </h6>Notice we had to use the reduction formula twice.</article>
 </div></div></p>
 </li>
-<li id="li-226">
-<p id="p-596">\(\displaystyle\int \sin^4(x) dx \)</p>
-<p id="p-597"><a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-3" id="answer-3"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-3"><div class="answer solution-like"><div class="displaymath">
+<li id="li-239">
+<p id="p-632">\(\displaystyle\int \sin^4(x) dx \)</p>
+<p id="p-633"><a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-3" id="answer-3"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-3"><div class="answer solution-like"><div class="displaymath">
 \begin{align*}
 \int \sin^4(x) dx \amp = -\dfrac{1}{4}\sin^3(x)\cos(x) + \dfrac{3}{4} \int \sin^2(x)dx\\
 \amp = -\dfrac{1}{4}\sin^3(x)\cos(x) + \dfrac{3}{4} \left( -\dfrac{1}{2} \sin(x)\cos(x) + \dfrac{1}{2}\int \sin^0(x)dx \right)\\
@@ -263,51 +263,51 @@ MathJax.Hub.Config({
 </div></div></div></p>
 </li>
 </ol></article></p>
-<p id="p-598">U-substitution can also be used in specific situations: <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel" style="width:50%;justify-content:flex-start;"><div class="displaymath" id="p-599">
+<p id="p-634">U-substitution can also be used in specific situations: <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><div class="displaymath" id="p-635">
 \begin{align*}
 \int \sin^4(x) \cos(x) dx \amp = \int u^4 du\\
 \amp = \dfrac{u^5}{5} + c\\
 \amp \dfrac{1}{5}\sin^5(x) + c
 \end{align*}
 </div></div>
-<div class="sbspanel" style="width:50%;justify-content:flex-start;"><p id="p-600"><figure class="table table-like" id="tab-higher-power-trig-u-sub"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">7.2.4<span class="period">.</span></span><span class="space"> </span></figcaption><table>
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><p id="p-636"><figure class="table table-like" id="tab-higher-power-trig-u-sub"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">7.2.4<span class="period">.</span></span><span class="space"> </span></figcaption><table>
 <tr><td class="l m b0 r2 l2 t0 lines" data-braille="last-cell">\(u = \sin(x) \)</td></tr>
 <tr><td class="l m b0 r2 l2 t0 lines" data-braille="last-cell">\(du = \cos(x)dx\)</td></tr>
 </table></figure></p></div>
 </div></div></p>
-<p id="p-601"><article class="assemblage assemblage-like" id="as-procedure-to-higher-power-trig-functions"><p id="p-602">Here is a procedure to evaluate functions of the form \(\displaystyle\int\sin^m(x)\cos^n(x)dx\text{:}\)</p>
+<p id="p-637"><article class="assemblage assemblage-like" id="as-procedure-to-higher-power-trig-functions"><p id="p-638">Here is a procedure to evaluate functions of the form \(\displaystyle\int\sin^m(x)\cos^n(x)dx\text{:}\)</p>
 <ul class="disc">
-<li id="li-227"><div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
-<div class="sbspanel" style="width:20.6896551724138%;justify-content:flex-start;"><p id="p-603">n is odd</p></div>
-<div class="sbspanel" style="width:31.0344827586207%;justify-content:flex-start;"><p id="p-604">split off a factor of \(\cos(x)\text{,}\) apply relevant identity, make u-sub where \(u = \sin(x)\)</p></div>
-<div class="sbspanel" style="width:41.3793103448276%;justify-content:flex-start;"><p id="p-605">\(\cos^2(x) = 1 - sin^2(x)\)</p></div>
+<li id="li-240"><div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
+<div class="sbspanel" style="width:20.6896551724138%;justify-content:flex-start;"><p id="p-639">n is odd</p></div>
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:flex-start;"><p id="p-640">split off a factor of \(\cos(x)\text{,}\) apply relevant identity, make u-sub where \(u = \sin(x)\)</p></div>
+<div class="sbspanel" style="width:41.3793103448276%;justify-content:flex-start;"><p id="p-641">\(\cos^2(x) = 1 - sin^2(x)\)</p></div>
 </div></div></li>
-<li id="li-228"><div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
-<div class="sbspanel" style="width:20.6896551724138%;justify-content:flex-start;"><p id="p-606">m is odd</p></div>
-<div class="sbspanel" style="width:31.0344827586207%;justify-content:flex-start;"><p id="p-607">split off a factor of \(\sin(x)\text{,}\) apply relevant identity, make u-sub where \(u=\cos(x)\)</p></div>
-<div class="sbspanel" style="width:41.3793103448276%;justify-content:flex-start;"><p id="p-608">\(\sin^2(x) = 1 - \cos^2(x)\)&gt;</p></div>
+<li id="li-241"><div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
+<div class="sbspanel" style="width:20.6896551724138%;justify-content:flex-start;"><p id="p-642">m is odd</p></div>
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:flex-start;"><p id="p-643">split off a factor of \(\sin(x)\text{,}\) apply relevant identity, make u-sub where \(u=\cos(x)\)</p></div>
+<div class="sbspanel" style="width:41.3793103448276%;justify-content:flex-start;"><p id="p-644">\(\sin^2(x) = 1 - \cos^2(x)\)&gt;</p></div>
 </div></div></li>
-<li id="li-229"><div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
-<div class="sbspanel" style="width:20.6896551724138%;justify-content:flex-start;"><p id="p-609">\(\begin{cases} \text{m is even} \\ \text{n is even} \end{cases} \)</p></div>
-<div class="sbspanel" style="width:31.0344827586207%;justify-content:flex-start;"><p id="p-610">use the relevant identities to reduce the powers on \(sin(x) \mbox{ and } \cos(x) \)</p></div>
-<div class="sbspanel" style="width:41.3793103448276%;justify-content:flex-start;"><p id="p-611">\(\begin{cases} \sin^2(x) = \dfrac{1}{2}(1 - \cos(2x)) \\
+<li id="li-242"><div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
+<div class="sbspanel" style="width:20.6896551724138%;justify-content:flex-start;"><p id="p-645">\(\begin{cases} \text{m is even} \\ \text{n is even} \end{cases} \)</p></div>
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:flex-start;"><p id="p-646">use the relevant identities to reduce the powers on \(sin(x) \mbox{ and } \cos(x) \)</p></div>
+<div class="sbspanel" style="width:41.3793103448276%;justify-content:flex-start;"><p id="p-647">\(\begin{cases} \sin^2(x) = \dfrac{1}{2}(1 - \cos(2x)) \\
 \cos^2(x) = \dfrac{1}{2}(1 + \cos(2x)) \end{cases}\)</p></div>
 </div></div></li>
 </ul></article></p></section><section class="subsection" id="sub-using-angular-trig-identites"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">7.2.4</span> <span class="title">Using Angular Trig Identities</span>
 </h3>
-<p id="p-612">How do we evaluate integrals of the form: \(\displaystyle \int \sin(mx) \cos(nx) dx \mbox{ , }\) \(\displaystyle \int \sin(mx) \sin(nx) dx \mbox{ , or }\) \(\displaystyle \int \cos(mx) \cos(nx) dx 
-\text{?}\) We can use a trig identity and express them as sums. <article class="assemblage assemblage-like" id="as-angular-trig-identities"><p id="p-613">Recall:</p>
+<p id="p-648">How do we evaluate integrals of the form: \(\displaystyle \int \sin(mx) \cos(nx) dx \mbox{ , }\) \(\displaystyle \int \sin(mx) \sin(nx) dx \mbox{ , or }\) \(\displaystyle \int \cos(mx) \cos(nx) dx 
+\text{?}\) We can use a trig identity and express them as sums. <article class="assemblage assemblage-like" id="as-angular-trig-identities"><p id="p-649">Recall:</p>
 <ul class="disc">
-<li id="li-230"><p id="p-614">\(\displaystyle \sin\alpha\cos\beta = \dfrac{1}{2}\left( \sin(\alpha - \beta) + \sin( \alpha + \beta)\right) dx \)</p></li>
-<li id="li-231"><p id="p-615">\(\displaystyle \sin\alpha\sin\beta = \dfrac{1}{2}\left( \cos(\alpha - \beta) - \cos( \alpha + \beta)\right) dx \)</p></li>
-<li id="li-232"><p id="p-616">\(\displaystyle \cos\alpha\cos\beta = \dfrac{1}{2}\left( \cos(\alpha - \beta) + \cos( \alpha + \beta)\right) dx \)</p></li>
+<li id="li-243"><p id="p-650">\(\displaystyle \sin\alpha\cos\beta = \dfrac{1}{2}\left( \sin(\alpha - \beta) + \sin( \alpha + \beta)\right) dx \)</p></li>
+<li id="li-244"><p id="p-651">\(\displaystyle \sin\alpha\sin\beta = \dfrac{1}{2}\left( \cos(\alpha - \beta) - \cos( \alpha + \beta)\right) dx \)</p></li>
+<li id="li-245"><p id="p-652">\(\displaystyle \cos\alpha\cos\beta = \dfrac{1}{2}\left( \cos(\alpha - \beta) + \cos( \alpha + \beta)\right) dx \)</p></li>
 </ul></article> <article class="project project-like" id="proj-angular-trig-identity-integral"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">7.2.2</span><span class="period">.</span>
 </h6>
-<p id="p-617">Evaluate \(\displaystyle \int \sin(5x)\cos(3x) dx\text{:}\)</p>
-<p id="p-618"><a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-4" id="answer-4"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-4"><div class="answer solution-like"><div class="displaymath">
+<p id="p-653">Evaluate \(\displaystyle \int \sin(5x)\cos(3x) dx\text{:}\)</p>
+<p id="p-654"><a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-4" id="answer-4"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-4"><div class="answer solution-like"><div class="displaymath">
 \begin{align*}
 \int \sin(5x)\cos(3x) dx \amp = \int \dfrac{1}{2} ( \sin(2x) + \sin(8x)) dx \\
 \amp = \dfrac{1}{2} \int \sin(2x) + \sin(8x) dx\\
