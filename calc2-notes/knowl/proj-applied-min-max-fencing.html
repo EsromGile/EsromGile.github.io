@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-06-04T19:12:08-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<article class="project project-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.1</span><span class="period">.</span>
+</h6>
+<p xmlns:svg="http://www.w3.org/2000/svg">Given one fixed wall of any length necessary, maximize the area of the rectangular concept space. We have 10,000 feet of fencting.</p>
+<ol class="decimal">
+<li><p xmlns:svg="http://www.w3.org/2000/svg">Draw: <figure class="figure figure-like"><div class="image-box" style="width: 45%; margin-left: 27.5%; margin-right: 27.5%;"><img src="images/applied-min-max-fence.png" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.4.1<span class="period">.</span></span><span class="space"> </span></figcaption></figure></p></li>
+<li>
+<p xmlns:svg="http://www.w3.org/2000/svg">Find a formula:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+A = w \cdot l
+\end{equation*}
+</div>
+</li>
+<li>
+<p xmlns:svg="http://www.w3.org/2000/svg">Reduce the formula to one variable:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+10000 \amp = 2w + l\\
+10000 - 2w \amp = l\\
+\amp \Downarrow \\
+A = f(w) \amp = w \cdot (10000 - 2w) \\
+\amp = 10000w - 2w^2 
+\end{align*}
+</div>
+</li>
+<li>
+<p xmlns:svg="http://www.w3.org/2000/svg">Constraints and interval:</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-end;"><p xmlns:svg="http://www.w3.org/2000/svg"><figure class="figure figure-like"><img src="images/fig-fence-constraint-1.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.4.2<span class="period">.</span></span><span class="space"> </span></figcaption></figure></p></div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-end;"><p xmlns:svg="http://www.w3.org/2000/svg"><figure class="figure figure-like"><img src="images/fig-fence-constraint-2.png" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.4.3<span class="period">.</span></span><span class="space"> </span></figcaption></figure></p></div>
+</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p xmlns:svg="http://www.w3.org/2000/svg">If we just run it along the wall, we get the above.</p></div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p xmlns:svg="http://www.w3.org/2000/svg">If we run the fence perpendicular to the wall and back, we get the above.</p></div>
+</div></div>
+<p xmlns:svg="http://www.w3.org/2000/svg">So, \(0 \leq w \leq 5000\)</p>
+</li>
+<li>
+<p xmlns:svg="http://www.w3.org/2000/svg">Calculation:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\dfrac{dA}{dw} \amp = \dfrac{d}{dw}(10000w - 2w^2)\\
+\amp = 10000 -4w
+\end{align*}
+</div>
+<p xmlns:svg="http://www.w3.org/2000/svg">critical points: \(10000 - 4w = 0 \Rightarrow\) w = 2500</p>
+<table>
+<tr>
+<td class="c m b2 r2 l0 t0 lines">\(w\)</td>
+<td class="c m b2 r2 l0 t0 lines">\(A(w)\)</td>
+<td class="c m b2 r0 l0 t0 lines" data-braille="last-cell">Result</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">(EP) \(0\)</td>
+<td class="c m b0 r2 l0 t0 lines">\(0\)</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">---</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">(CP) \(2500\)</td>
+<td class="c m b0 r2 l0 t0 lines">\(12,500,000\)</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">absolute max on \([0, 5000]\)</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">(EP) \(0\)</td>
+<td class="c m b0 r2 l0 t0 lines">\(0\)</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">---</td>
+</tr>
+</table>
+</li>
+</ol>
+<p xmlns:svg="http://www.w3.org/2000/svg">Conclusion:</p>
+<ul class="disc"><li><p xmlns:svg="http://www.w3.org/2000/svg">The maximum area is \(12,500,000 ft^2\) with \(l=5000, w =2500\text{.}\)</p></li></ul></article><span class="incontext"><a href="sec-applied-max-min.html#proj-applied-min-max-fencing">in-context</a></span>
+</body>
+</html>

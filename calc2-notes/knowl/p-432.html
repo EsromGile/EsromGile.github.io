@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-06-01T14:51:44-05:00       *-->
+<!--*       on 2021-06-04T19:12:08-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,18 +15,12 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Let's set up the integral to find the volume of the image above revolved around the y-axis. The area is bound above by \(f(x)=x^2\text{,}\) on the left by \(x=0\text{,}\) and on the right by \(x=2\text{.}\)</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{align*}
-V \amp = \int_a^b 2\pi x \left(f(x) - g(x)\right) dx\\
-\amp = \int_0^2 2\pi x \left(x^2\right) dx\\
-\amp = 2\pi \int_0^2  x^3 dx \\
-\amp = 2 \pi \left[ \dfrac{x^4}{4}\right]_0^2\\
-\amp = 2 \pi \left( \dfrac{(2)^4}{4}- \dfrac{(0)^4}{4}\right)\\
-\amp = 2 \pi \left( \dfrac{16}{4} \right)\\
-\amp = 8 \pi
-\end{align*}
-</div>
+<p>If we cut the previous graph up into small, evenly spaced verticle strips, and rotate them around the x-axis, we would get a series of disks. The equation for the volume of a disk is \(V_{disk}=\pi r^2 h\text{.}\) We can apply this to our graph by using the following:</p>
+<ul class="disc">
+<li><p xmlns:svg="http://www.w3.org/2000/svg">\(r=f(x_k^*)\)  where \(f(x_k^*)\) is the height of each individual "strip"</p></li>
+<li><p xmlns:svg="http://www.w3.org/2000/svg">\(h=\Delta x\) where \(\Delta x \) is the width of each individual "strip"</p></li>
+<li><p xmlns:svg="http://www.w3.org/2000/svg">This gives us the equation: \(V_{n,disk}=\pi(f(x_k^*))^2 \Delta x\)</p></li>
+</ul>
 <span class="incontext"><a href="sec-volumes-by-slicing.html#p-432">in-context</a></span>
 </body>
 </html>
