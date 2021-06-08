@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-06-04T19:12:09-05:00       *-->
+<!--*       on 2021-06-08T16:43:52-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,14 +15,30 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
+<p>This can be done in three steps:</p>
+<ol class="decimal">
+<li><p xmlns:svg="http://www.w3.org/2000/svg">take the natural log of both sides,</p></li>
+<li><p xmlns:svg="http://www.w3.org/2000/svg">take the derivative of both sides with respect to x,</p></li>
+<li><p xmlns:svg="http://www.w3.org/2000/svg">multiply both sides times y.</p></li>
+</ol>
+<p data-braille="continuation"><article class="note remark-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">6.2.2</span><span class="period">.</span>
+</h6>Make sure to simplify your equation between each step.</article> <article class="project project-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.1</span><span class="period">.</span>
+</h6>
+<p>Using the equation above:</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{align*}
-\displaystyle\lim_{x \to 3}\dfrac{x^2+x-12}{x^2+4x-21} \amp = \displaystyle\lim_{x \to 3}\dfrac{(x-3)(x+4)}{(x-3)(x+7)} \\
-\amp = \displaystyle\lim_{x \to 3}\dfrac{x+4}{x+7}\\
-\amp =\dfrac{3+4}{3+7}\\
-\amp = \dfrac{7}{10}
+y \amp = \dfrac{(x^4 + 7) \sqrt{x}}{\sin(x)}\\
+\ln(y) \amp = \ln \left( \dfrac{(x^4 + 7) \sqrt{x}}{ \sin(x)} \right) \\
+\amp = \ln((x^4 + 7)\sqrt{x})-\ln(\sin(x)) \\
+\amp = \ln(x^4 + 7) + \ln(\sqrt{x})-\ln(\sin(x)) \\
+\amp = \ln(x^4 + 7) + \frac{1}{2}\ln(x)-\ln(\sin(x))\\
+\frac{1}{y} \cdot \dfrac{dy}{dx} \amp = \dfrac{1}{x^4+7} \cdot 4x^3 + \frac{1}{2} \cdot \frac{1}{x} - \dfrac{1}{\sin(x)} \cdot \cos(x) \\
+\dfrac{dy}{dx} \amp = \left( \dfrac{1}{x^4+7} \cdot 4x^3 + \frac{1}{2} \cdot \frac{1}{x} - \dfrac{1}{\sin(x)} \cdot \cos(x) \right) \cdot y \\
+\dfrac{dy}{dx} \amp = \left( \dfrac{4x^3}{x^4+7} + \frac{1}{2x} - \dfrac{\cos(x)}{\sin(x)} \right) \cdot \left( \dfrac{(x^4+7)(\sqrt{x})}{\sin(x)} \right) 
 \end{align*}
-</div>
-<span class="incontext"><a href="sec-lhapitals-rule.html#p-550">in-context</a></span>
+</div></article></p>
+<span class="incontext"><a href="sec-derivatives-and-integrals-of-logs.html#p-550">in-context</a></span>
 </body>
 </html>

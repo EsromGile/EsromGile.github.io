@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-06-04T19:12:05-05:00       *-->
+<!--*       on 2021-06-08T16:43:48-05:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -175,12 +175,111 @@ MathJax.Hub.Config({
 \int f(x) dx = F(x) + c
 \end{equation*}
 </div>
+<p data-braille="continuation">This means the same as:</p>
+<div class="displaymath">
+\begin{equation*}
+\dfrac{d}{dx}(F(x)) = f(x)
+\end{equation*}
+</div>
+<p data-braille="continuation">but we know \(f(x)\) and we are finding \(F(x)\text{.}\) <article class="assemblage assemblage-like" id="as-spoken-integral-equation"><p id="p-428">The equation</p>
+<div class="displaymath">
+\begin{equation*}
+\int f(x) dx = F(x) + c
+\end{equation*}
+</div>
+<p data-braille="continuation">would be said as:</p>
+<p id="p-429">"The integral of \(f(x)\) with respet to \(x\) is \(F(x)\) plus \(c\text{.}\)"</p></article> <article class="note remark-like" id="note-integral-constant"><h6 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">4.1.3</span><span class="period">.</span>
+</h6>
+<p id="p-430">Assume \(c\) is a constant, \(\dfrac{d}{dx}(c) = 0\) so,</p>
 <div class="displaymath">
 \begin{align*}
-\int \amp f(x) \amp dx = \amp F(x) + c\\
-\text{integral sign} \amp \text{integrand} \amp \text{differential} \amp \text{antiderivative} \amp \text{arbitrary constant}
+\dfrac{d}{dx}(F(x) + c) \amp = \dfrac{d}{dx}(F(x)) + \dfrac{d}{dx}(c)\\
+\amp = f(x) + 0 \\
+\amp = f(x)
 \end{align*}
-</div></section></div></main>
+</div>
+<p id="p-431">This means \(F(x) + c\) represesnts all possible function that share \(f(x)\) as their derivative.</p></article> <p id="p-432">If \(f(x) = 5\text{,}\) what is \(F(x)\text{?}\)</p><div class="displaymath">
+\begin{equation*}
+\dfrac{d}{dx}\text{(  ?  )} = 5
+\end{equation*}
+</div><div class="displaymath">
+\begin{equation*}
+5x + c = ?
+\end{equation*}
+</div><p data-braille="continuation">\(c\) lets us shift the value of the function vertically without changing the function.</p> <p id="p-433">We call this an indefinite integral (finding the set of all functions that share a common derivative).</p></p>
+<article class="project project-like" id="proj-integral-into-ex"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.1</span><span class="period">.</span>
+</h6>
+<p id="p-434">Find \(\displaystyle\int 3 dx\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:center;"><div class="displaymath" id="p-435">
+\begin{align*}
+\int 3 dx \amp = F(x) + c\\
+\amp = 3x + c
+\end{align*}
+</div></div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:center;"><p id="p-436">Since \(\dfrac{d}{dx} \left( 3x + c \right) = 3\)</p></div>
+</div></div>
+<article class="note remark-like" id="note-proj-integral-c"><h6 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">4.1.4</span><span class="period">.</span>
+</h6>
+<p id="p-437">The \(c\) allows us to write all related functions generally.</p></article></article><p id="p-438">Here are a list of common integrals:</p>
+<ul class="disc">
+<li id="li-171"><p id="p-439">\(\displaystyle \displaystyle\int dx = \displaystyle\int 1 dx = x + c  \)</p></li>
+<li id="li-172"><p id="p-440">\(\displaystyle \displaystyle\int x dx = \dfrac{1}{2} x^2 + c \)</p></li>
+<li id="li-173"><p id="p-441">\(\displaystyle \displaystyle\int x^2 dx = \dfrac{1}{3} x^3 + c \)</p></li>
+<li id="li-174"><p id="p-442">\(\displaystyle \displaystyle\int \cos(x) dx = \sin(x) + c \)</p></li>
+<li id="li-175"><p id="p-443">\(\displaystyle \displaystyle\int \sin(x) dx = - \cos(x) + c \)</p></li>
+<li id="li-176"><p id="p-444">\(\displaystyle \displaystyle\int \sec^2(x) dx = \tan(x) + c \)</p></li>
+<li id="li-177"><p id="p-445">\(\displaystyle \displaystyle\int \csc^2(x) dx = - \cot(x) + c \)</p></li>
+<li id="li-178"><p id="p-446">\(\displaystyle \displaystyle\int \sec(x)\tan(x) dx = \sec(x) + c \)</p></li>
+<li id="li-179"><p id="p-447">\(\displaystyle \displaystyle\int \csc(x)\cot(x) dx = - \csc(x) + c \)</p></li>
+</ul>
+<p data-braille="continuation"><article class="assemblage assemblage-like" id="as-prower-rule-for-integrals"><h6 class="heading"><span class="title">Power Rule for Integrals.</span></h6>
+<p id="p-448">The power rule for integrals states</p>
+<div class="displaymath">
+\begin{equation*}
+\int x^r dx = \dfrac{1}{r + 1} \cdot x^{r + 1} + c 
+\end{equation*}
+</div>
+<p data-braille="continuation">for all \(r \neq -1\text{.}\)</p></article></p>
+<p id="p-449">Let \(k\) and \(c\) be constants, \(F(x)\) and \(G(x)\) be antiderivatives of \(f(x)\) and \(g(x)\text{.}\) Then all of the following are true:</p>
+<ul class="disc">
+<li id="li-180"><div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:57.8947368421053%;justify-content:flex-start;"><div class="displaymath" id="p-450">
+\begin{equation*}
+\int k \cdot f(x) dx = k \int f(x) dx = k \cdot F(x) + c
+\end{equation*}
+</div></div>
+<div class="sbspanel" style="width:36.8421052631579%;justify-content:flex-start;"><p id="p-451"><article class="note remark-like" id="note-integrals-k-times-c"><h6 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">4.1.5</span><span class="period">.</span>
+</h6>
+<p id="p-452">Since \(c\) is unknown \(k \cdot c\) doesn't have any meaning, so we can still call it \(c\text{.}\)</p></article></p></div>
+</div></div></li>
+<li id="li-181"><div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><div class="displaymath" id="p-453">
+\begin{align*}
+\int f(x) \pm g(x) dx \amp = \left( \int f(x) dx \right) \pm \left( \int g(x) dx \right)\\
+\amp = \left( F(x) + c \right) \pm \left( G(x) + c \right) \\
+\amp = F(x) \pm G(x) + c
+\end{align*}
+</div></div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><p id="p-454"></p></div>
+</div></div></li>
+</ul>
+<article class="project project-like" id="proj-integrals-rules-ex"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.2</span><span class="period">.</span>
+</h6>
+<p id="p-455">Let's put some of these rules together:</p>
+<div class="displaymath">
+\begin{align*}
+\int 3x^2 - \cos(x) dx \amp = \int 3x^2 dx - \int \cos(x) dx\\
+\amp = 3 \int x^2 dx - \int \cos(x) dx \\
+\amp = 3\left( \dfrac{1}{3} x^3 \right) - \left( \sin(x) \right) + c\\
+\amp = x^3 - \sin(x) + c
+\end{align*}
+</div></article></section></div></main>
 </div>
 </body>
 </html>
