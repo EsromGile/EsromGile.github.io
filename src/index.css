@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
 
+:root {
+  --green: #126940;
+  --green-border: #0c5432;
+  --green-shadow: #072919;
+  --background: rgb(160, 160, 160);
+  --header: gray;
+  --background-shadow: rgb(17, 17, 17);
+  --border: rgb(52, 52, 52);
+
+  background-color: var(--background);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,18 +23,57 @@ body {
 
 /* projects begin */
 .card-group {
+  height: 100%;
   display: flex;
   flex-basis: 0;
-  flex-wrap: 1;
+  flex-wrap: wrap;
   flex-grow: 1;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
 }
 
 .card {
-  margin: 25px;
+  background-color: var(--header);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
   padding: 10px;
-  width: 250px;
+  width: 260px;
   height: auto;
+  border-radius: 15px;
+  box-shadow: 4px 5px 8px var(--background-shadow);
 }
+
+.card-button {
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+}
+
+.card-languages {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.card-languages > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 /* projects end */
 
 /* navbar begin */
@@ -33,15 +84,15 @@ nav {
   display: flex;
   justify-content: right;
   padding: 25px 18px;
-  background-color: gray;
-  border-bottom: 2px solid rgb(103, 103, 103);
+  background-color: var(--header);
+  border-bottom: 1px solid var(--border);
 }
 
 
 .link-active {
   text-decoration: none;
-  border-bottom: 2px solid #126940;
-  border-top: 2px solid #126940;
+  border-bottom: 2px solid var(--green);
+  border-top: 2px solid var(--green);
 }
 
 .home::before {
@@ -49,10 +100,10 @@ nav {
   content: "";
   position: absolute;
   inset: 1% 6% 100%;
-  background-color: #198754;
-  border: 1px solid #126940;
+  background-color: var(--green);
+  border: 1px solid var(--green-border);
   border-radius: 12px;
-  box-shadow: 5px 4px 4px #072919;
+  box-shadow: 5px 4px 4px var(--green-shadow);
   z-index: 1000;
   width: 120px;
   height: 110px;
@@ -78,10 +129,10 @@ nav {
   content: "";
   position: absolute;
   inset: 1% 6% 100%;
-  background-color: #198754;
-  border: 1px solid #126940;
+  background-color: var(--green);
+  border: 1px solid var(--green-border);
   border-radius: 12px;
-  box-shadow: 5px 4px 4px #072919;
+  box-shadow: 5px 4px 4px var(--green-shadow);
   z-index: 1000;
   width: 120px;
   height: 110px;
@@ -107,10 +158,10 @@ nav {
   content: "";
   position: absolute;
   inset: 1% 6% 100%;
-  background-color: #198754;
-  border: 1px solid #126940;
+  background-color: var(--green);
+  border: 1px solid var(--green-border);
   border-radius: 12px;
-  box-shadow: 5px 4px 4px #072919;
+  box-shadow: 5px 4px 4px var(--green-shadow);
   z-index: 1000;
   width: 120px;
   height: 110px;
@@ -139,14 +190,14 @@ nav {
 }
 
 #navigation li > * {
-  color: black;
+  color: var(--background-shadow);
   text-decoration: none;
   padding: 20px 12px;
   transition: all 0.15s ease-in-out;
 }
 
 #navigation li > *:hover {
-  color: #126940;
+  color: var(--green);
 }
 
 @media (max-width: 525px) {
@@ -208,8 +259,9 @@ nav {
   left:0;
   width: 100%;
   height: auto;
-  color: gray;
-  background-color: black;
+  color: var(--header);
+  border-top: 1px solid var(--border);
+  background-color: var(--background-shadow);
   background-repeat: no-repeat;
   background-position-y: -10px;
   background-position-x: center;

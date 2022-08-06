@@ -1,4 +1,4 @@
-import Card  from "../components/Card.js";
+import MyCard  from "../components/MyCard.js";
 
 import Sudoku from "../assets/sudoku.png";
 import Life from "../assets/game-of-life.gif";
@@ -8,44 +8,44 @@ import Hand from "../assets/hand-point-up-solid.svg";
 
 const Projects = () => {
 
-    const generatorLanguages = ["Vanilla JS", "HTML", "CSS"];
-    const searchLanguages = ["Angular TS", "C#", "HTML", "CSS"]
-    const conwaysLanguages = ["Vanilla JS","HTML", "CSS"];
+    const generatorLanguages = ["Vanilla", "HTML", "CSS"];
+    const searchLanguages = ["Angular", "DotNet", "HTML", "CSS"]
+    const conwaysLanguages = ["Vanilla","HTML", "CSS"];
     const tictactoeLanguages = ["Java"];
-    const thispageLanguages = ["React JS", "HTML", "CSS"];
+    const thispageLanguages = ["React", "HTML", "CSS"];
 
     return (
         <div className="card-group">
-            <Card 
+            <MyCard 
                 project="Sudoku Generator" 
                 image={Sudoku}
                 link="https://esromgile.github.io/sudoku-generator/"
                 languages={generatorLanguages}
-            ></Card>
-            <Card 
+                ></MyCard>
+            <MyCard 
                 project="Github Search" 
                 image={Github}
                 link="https://elimorse-project3.azurewebsites.net/"
                 languages={searchLanguages}
-            ></Card>
-            <Card 
+                ></MyCard>
+            <MyCard 
                 project="Conway's Game of Life" 
                 image={Life}
                 link="https://esromgile.github.io/game-of-life/"
                 languages={conwaysLanguages}
-            ></Card>
-            <Card 
+                ></MyCard>
+            <MyCard 
                 project="5x5 Tic-Tac-Toe" 
                 image={TicTacToe}
                 link="https://github.com/EsromGile/Super-Tic-Tac-Toe"
                 languages={tictactoeLanguages}
-            ></Card>
-            <Card
+                ></MyCard>
+            <MyCard
                 project="This Page!"
                 image={Hand}
                 link={null}
                 languages={thispageLanguages}
-            ></Card>
+                ></MyCard>
         </div>
     )
 };
