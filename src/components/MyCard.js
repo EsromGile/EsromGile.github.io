@@ -6,17 +6,15 @@ const MyCard = (props) => {
     let link = <></>;
     if (props.link != null) {
         link = 
-        <a className="card-button" href={props.link} target="_blank" rel="noreferrer">
-            <button>Check it out!</button>
+        <a className='card-button-container' href={props.link} target="_blank" rel="noreferrer">
+            <button className='card-button'>Check it out!</button>
         </a>
     }
 
     return (
         <div className="card">
 
-            <h2>{props.project}</h2>
-            <img src={props.image} alt="" width="200" height="200"/>
-            {link}
+            <h2 className='card-header'>{props.project}</h2>
             <div className="card-languages">
                 <span class="card-language-span">Tools:</span>
                 {props.languages.map(language => {
@@ -40,6 +38,8 @@ const MyCard = (props) => {
                     }
                 })}
             </div>
+            <img className='card-img' src={props.image} alt="" width="200" height="200"/>
+            {link}
         </div>
     )
 };

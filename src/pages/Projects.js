@@ -1,10 +1,10 @@
 import MyCard  from "../components/MyCard.js";
 
 import Sudoku from "../assets/sudoku.png";
-import Life from "../assets/game-of-life.gif";
-import Github from "../assets/github-brands.svg";
+import Life from "../assets/dna.png";
+import Github from "../assets/github.png";
 import TicTacToe from "../assets/tic-tac-toe.png";
-import Hand from "../assets/hand-point-up-solid.svg";
+import Internet from "../assets/internet.png";
 
 const Projects = () => {
 
@@ -29,7 +29,7 @@ const Projects = () => {
                 languages={searchLanguages}
                 ></MyCard>
             <MyCard 
-                project="Conway's Game of Life" 
+                project="Game of Life" 
                 image={Life}
                 link="https://esromgile.github.io/game-of-life/"
                 languages={conwaysLanguages}
@@ -41,8 +41,8 @@ const Projects = () => {
                 languages={tictactoeLanguages}
                 ></MyCard>
             <MyCard
-                project="This Page!"
-                image={Hand}
+                project="This React Page!"
+                image={Internet}
                 link={null}
                 languages={thispageLanguages}
                 ></MyCard>
