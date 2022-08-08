@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.8179e833.css",
-    "main.js": "/static/js/main.00888245.js",
+    "main.css": "/static/css/main.62505812.css",
+    "main.js": "/static/js/main.23a4921e.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
-    "static/media/tic-tac-toe.png": "/static/media/tic-tac-toe.cd0574a83e84f3b3eaa4.png",
-    "static/media/sudoku.png": "/static/media/sudoku.9768c7530964c10268e9.png",
-    "static/media/github-brands.svg": "/static/media/github-brands.022db3ae71b7f7388d8a9835ca7fded2.svg",
-    "static/media/hand-point-up-solid.svg": "/static/media/hand-point-up-solid.2f61568c1c455306ac2de598a80e8b9a.svg",
+    "static/media/dna.png": "/static/media/dna.6fb49ed54affdcd19abb.png",
+    "static/media/github.png": "/static/media/github.96997ac26ed9d67f9159.png",
+    "static/media/tic-tac-toe.png": "/static/media/tic-tac-toe.37c6dedb5d6525cc3331.png",
+    "static/media/internet.png": "/static/media/internet.b2c514376e752719d541.png",
+    "static/media/sudoku.png": "/static/media/sudoku.245f6f4499a4fa77d3be.png",
     "static/media/house-chimney-solid.svg": "/static/media/house-chimney-solid.4d6b80d299c6a6039288.svg",
     "static/media/code-solid.svg": "/static/media/code-solid.a071801782064e53c536.svg",
     "static/media/file-lines-solid.svg": "/static/media/file-lines-solid.6c210fe94bfd44c0d544.svg",
     "index.html": "/index.html",
-    "main.8179e833.css.map": "/static/css/main.8179e833.css.map",
-    "main.00888245.js.map": "/static/js/main.00888245.js.map"
+    "main.62505812.css.map": "/static/css/main.62505812.css.map",
+    "main.23a4921e.js.map": "/static/js/main.23a4921e.js.map"
   },
   "entrypoints": [
-    "static/css/main.8179e833.css",
-    "static/js/main.00888245.js"
+    "static/css/main.62505812.css",
+    "static/js/main.23a4921e.js"
   ]
 }
