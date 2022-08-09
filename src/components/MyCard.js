@@ -2,17 +2,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faJava, faJsSquare, faReact, faHtml5, faCss3, faAngular} from '@fortawesome/free-brands-svg-icons';
 
 const MyCard = (props) => {
-
-    let link = <></>;
-    if (props.link != null) {
-        link = 
-        <a className='card-button-container' href={props.link} target="_blank" rel="noreferrer">
-            <button className='card-button'>Check it out!</button>
-        </a>
-    }
-
     return (
-        <div className="card">
+        <a className="card" href={props.link} target="_blank" rel="noreferrer">
 
             <h2 className='card-header'>{props.project}</h2>
             <div className="card-languages">
@@ -39,8 +30,7 @@ const MyCard = (props) => {
                 })}
             </div>
             <img className='card-img' src={props.image} alt="" width="200" height="200"/>
-            {link}
-        </div>
+        </a>
     )
 };
   

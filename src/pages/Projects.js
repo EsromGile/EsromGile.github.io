@@ -15,6 +15,10 @@ const Projects = () => {
     const thispageLanguages = ["React", "HTML", "CSS"];
 
     return (
+        <>
+        <span className="card-group-header">
+            Click each card to visit!
+        </span>
         <div className="card-group">
             <MyCard 
                 project="Sudoku Generator" 
@@ -43,10 +47,11 @@ const Projects = () => {
             <MyCard
                 project="This React Page!"
                 image={Internet}
-                link={null}
+                link="https://esromgile.github.io/"
                 languages={thispageLanguages}
                 ></MyCard>
         </div>
+        </>
     )
 };
   
