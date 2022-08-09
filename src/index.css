@@ -4,6 +4,7 @@
   --green: #126940;
   --yellow: #eec643;
   --black: #040f0f;
+  --attribution: rgb(50, 50, 50);
   --gray: #bebfc4;
   --white: #ffffff;
   
@@ -16,20 +17,65 @@
 body {
   margin: 0;
   overflow-x: hidden;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto Mono', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.view {
+/* home begin */
+.home-header {
+  margin-top: 50px;
   display: flex;
-  flex-direction: column;
-  height: 100vh;
+  flex: 1;
+  justify-content: center;
 }
 
+.home > * {
+  display: flex;
+  flex: 1;
+}
+
+.hand-waving {
+  margin-top: 12px;
+  margin-left: 20px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../public/images/waving-hand.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+@media (max-width: 415px) {
+  .hand-waving {
+    display: none;
+  }
+}
+/* home end */
+
 /* projects begin */
+.card-group-header {
+  padding-top: 80px;
+  padding-bottom: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.click-icon {
+  display: inline-block;
+  margin-top: -8px;
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  background-image: url("../public/images/cursor.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
 .card-group {
   display: flex;
   flex-basis: 0;
@@ -41,25 +87,13 @@ body {
   margin-top: 20px;
 }
 
-.card-group-header {
-  padding-top: 80px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  font-family: 'Roboto Mono', sans-serif;
-  font-weight: bold;
-  font-size: 25px;
-}
-
 .card {
   background: var(--white);
   align-items: center;
   margin: 10px;
   min-width: 260px;
   max-width: 260px;
-  height: 370px;
+  height: 340px;
   border-radius: 15px;
   border: 1px solid var(--border);
   box-shadow: 2px 2px 4px var(--black);
@@ -76,7 +110,6 @@ body {
 .card > * {
   text-align: center;
   padding: 10px 0;
-  font-family: 'Roboto Mono', sans-serif;
 }
 
 .card-img {
@@ -106,6 +139,7 @@ body {
 
 .card-languages > * {
   font-weight: 600;
+  font-size: 19px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,11 +148,14 @@ body {
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.card-languages > span {
+  font-size: 16px;
+}
 /* projects end */
 
 /* navbar begin */
 nav {
-  font-family: 'Roboto Mono', sans-serif;
   font-weight: bold;
   font-size: 18px;
   display: flex;
@@ -132,6 +169,14 @@ nav {
   text-decoration: none;
   border-bottom: 2px solid var(--green);
   border-top: 2px solid var(--green);
+}
+
+#navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  list-style: none;
+  padding-right: 5%;
 }
 
 #navigation li > *::before {
@@ -161,25 +206,6 @@ nav {
   height: 110px;
 }
 
-.home::after {
-  background-image: url("../public/images/house-chimney-solid.svg");
-}
-
-.resume::after {
-  background-image: url("../public/images/file-lines-solid.svg");
-}
-
-.projects::after {
-  background-image: url("../public/images/code-solid.svg");
-}
-
-#navigation {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  padding-right: 5%;
-}
-
 #navigation li > * {
   color: var(--white);
   text-decoration: none;
@@ -189,6 +215,18 @@ nav {
 
 #navigation li > *:hover {
   color: var(--green);
+}
+
+.home::after {
+  background-image: url("../public/images/user-solid.svg");
+}
+
+.resume::after {
+  background-image: url("../public/images/file-lines-solid.svg");
+}
+
+.projects::after {
+  background-image: url("../public/images/code-solid.svg");
 }
 
 @media (max-width: 525px) {
@@ -218,9 +256,11 @@ nav {
     justify-content: center;
     max-width: 100vw;
   }
-
   #navigation li > *::after, 
   #navigation li > *::before {
+    display: none;
+  }
+  .click-icon {
     display: none;
   }
 }
@@ -266,7 +306,6 @@ nav {
   display: flex;
   flex-grow: 0;
   justify-content: center;
-  font-family: 'Roboto Mono', sans-serif;
   font-size: 16px;
 }
 
@@ -297,6 +336,26 @@ ul.footer-list li a {
 
 ul.footer-list li a:hover {
   transform: translateY(-4px);
+}
+
+.attributes {
+  font-family: 'Roboto Mono', sans-serif;
+  position: fixed;
+  background-color: transparent;
+  border: none;
+  color: var(--attribution);
+  justify-content: center;
+  bottom: 20px;
+  right: 20px;
+}
+
+.space {
+  margin-left: 5px;
+  margin-top: 3px;
+}
+
+.small-text {
+  font-size: 12px;
 }
 
 @media (min-width: 900px) {

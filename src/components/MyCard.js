@@ -7,7 +7,7 @@ const MyCard = (props) => {
 
             <h2 className='card-header'>{props.project}</h2>
             <div className="card-languages">
-                <span class="card-language-span">Tools:</span>
+                <span>Tools:</span>
                 {props.languages.map(language => {
                     switch (language) {
                         case "Vanilla": 

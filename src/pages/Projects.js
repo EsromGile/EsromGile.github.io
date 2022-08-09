@@ -16,9 +16,10 @@ const Projects = () => {
 
     return (
         <>
-        <span className="card-group-header">
+        <div className="card-group-header">
             Click each card to visit!
-        </span>
+            <span className="click-icon"></span>
+        </div>
         <div className="card-group">
             <MyCard 
                 project="Sudoku Generator" 
