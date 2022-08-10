@@ -2,12 +2,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faJava, faJsSquare, faReact, faHtml5, faCss3, faAngular} from '@fortawesome/free-brands-svg-icons';
 
 const MyCard = (props) => {
+
+    let spanFontSize = 16;
+
     return (
         <a className="card" href={props.link} target="_blank" rel="noreferrer">
 
             <h2 className='card-header'>{props.project}</h2>
             <div className="card-languages">
-                <span>Tools:</span>
+                <span style={{fontSize: spanFontSize}}>Tools:</span>
                 {props.languages.map(language => {
                     switch (language) {
                         case "Vanilla": 

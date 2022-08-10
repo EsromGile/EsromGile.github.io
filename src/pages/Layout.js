@@ -9,13 +9,13 @@ const Layout = () => {
       <nav>
         <ul id="navigation">
           <li>
-            <NavLink to="/" className={({isActive}) => (isActive ? "link-active home": "")}>About Me</NavLink>
-          </li>
-          <li>
-            <NavLink to="/resume" className={({isActive}) => (isActive ? "link-active resume": "")}>Resume</NavLink>
+            <NavLink to="/" className={({isActive}) => (isActive ? "link-active home": "")}>About</NavLink>
           </li>
           <li>
             <NavLink to="/projects" className={({isActive}) => (isActive ? "link-active projects": "")}>Projects</NavLink>
+          </li>
+          <li>
+            <NavLink to="/resume" className={({isActive}) => (isActive ? "link-active resume": "")}>Resume</NavLink>
           </li>
         </ul>
       </nav>
