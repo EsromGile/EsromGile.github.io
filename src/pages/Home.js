@@ -9,7 +9,10 @@ const Home = () => {
     return (
         <div className="about-page">  
             <div className="home-header">
-                <h1>Hi, I'm Eli Morse! </h1><span className="hand-waving"></span>
+                <div>
+                    <h1 className='typed-out'>Hi, I'm Eli Morse!</h1>
+                    {/* <span className="hand-waving"></span> */}
+                </div>
             </div>
             <div className="home-container container-left">
                 <h2 className="home-container-header header-left">

@@ -40,16 +40,6 @@ body {
   flex: 1;
 }
 
-.hand-waving {
-  margin-top: 12px;
-  margin-left: 20px;
-  width: 50px;
-  height: 50px;
-  background-image: url("../public/images/waving-hand.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
 .home-container {
   z-index: 1000;
   display: flex;
@@ -128,26 +118,42 @@ body {
 
 /* projects begin */
 .card-group-header {
-  padding-top: 80px;
+  padding-top: 35px;
   padding-bottom: 35px;
+  margin-left: 25px;
+  margin-right: 25px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  width: 100%;
   font-weight: bold;
   font-size: 25px;
 }
 
-.click-icon {
-  display: inline-block;
-  margin-top: -8px;
-  margin-left: 20px;
-  width: 40px;
-  height: 40px;
-  background-image: url("../public/images/cursor.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+.typed-out{
+  overflow: hidden;
+  text-align: left;
+  border-right: .15em solid var(--green);
+  white-space: nowrap;
+  animation: 
+    typing 1.5s steps(25, end) forwards,
+    blink .8s infinite;
+  font-size: 25px;
+  width: 0;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink {
+  from { border-color: transparent }
+  to { border-color: var(--green); }
+}
+
+.static {
+  display: none;
 }
 
 .card-group {
@@ -158,7 +164,6 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0 50px 100px 50px;
-  margin-top: 20px;
 }
 
 .card {
@@ -167,18 +172,18 @@ body {
   margin: 10px;
   min-width: 260px;
   max-width: 260px;
-  height: 340px;
+  height: 430px;
   border-radius: 15px;
   border: 1px solid var(--border);
   box-shadow: 2px 2px 4px var(--black);
   transition: all 0.15s ease-in-out;
   text-decoration: none;
-  color: var(--black)
+  color: var(--black);
 }
 
 .card:hover {
   box-shadow: 5px 7px 8px var(--black);
-  transform: translateY(-3px);
+  transform: translateY(-5px);
 }
 
 .card > * {
@@ -190,7 +195,6 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 20px;
 }
 
 .card-header {
@@ -219,8 +223,25 @@ body {
   align-items: center;
   list-style: none;
   text-decoration: none;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.card-description {
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 10px 0 10px;
+}
+
+@media (max-width: 415px) {
+  .typed-out {
+    display: none;
+  }
+  .static {
+    display: inline-block;
+    font-size: 25px;
+  }
 }
 /* projects end */
 
@@ -409,7 +430,7 @@ ul.footer-list li a:hover {
   border: none;
   color: var(--attribution);
   justify-content: center;
-  bottom: 20px;
+  bottom: 13px;
   right: 20px;
 }
 
@@ -421,11 +442,9 @@ ul.footer-list li a:hover {
   }
   #footer > * {
     margin: 0;
-    padding-left: 5px;
-    padding-right: 5px;
     padding-top: 8px !important;
     padding-bottom: 8px;
-    justify-content: left;
+    justify-content: center;
   }
 }
 /* footer end */

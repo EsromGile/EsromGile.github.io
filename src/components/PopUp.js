@@ -10,7 +10,7 @@ export default function PopUp(){
     let size = 14;
 
     return(
-        <div>
+        <>
             <Popup trigger=
                 {<button className="attributes">
                     Attributes 
@@ -18,8 +18,6 @@ export default function PopUp(){
                 </button>}
             position="top right">
                 <ul>
-                    <li style={{fontSize: size}}><a href="https://www.flaticon.com/free-icons/click" title="click icons">Click icons created by Freepik - Flaticon</a></li>
-                    <li style={{fontSize: size}}><a href="https://www.flaticon.com/free-icons/hello" title="hello icons">Hello icons created by Freepik - Flaticon</a></li>
                     <li style={{fontSize: size}}><a href="https://www.flaticon.com/free-icons/profile" title="profile icons">Profile icons created by Prosymbols Premium - Flaticon</a></li>
                     <li style={{fontSize: size}}><a href="https://www.flaticon.com/free-icons/dna" title="dna icons">Dna icons created by Freepik - Flaticon</a></li>
                     <li style={{fontSize: size}}><a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Freepik - Flaticon</a></li>
@@ -28,6 +26,6 @@ export default function PopUp(){
                     <li style={{fontSize: size}}><a href="https://www.flaticon.com/free-icons/internet" title="internet icons">Internet icons created by Freepik - Flaticon</a></li>
                 </ul>
             </Popup>
-        </div>
+        </>
     )
 };
