@@ -11,35 +11,26 @@ const Home = () => {
             <div className="home-header">
                 <div>
                     <h1 className='typed-out'>Hi, I'm Eli Morse!</h1>
-                    {/* <span className="hand-waving"></span> */}
+                </div>
+                <div>
+                    <h1 className='static'>Hi, I'm Eli Morse!</h1>
                 </div>
             </div>
-            <div className="home-container container-left">
-                <h2 className="home-container-header header-left">
-                    Student<FontAwesomeIcon style={{marginLeft: margin, fontSize: iconFontSize}} icon={faBook}></FontAwesomeIcon>
-                </h2>
-                <p className="home-container-text">
-                    I am a Senior Software Engineering Student at the University of Oklahoma and set to graduate in May 2023.
-                </p>
-            </div>
-            <div className="home-container container-right">
-                <h2 className="home-container-header header-left hidden">
-                    Spouce<FontAwesomeIcon style={{marginLeft: margin, fontSize: iconFontSize}} icon={faRing}></FontAwesomeIcon>
-                </h2>
-                <p className="home-container-text">
-                    //text goes here//
-                </p>
-                <h2 className="home-container-header header-right">
-                    Spouce<FontAwesomeIcon style={{marginLeft: margin, fontSize: iconFontSize}} icon={faRing}></FontAwesomeIcon>
-                </h2>
-            </div>
-            <div className="home-container container-left">
-                <h2 className="home-container-header header-left">
-                    Nerd<FontAwesomeIcon style={{marginLeft: margin, fontSize: iconFontSize}} icon={faGlasses}></FontAwesomeIcon>
-                </h2>
-                <p className="home-container-text">
-                    //text goes here//
-                </p>
+
+            <div className="home-container">
+                <div className="home-left">
+                    {/* <h2 className='home-subheader'>Get To Know Me</h2>
+                    <p className='home-text'> */}
+                        //stuff goes here
+                    {/* </p> */}
+                </div>
+                <div className="home-right">
+                    {/* <h2 className='home-subheader'>Skills & Experience</h2>
+                    <p className='home-text'> */}
+                        //stuff goes here
+                    {/* </p> */}
+                </div>
+
             </div>
         </div>
     )

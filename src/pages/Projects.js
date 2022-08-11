@@ -8,9 +8,9 @@ import Internet from "../assets/internet.png";
 
 const Projects = () => {
 
-    const generatorLanguages = ["JS", "HTML", "CSS"];
-    const searchLanguages = ["Angular", "DotNet", "TS", "HTML", "CSS"]
-    const conwaysLanguages = ["JS","HTML", "CSS"];
+    const generatorLanguages = ["JS", "HTML", "CSS", "Bootstrap"];
+    const searchLanguages = ["Angular", "DotNet", "TS", "HTML", "CSS", "Bootstrap"]
+    const conwaysLanguages = ["JS","HTML", "CSS", "Bootstrap"];
     const tictactoeLanguages = ["Java"];
     const thispageLanguages = ["React", "JS", "HTML", "CSS"];
 
@@ -26,11 +26,9 @@ const Projects = () => {
             <div>
                 <h2 className="typed-out">
                     Click each card to visit!
-                    {/* <span className="click-icon"></span> */}
                 </h2>
                 <h2 className="static">
                     Click each card to visit!
-                    {/* <span className="click-icon"></span> */}
                 </h2>
             </div>
         </div>

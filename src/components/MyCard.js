@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faJava, faJsSquare, faReact, faHtml5, faCss3, faAngular} from '@fortawesome/free-brands-svg-icons';
 
-import { TypescriptPlainIcon, DotnetcorePlainIcon } from 'react-devicons';
+import { TypescriptPlainIcon, DotnetcorePlainIcon, BootstrapPlainIcon } from 'react-devicons';
 
 const MyCard = (props) => {
 
@@ -32,6 +32,8 @@ const MyCard = (props) => {
                             return <div><DotnetcorePlainIcon color={color}/></div>
                         case "TS":
                             return <div><TypescriptPlainIcon color={color}/></div>
+                        case "Bootstrap":
+                            return <div><BootstrapPlainIcon color={color}/></div>
                         default:
                             return <></>
                     }

@@ -10,25 +10,36 @@
   
   --green-border: #0c5432;
   --border: rgb(52, 52, 52);
-
-  background: var(--gray);
 }
 
 body {
   margin: 0;
   overflow-x: hidden;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100vh;
   font-family: 'Roboto Mono', sans-serif;
+  background-color: var(--black);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  background: var(--gray);
+  height: 100vh;
+}
+
 /* home begin */
 .about-page {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   margin-bottom: 125px
 }
 
 .home-header {
-  margin-top: 30px;
+  margin: 30px 30px 10px 30px;
   display: flex;
   flex: 1;
   justify-content: center;
@@ -41,77 +52,63 @@ body {
 }
 
 .home-container {
-  z-index: 1000;
   display: flex;
-  margin: 50px;
-  padding: 10px;
-  border-radius: 15px;
-  border: 1px solid var(--border);
-  background: var(--white);
-}
-
-.home-container-header {
-  background-color: var(--green);
-  border: 1px solid var(--green-border);
-  border-radius: 15px;
-  box-shadow: 3px 3px 6px var(--black);
-  display: flex;
-  padding: 50px;
+  flex: 1;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  margin: 0 50px;
 }
 
-.home-container-text {
+.home-container > * {
   display: flex;
-  justify-content: center;
+  padding: 0 10px;
+  margin: 20px 20px;
+  flex: 1;
+  flex-direction: column;
   text-align: center;
-  padding: 0 10px 0 10px;
-  align-items: center;
+  flex-wrap: wrap;
+  min-width: 300px;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  padding: 10px;
+  background-color: var(--white);
 }
 
-.header-right {
-  margin: -25px -15px -25px 10px;
-}
-.header-left {
-  margin: -25px 10px -25px -15px;
-}
-.container-right {
-  justify-content: right;
-}
-.container-left {
-  justify-content: left;
-}
-.hidden {
-  display: none;
+.home-container > *::before {
+  display: inline;
+  white-space: pre;
+  position: relative;
+  padding: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: var(--gray);
+  left: 50%;
+  border: 1px solid var(--green-border);
+  background-color: var(--green);
+  border-radius: 10px;
+  transform: translate(-50%, -32px);
+  width: 250px;
 }
 
-@media (max-width: 700px) {
-  .home-container {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .home-container-header {
-    margin: -25px 25px 10px 25px;
-    padding: 20px;
-  }
-  .hidden {
-    display: flex;
-  }
-  .header-right {
-    display: none;
-  }
+.home-left::before {
+  content: "Get to Know Me";
+  /* width: 180px; */
+}
+
+.home-right::before {
+  content: "Skills & Experience";
+  /* width: 230px; */
+}
+
+.home-text {
+  border: 3px solid var(--border);
+  padding: 10px;
 }
 
 @media (max-width: 450px) {
-  .home-container {
-    margin: 50px 20px;
-  }
   .home-header {
     margin-top: 25px;
-  }
-  .hand-waving {
-    display: none;
   }
 }
 /* home end */
@@ -223,8 +220,8 @@ body {
   align-items: center;
   list-style: none;
   text-decoration: none;
-  padding-left: 7px;
-  padding-right: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .card-description {
@@ -391,10 +388,7 @@ nav {
 }
 
 ul.footer-list {
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 3px;
-  padding-bottom: 12px;
+  padding: 3px 0 3px 0;
   display: flex;
   flex-direction: row;
   width: 8%;
@@ -425,13 +419,10 @@ ul.footer-list li a:hover {
 
 .attributes {
   font-family: 'Roboto Mono', sans-serif;
-  position: fixed;
   background-color: transparent;
   border: none;
   color: var(--attribution);
-  justify-content: center;
-  bottom: 13px;
-  right: 20px;
+  padding-bottom: 8px;
 }
 
 @media (min-width: 900px) {
@@ -445,6 +436,19 @@ ul.footer-list li a:hover {
     padding-top: 8px !important;
     padding-bottom: 8px;
     justify-content: center;
+  }
+  #contact {
+    margin-right: 10px;
+  }
+  .attributes {
+    font-family: 'Roboto Mono', sans-serif;
+    position: fixed;
+    background-color: transparent;
+    border: none;
+    color: var(--attribution);
+    justify-content: center;
+    bottom: 13px;
+    right: 20px;
   }
 }
 /* footer end */
