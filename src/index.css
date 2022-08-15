@@ -56,14 +56,13 @@ body {
   flex: 1;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  margin: 0 50px;
+  margin: 0 50px 100px 50px;
 }
 
 .home-container > * {
   display: flex;
-  padding: 0 10px;
   margin: 20px 20px;
+  padding: 10px;
   flex: 1;
   flex-direction: column;
   text-align: center;
@@ -71,7 +70,6 @@ body {
   min-width: 300px;
   border: 1px solid var(--border);
   border-radius: 15px;
-  padding: 10px;
   background-color: var(--white);
 }
 
@@ -80,6 +78,7 @@ body {
   white-space: pre;
   position: relative;
   padding: 8px;
+  margin: -10px 0;
   font-size: 20px;
   font-weight: bold;
   background-color: var(--gray);
@@ -87,23 +86,34 @@ body {
   border: 1px solid var(--green-border);
   background-color: var(--green);
   border-radius: 10px;
-  transform: translate(-50%, -32px);
-  width: 250px;
+  transform: translate(-50%, -22px);
+  width: 280px;
 }
 
 .home-left::before {
   content: "Get to Know Me";
-  /* width: 180px; */
 }
 
 .home-right::before {
-  content: "Skills & Experience";
-  /* width: 230px; */
+  content: "Coursework & Experience";
 }
 
 .home-text {
   border: 3px solid var(--border);
   padding: 10px;
+}
+
+.experience-list {
+  margin-top: 0px;
+}
+
+.experience-list > * {
+  text-align: left;
+  padding: 7px;
+}
+
+.experience-sublist > * {
+  padding-top: 7px;
 }
 
 @media (max-width: 450px) {
@@ -437,8 +447,9 @@ ul.footer-list li a:hover {
     padding-bottom: 8px;
     justify-content: center;
   }
-  #contact {
-    margin-right: 10px;
+  ul.footer-list li {
+    padding-right: 0;
+    padding-left: 14px;
   }
   .attributes {
     font-family: 'Roboto Mono', sans-serif;

@@ -13,10 +13,49 @@ const Home = () => {
 
             <div className="home-container">
                 <div className="home-left">
-                    //stuff goes here
+                    <p>
+                        I am a Software Engineering student at the University of Central Oklahoma and set to graduate 
+                        May 2023. 
+                    </p>
+                    <p>
+                        // more stuff here...
+                    </p>
+
                 </div>
                 <div className="home-right">
-                    //stuff goes here
+                    <ul className="experience-list">
+                        <li>
+                            Previous:
+                            <ul className="experience-sublist">
+                                <li>
+                                    Java / C++ / JS / HTML / CSS / React / SQL / .NET Core
+                                </li>
+                                <li>
+                                    Data Structures & Algorithms
+                                </li>
+                                <li>
+                                    Object Oriented Programming
+                                </li>
+                                <li>
+                                    Software Engineering / Design Patterns
+                                </li>
+                                <li>
+                                    Relational Database
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Upcoming: 
+                            <ul className="experience-sublist">
+                                <li>
+                                    Python / Flutter
+                                </li>
+                                <li>
+                                    Algorithms for Machine Learning
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
 
             </div>
