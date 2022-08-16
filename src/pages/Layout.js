@@ -24,7 +24,6 @@ const Layout = () => {
           </li>
           <li>
             {/* <NavLink to="/resume" className={({isActive}) => (isActive ? "link-active resume": "")}>Resume</NavLink> */}
-            {/* <Link to="/files/something.txt" target="_blank" className="resume" download>Resumé</Link> */}
             <a className="resume"
                 onClick={() => {
                 if (window.confirm("Download Eli's resumé?")) {
@@ -37,14 +36,14 @@ const Layout = () => {
       </nav>
 
       <Outlet/>
-
+      
       <div id="footer">
         <div id="contact">Contact Me: </div>
-        <ul class="footer-list">
-          <li><a href="mailto:elimorse15@gmail.com"><i class="fa fa-solid fa-envelope"></i></a></li>
-          <li><a href="https://linkedin.com/in/eli-morse-743335228"><i class="fa fa-brands fa-linkedin"></i></a></li>
-          <li><a href="https://github.com/EsromGile"><i class="fa fa-brands fa-github"></i></a></li>
-			  </ul>
+        <div class="footer-list">
+          <a href="mailto:elimorse15@gmail.com"><i class="fa fa-solid fa-envelope"></i></a>
+          <a href="https://linkedin.com/in/eli-morse-743335228"><i class="fa fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/EsromGile"><i class="fa fa-brands fa-github"></i></a>
+			  </div>
         <Popup></Popup>
       </div>
     </>

@@ -23,8 +23,8 @@ const Projects = () => {
     return (
         <>
         <div className="card-group-header">
-            <div>
-                <h2 className="typed-out">
+            <div className="typed-container projects-typed-container">
+                <h2 className="typed-out long-message">
                     Click each card to visit!
                 </h2>
                 <h2 className="static">
