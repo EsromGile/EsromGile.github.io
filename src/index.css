@@ -30,6 +30,42 @@ body {
   height: 100vh;
 }
 
+/* no page begin */
+
+.no-page {
+  margin: 150px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.no-page::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  inset: 1% 6% 100%;
+  z-index: 2050;
+  background-repeat: no-repeat;
+  background-size: 75px 75px;
+  background-position: 23px 16px;
+  width: 120px;
+  height: 110px;
+  background-image: url("../public/images/question-solid.svg");
+}
+
+.no-page > * {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.short {
+  animation: 
+    typing 0.25s steps(3, end) forwards,
+    blink .8s infinite !important;
+}
+/* no page end */
+
 /* home begin */
 .about-page {
   display: flex;
@@ -307,7 +343,8 @@ nav {
 #navigation li > * {
   color: var(--white);
   text-decoration: none;
-  padding: 20px 12px;
+  padding: 20px 0;
+  margin: 0 12px;
   transition: all 0.20s ease-in-out;
 }
 
@@ -319,27 +356,46 @@ nav {
   background-image: url("../public/images/user-solid.svg");
 }
 
-.resume::after {
-  background-image: url("../public/images/file-lines-solid.svg");
-}
-
 .projects::after {
   background-image: url("../public/images/code-solid.svg");
+}
+
+/* .resume:after {
+  background-image: url("../public/images/file-lines-solid.svg");
+} */
+
+.resume:hover {
+  background-image: url("../public/images/download-solid.svg");
+  background-size: 47px 47px;
+  background-position: 21px 10px;
+  background-repeat: no-repeat;
+  background-color: var(--green);
+  color: transparent !important;
+  border-radius: 15px;
+  transition: all 0.10s ease-in-out;
+  padding: 20px 12px !important;
+  margin: 0 !important;
 }
 
 @media (max-width: 525px) {
   #navigation li > * {
     padding: 20px 8px;
+    margin: 0;
   }
   #navigation {
     padding-right: 0px;
   }
-
-  #navigation li > *::after {
+  #navigation li > *::after,
+  .no-page::after {
     background-position: 4px 10px;
   }
   #navigation li > *::before {
     inset: 5px 10px 100%;
+  }
+  .resume:hover {
+    padding: 20px 4px !important;
+    margin: 0 4px !important;
+    background-position: 14px 10px;
   }
 }
 
@@ -355,10 +411,8 @@ nav {
     max-width: 100vw;
   }
   #navigation li > *::after, 
-  #navigation li > *::before {
-    display: none;
-  }
-  .click-icon {
+  #navigation li > *::before,
+  .no-page::after {
     display: none;
   }
 }

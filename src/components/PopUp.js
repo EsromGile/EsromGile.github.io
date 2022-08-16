@@ -17,6 +17,7 @@ export default function PopUp(){
                     <FontAwesomeIcon style={{marginLeft: 5, marginTop: 3}} icon={faInfoCircle}></FontAwesomeIcon> 
                 </button>}
             position="top right">
+                <span style={{padding: 8}}>Images provided by: </span>
                 <ul>
                     <li style={{fontSize: size}}><a href="https://www.flaticon.com/free-icons/profile" title="profile icons">Profile icons created by Prosymbols Premium - Flaticon</a></li>
                     <li style={{fontSize: size}}><a href="https://www.flaticon.com/free-icons/dna" title="dna icons">Dna icons created by Freepik - Flaticon</a></li>

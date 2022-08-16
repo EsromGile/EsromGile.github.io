@@ -1,8 +1,16 @@
-import { Outlet, NavLink } from "react-router-dom";
+import { Outlet, NavLink, Link } from "react-router-dom";
 import Popup from "../components/PopUp";
+import { saveAs } from "file-saver";
 import 'font-awesome/css/font-awesome.min.css';
 
 const Layout = () => {
+
+  const saveFile = () => {
+    saveAs(
+      "/files/something.txt",
+      "resume.txt"
+    );
+  }
 
   return (
     <>
@@ -15,7 +23,15 @@ const Layout = () => {
             <NavLink to="/projects" className={({isActive}) => (isActive ? "link-active projects": "")}>Projects</NavLink>
           </li>
           <li>
-            <NavLink to="/resume" className={({isActive}) => (isActive ? "link-active resume": "")}>Resume</NavLink>
+            {/* <NavLink to="/resume" className={({isActive}) => (isActive ? "link-active resume": "")}>Resume</NavLink> */}
+            {/* <Link to="/files/something.txt" target="_blank" className="resume" download>Resumé</Link> */}
+            <a className="resume"
+                onClick={() => {
+                if (window.confirm("Download Eli's resumé?")) {
+                  saveFile();
+                }}}>
+              Resumé
+            </a>
           </li>
         </ul>
       </nav>
