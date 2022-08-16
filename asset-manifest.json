@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d045600b.css",
-    "main.js": "/static/js/main.77f886cf.js",
+    "main.css": "/static/css/main.241736cd.css",
+    "main.js": "/static/js/main.596b3889.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
@@ -13,14 +13,15 @@
     "static/media/internet.png": "/static/media/internet.b2c514376e752719d541.png",
     "static/media/sudoku.png": "/static/media/sudoku.245f6f4499a4fa77d3be.png",
     "static/media/code-solid.svg": "/static/media/code-solid.a071801782064e53c536.svg",
-    "static/media/file-lines-solid.svg": "/static/media/file-lines-solid.6c210fe94bfd44c0d544.svg",
+    "static/media/download-solid.svg": "/static/media/download-solid.11466158c669e4c4fc23.svg",
+    "static/media/question-solid.svg": "/static/media/question-solid.7eefb3994e7c7a17dc33.svg",
     "index.html": "/index.html",
     "static/media/user-solid.svg": "/static/media/user-solid.ff5c39e4067bbd06037f.svg",
-    "main.d045600b.css.map": "/static/css/main.d045600b.css.map",
-    "main.77f886cf.js.map": "/static/js/main.77f886cf.js.map"
+    "main.241736cd.css.map": "/static/css/main.241736cd.css.map",
+    "main.596b3889.js.map": "/static/js/main.596b3889.js.map"
   },
   "entrypoints": [
-    "static/css/main.d045600b.css",
-    "static/js/main.77f886cf.js"
+    "static/css/main.241736cd.css",
+    "static/js/main.596b3889.js"
   ]
 }
