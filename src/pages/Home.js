@@ -15,19 +15,17 @@ const Home = () => {
             <div className="home-container">
                 <div className="home-left">
                     <p className="home-text">
-                        I am a Software Engineering student at the University of Central Oklahoma and set to graduate 
-                        May 2023. 
+                        I am a Software Engineering student at the University of Central Oklahoma
+                        with an expected graduation date of May 2023.
                     </p>
                     <p>
-                        I am passionate about learning and developing new skills. My freetime often consists of spending
-                        time with friends, gaming, and learning about various topics.
+                        My inquisitive nature leads me to spending much of my free time learning about 
+                        various topics and developing new skills. A few of my interests include: computer science,
+                        linguistics, mathematics, music, and technology.
                     </p>
                     <p>
-                        I am a well-organized, self-driven, and team-oriented individual who prides themself on problem
+                        As a well-organized, self-driven, and team-oriented individual, I pride myself on problem
                         solving skills and attention to detail.
-                    </p>
-                    <p>
-                        Like to work together? Contact me with the methods below.
                     </p>
                 </div>
                 <div className="home-right">

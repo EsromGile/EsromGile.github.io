@@ -18,7 +18,7 @@ const Projects = () => {
     const searchDescription = "A university project for searching github repos and users.";
     const conwaysDescriptioin = "My first JS project. Implements Conway's Game of Life algorithm with simple UI.";
     const tictactoeDescription = "A group University Project implementing 5x5 TicTacToe of which I worked on the AI.";
-    const thispageDescription = "My introduction into the lovely world of React!";
+    const thispageDescription = "A responsive personal page built with React.js";
 
     return (
         <>

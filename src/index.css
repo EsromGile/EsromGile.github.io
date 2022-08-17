@@ -197,7 +197,7 @@ body {
 }
 
 .home-left > * {
-  margin: 10px 20px;
+  margin: 15px;
 }
 
 .home-right::before {
@@ -393,9 +393,6 @@ nav {
 
 .home::after {
   background-image: url("../public/images/address-book-regular.svg");
-  /* background-image: url("../public/images/user-regular.svg"); */
-  /* background-image: url("../public/images/user-solid.svg"); */
-  /* background-image: url("../public/images/comment-dots-solid.svg"); */
 }
 
 .projects::after {

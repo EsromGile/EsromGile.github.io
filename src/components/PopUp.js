@@ -19,7 +19,6 @@ export default function PopUp(){
             position="top right">
                 <span style={{padding: 8}}>Images provided by: </span>
                 <ul>
-                    <li style={{fontSize: size}}><a href="https://www.flaticon.com/free-icons/profile" title="profile icons">Profile icons created by Prosymbols Premium - Flaticon</a></li>
                     <li style={{fontSize: size}}><a href="https://www.flaticon.com/free-icons/dna" title="dna icons">Dna icons created by Freepik - Flaticon</a></li>
                     <li style={{fontSize: size}}><a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Freepik - Flaticon</a></li>
                     <li style={{fontSize: size}}><a href="https://www.flaticon.com/free-icons/sudoku" title="sudoku icons">Sudoku icons created by Freepik - Flaticon</a></li>
