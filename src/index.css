@@ -140,7 +140,7 @@ body {
 }
 
 .home-header {
-  margin: 35px 30px 35px 30px;
+  margin: 55px 30px 35px 30px;
   display: flex;
   flex: 1;
   justify-content: center;
@@ -225,7 +225,7 @@ body {
 
 /* projects begin */
 .card-group-header {
-  padding-top: 35px;
+  padding-top: 55px;
   padding-bottom: 35px;
   margin-left: 25px;
   margin-right: 25px;
@@ -245,7 +245,7 @@ body {
   flex-grow: 1;
   justify-content: center;
   align-items: center;
-  padding: 0 50px 100px 50px;
+  padding: 0 50px 50px 50px;
 }
 
 .card {

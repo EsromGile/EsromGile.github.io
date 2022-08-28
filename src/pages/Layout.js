@@ -7,8 +7,8 @@ const Layout = () => {
 
   const saveFile = () => {
     saveAs(
-      "/files/something.txt",
-      "resume.txt"
+      "/files/download.pdf",
+      "resume.pdf"
     );
   }
 
@@ -35,8 +35,8 @@ const Layout = () => {
       <div id="footer">
         <div id="contact">Contact Me: </div>
         <div class="footer-list">
-          <a href="mailto:elimorse15@gmail.com"><i class="fa fa-solid fa-envelope"></i></a>
-          <a href="https://linkedin.com/in/eli-morse-743335228"><i class="fa fa-brands fa-linkedin"></i></a>
+          <a href="mailto:elimorse15+joboffer@gmail.com"><i class="fa fa-solid fa-envelope"></i></a>
+          <a href="https://linkedin.com/in/eli-morse"><i class="fa fa-brands fa-linkedin"></i></a>
           <a href="https://github.com/EsromGile"><i class="fa fa-brands fa-github"></i></a>
 			  </div>
           <Popup/>
