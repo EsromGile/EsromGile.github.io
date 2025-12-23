@@ -1,5 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faJava, faJsSquare, faReact, faHtml5, faCss3, faAngular } from '@fortawesome/free-brands-svg-icons';
+import { faJava, faJsSquare, faReact, faHtml5, faCss3, faAngular, faTex } from '@fortawesome/free-brands-svg-icons';
+
+import Latex from "../assets/latex_logo.png";
 
 import { TypescriptPlainIcon, DotnetcorePlainIcon, BootstrapPlainIcon, CPlainIcon, DartPlainIcon, FlutterPlainIcon } from 'react-devicons';
 
@@ -38,6 +40,8 @@ const MyCard = (props) => {
                             return <div><DartPlainIcon color={color} /></div>
                         case "Flutter":
                             return <div><FlutterPlainIcon color={color} /></div>
+                        case "LaTeX":
+                            return <div><FontAwesomeIcon icon={faTex} /></div>
                         default:
                             return <></>
                     }

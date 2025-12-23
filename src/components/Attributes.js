@@ -26,6 +26,7 @@ export default function Attributes(){
                     <li style={{fontSize: size}}><a href="https://www.flaticon.com/free-icons/internet" title="internet icons">Internet icons created by Freepik - Flaticon</a></li>
                     <li style={{fontsize: size}}><a href="https://www.flaticon.com/free-icons/rating" title="rating icons">Rating icons created by Muhajir - Flaticon</a></li>
                     <li style={{fontsize: size}}><a href="https://www.flaticon.com/free-icons/charity" title="charity icons">Charity icons created by Freepik - Flaticon</a></li>
+                    <li style={{fontsize: size}}><a href="https://www.flaticon.com/free-icons/calculus" title="calculus icons">Calculus icons created by Freepik - Flaticon</a></li>
                 </ul>
             </Popup>
         </>

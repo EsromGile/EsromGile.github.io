@@ -1,5 +1,6 @@
 import MyCard from "../components/MyCard.js";
 
+import Calculus from "../assets/calculus.png"
 import Allocator from "../assets/generous.png"
 import Capstone from "../assets/stars.png"
 import Sudoku from "../assets/sudoku.png";
@@ -47,6 +48,13 @@ const Projects = () => (
                 languages={["Dart", "Flutter"]}
                 description={"A customizable to-do application with reminders and a cosmetic rewards system."}
             ></MyCard>
+            <MyCard
+                project="Calculus Notes"
+                image={Calculus}
+                link={"https://esromgile.github.io/calcnotes/calc-notes.html"}
+                languages={["LaTeX"]}
+                description={"A collection of some of my calculus notes written in LaTeX."}
+            >/</MyCard>
             <MyCard
                 project="This React Page!"
                 image={Github}
