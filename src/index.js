@@ -7,19 +7,19 @@ import NoPage from "./pages/NoPage";
 
 import './index.css';
 
-export default function App() {
-	return (
-		<BrowserRouter>
-			<Routes>
-				<Route path="/" element={<Layout />}>
-					<Route index element={<Home />} />
-					<Route path="projects" element={<Projects />} />
-					<Route path="*" element={<NoPage />} />
-				</Route>
-			</Routes>
-		</BrowserRouter>
-	);
-}
+const App = () => (
+	<BrowserRouter>
+		<Routes>
+			<Route path="/" element={<Layout />}>
+				<Route index element={<Home />} />
+				<Route path="projects" element={<Projects />} />
+				<Route path="*" element={<NoPage />} />
+			</Route>
+		</Routes>
+	</BrowserRouter>
+);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);
+
+export default App;

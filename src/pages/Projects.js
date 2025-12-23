@@ -1,4 +1,4 @@
-import MyCard from "../components/MyCard.js";
+import ProjectCard from "../components/ProjectCard.js";
 
 import Calculus from "../assets/calculus.png"
 import Allocator from "../assets/generous.png"
@@ -20,48 +20,48 @@ const Projects = () => (
             </div>
         </div>
         <div className="card-group">
-            <MyCard
+            <ProjectCard
                 project="C Allocators"
                 image={Allocator}
                 link={"https://github.com/EsromGile/em-allocators"}
                 languages={["C"]}
                 description={"A small library of custom C general purpose allocators."}
-            ></MyCard>
-            <MyCard
+            ></ProjectCard>
+            <ProjectCard
                 project="Sudoku Generator"
                 image={Sudoku}
                 link="https://esromgile.github.io/sudoku-generator/"
                 languages={["JS", "HTML", "CSS", "Bootstrap"]}
                 description={"A sudoku generator with the ability to check answers when completed."}
-            ></MyCard>
-            <MyCard
+            ></ProjectCard>
+            <ProjectCard
                 project="Game of Life"
                 image={Life}
                 link="https://esromgile.github.io/game-of-life/"
                 languages={["JS", "HTML", "CSS", "Bootstrap"]}
                 description={"My first JS project. Implements Conway's Game of Life algorithm with simple UI."}
-            ></MyCard>
-            <MyCard
+            ></ProjectCard>
+            <ProjectCard
                 project="Capstone Project"
                 image={Capstone}
                 link={"https://github.com/uco-capstone/capstone"}
                 languages={["Dart", "Flutter"]}
                 description={"A customizable to-do application with reminders and a cosmetic rewards system."}
-            ></MyCard>
-            <MyCard
+            ></ProjectCard>
+            <ProjectCard
                 project="Calculus Notes"
                 image={Calculus}
                 link={"https://esromgile.github.io/calcnotes/calc-notes.html"}
                 languages={["LaTeX"]}
                 description={"A collection of some of my calculus notes written in LaTeX."}
-            >/</MyCard>
-            <MyCard
+            >/</ProjectCard>
+            <ProjectCard
                 project="This React Page!"
                 image={Github}
                 link="https://github.com/EsromGile/EsromGile.github.io"
                 languages={["React", "JS", "HTML", "CSS"]}
                 description={"A responsive personal page built with React.js."}
-            ></MyCard>
+            ></ProjectCard>
         </div>
     </>
 );
