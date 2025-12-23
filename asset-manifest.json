@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.15cee57d.css",
-    "main.js": "/static/js/main.bf721e40.js",
+    "main.css": "/static/css/main.ff4ad2d9.css",
+    "main.js": "/static/js/main.1f1346c4.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
@@ -12,16 +12,18 @@
     "static/media/dna.png": "/static/media/dna.6fb49ed54affdcd19abb.png",
     "static/media/github.png": "/static/media/github.96997ac26ed9d67f9159.png",
     "static/media/sudoku.png": "/static/media/sudoku.245f6f4499a4fa77d3be.png",
+    "static/media/calculus.png": "/static/media/calculus.bb7c9b330e2d42608380.png",
+    "static/media/tex-brands-solid.svg": "/static/media/tex-brands-solid.90563182433fed5a52208ef7c4984be5.svg",
     "static/media/code-solid.svg": "/static/media/code-solid.a071801782064e53c536.svg",
     "static/media/address-book-regular.svg": "/static/media/address-book-regular.97edd6445436566e0741.svg",
     "static/media/download-solid.svg": "/static/media/download-solid.11466158c669e4c4fc23.svg",
     "index.html": "/index.html",
     "static/media/question-solid.svg": "/static/media/question-solid.7eefb3994e7c7a17dc33.svg",
-    "main.15cee57d.css.map": "/static/css/main.15cee57d.css.map",
-    "main.bf721e40.js.map": "/static/js/main.bf721e40.js.map"
+    "main.ff4ad2d9.css.map": "/static/css/main.ff4ad2d9.css.map",
+    "main.1f1346c4.js.map": "/static/js/main.1f1346c4.js.map"
   },
   "entrypoints": [
-    "static/css/main.15cee57d.css",
-    "static/js/main.bf721e40.js"
+    "static/css/main.ff4ad2d9.css",
+    "static/js/main.1f1346c4.js"
   ]
 }
