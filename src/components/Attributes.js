@@ -5,7 +5,7 @@ import 'reactjs-popup/dist/index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 
-export default function PopUp(){
+export default function Attributes(){
 
     let size = 14;
 
@@ -24,6 +24,8 @@ export default function PopUp(){
                     <li style={{fontSize: size}}><a href="https://www.flaticon.com/free-icons/sudoku" title="sudoku icons">Sudoku icons created by Freepik - Flaticon</a></li>
                     <li style={{fontSize: size}}><a href="https://www.flaticon.com/free-icons/game" title="game icons">Game icons created by Freepik - Flaticon</a></li>
                     <li style={{fontSize: size}}><a href="https://www.flaticon.com/free-icons/internet" title="internet icons">Internet icons created by Freepik - Flaticon</a></li>
+                    <li style={{fontsize: size}}><a href="https://www.flaticon.com/free-icons/rating" title="rating icons">Rating icons created by Muhajir - Flaticon</a></li>
+                    <li style={{fontsize: size}}><a href="https://www.flaticon.com/free-icons/charity" title="charity icons">Charity icons created by Freepik - Flaticon</a></li>
                 </ul>
             </Popup>
         </>

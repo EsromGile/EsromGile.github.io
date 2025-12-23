@@ -1,9 +1,10 @@
-import MyCard  from "../components/MyCard.js";
+import MyCard from "../components/MyCard.js";
 
+import Allocator from "../assets/generous.png"
+import Capstone from "../assets/stars.png"
 import Sudoku from "../assets/sudoku.png";
 import Life from "../assets/dna.png";
 import Github from "../assets/github.png";
-import Internet from "../assets/internet.png";
 
 const Projects = () => (
     <>
@@ -19,40 +20,42 @@ const Projects = () => (
         </div>
         <div className="card-group">
             <MyCard
-                project="Capstone Project"
-                image={Github}
-                languages={["Dart"]}
-                description={"A customizable to-do application with reminders and a cosmetic rewards system."}
-                ></MyCard>
-            <MyCard
-                project="Custom C Allocators"
-                image={Github}
+                project="C Allocators"
+                image={Allocator}
+                link={"https://github.com/EsromGile/em-allocators"}
                 languages={["C"]}
                 description={"A small library of custom C general purpose allocators."}
-                ></MyCard>
-            <MyCard 
-                project="Sudoku Generator" 
+            ></MyCard>
+            <MyCard
+                project="Sudoku Generator"
                 image={Sudoku}
                 link="https://esromgile.github.io/sudoku-generator/"
                 languages={["JS", "HTML", "CSS", "Bootstrap"]}
                 description={"A sudoku generator with the ability to check answers when completed."}
-                ></MyCard>
-            <MyCard 
-                project="Game of Life" 
+            ></MyCard>
+            <MyCard
+                project="Game of Life"
                 image={Life}
                 link="https://esromgile.github.io/game-of-life/"
-                languages={["JS","HTML", "CSS", "Bootstrap"]}
+                languages={["JS", "HTML", "CSS", "Bootstrap"]}
                 description={"My first JS project. Implements Conway's Game of Life algorithm with simple UI."}
-                ></MyCard>
+            ></MyCard>
+            <MyCard
+                project="Capstone Project"
+                image={Capstone}
+                link={"https://github.com/uco-capstone/capstone"}
+                languages={["Dart", "Flutter"]}
+                description={"A customizable to-do application with reminders and a cosmetic rewards system."}
+            ></MyCard>
             <MyCard
                 project="This React Page!"
-                image={Internet}
+                image={Github}
                 link="https://github.com/EsromGile/EsromGile.github.io"
                 languages={["React", "JS", "HTML", "CSS"]}
                 description={"A responsive personal page built with React.js."}
-                ></MyCard>
+            ></MyCard>
         </div>
     </>
 );
-  
+
 export default Projects;
