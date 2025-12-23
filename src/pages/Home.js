@@ -15,49 +15,36 @@ const Home = () => {
             <div className="home-container">
                 <div className="home-left">
                     <p className="home-text">
-                        I am a Software Engineering student at the University of Central Oklahoma
-                        with an expected graduation date of May 2023.
+                        I am a Software Developer IV at Paycom, where I contribute to innovative in-house testing software solutions using C#/.NET. 
+                        I hold a degree in Software Engineering from the University of Central Oklahoma, where I also supported students as a Mathematics Tutor for over three years.
                     </p>
                     <p>
-                        My inquisitive nature leads me to spending much of my free time learning about 
-                        various topics and developing new skills. A few of my interests include: computer science,
-                        linguistics, mathematics, music, and technology.
+                        My inquisitive nature leads me to spending much of my free time learning about various topics and developing new skills. 
+                        A few of my interests include: software architecture and design, linguistics, mathematics, music, and technology.
                     </p>
                     <p>
-                        As a well-organized, self-driven, and team-oriented individual, I pride myself on problem
-                        solving skills and attention to detail.
+                        As a well-organized, self-driven, and team-oriented individual, I pride myself on problem solving skills and attention to detail.
                     </p>
                 </div>
                 <div className="home-right">
                     <ul className="experience-list">
                         <li>
-                            Previous:
+                            Experience:
                             <ul className="experience-sublist">
                                 <li>
-                                    Java / C++ / JS / HTML / CSS / React / SQL / .NET Core
+                                    C# / ASP.NET / PHP / MySQL / TS / JS / HTML / CSS / React / C
                                 </li>
                                 <li>
-                                    Data Structures & Algorithms
+                                    Software Architecture And Design
                                 </li>
                                 <li>
-                                    Object Oriented Programming
+                                    Applications Database Systems
                                 </li>
                                 <li>
-                                    Software Engineering / Design Patterns
+                                    Object-Oriented Design and Patterns
                                 </li>
                                 <li>
-                                    Relational Database
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            Upcoming: 
-                            <ul className="experience-sublist">
-                                <li>
-                                    Python / Flutter
-                                </li>
-                                <li>
-                                    Algorithms for Machine Learning
+                                    Software Engineering I & II
                                 </li>
                             </ul>
                         </li>

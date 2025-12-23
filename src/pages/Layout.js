@@ -8,7 +8,7 @@ const Layout = () => {
   const saveFile = () => {
     saveAs(
       "/files/download.pdf",
-      "resume.pdf"
+      "Eli_Morse_Resume.pdf"
     );
   }
 
